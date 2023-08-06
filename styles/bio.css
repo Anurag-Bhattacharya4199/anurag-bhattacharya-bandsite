@@ -22,4 +22,45 @@
   font-style: normal;
   padding: 0px;
   margin: 0px;
+}
+
+.headerSection {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #323232;
+}
+
+.bandSiteLogo {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.main-navigation {
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.main-navigation__list li {
+  list-style: none;
+  display: inline;
+  padding: 16px;
+}
+
+.main-navigation__list li:hover {
+  border-bottom: 5px solid #FFFFFF;
+}
+
+.main-navigation__list li.main-navigation__item-active {
+  color: #FFFFFF;
+  font-weight: bold;
+  border-bottom: 5px solid #FFFFFF;
+}
+
+.main-navigation__list li.main-navigation__item-inactive {
+  color: #E1E1E1;
 }/*# sourceMappingURL=bio.css.map */
