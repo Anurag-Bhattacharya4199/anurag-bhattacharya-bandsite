@@ -1,7 +1,7 @@
-@import './partials/fonts';
+@import './partials/mixins';
 
 * {
-  font-family: 'AvenirNext';
+  @include normal-font-style($main-font-family, normal, normal);
   padding: 0px;
   margin: 0px;
-}
+} 

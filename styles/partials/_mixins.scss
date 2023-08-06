@@ -1,0 +1,36 @@
+@import './variables';
+
+@mixin normal-font-style($font-family, $font-weight, $font-style)
+{
+  font-family: $font-family;
+  font-weight: $font-weight;
+  font-style: $font-style;
+}
+
+@mixin mobile-page-section-header-style($font-size, $line-height, $font-weight)
+{
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: $font-weight;
+}
+
+@mixin mobile-page-subheader-style($font-size, $line-height, $font-weight)
+{
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: $font-weight;
+}
+
+@mixin mobile-body-footer-style($font-size, $line-height, $font-weight)
+{
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: $font-weight;
+}
+
+@mixin mobile-labels-buttons-style($font-size, $line-height, $font-weight)
+{
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: $font-weight;
+}
