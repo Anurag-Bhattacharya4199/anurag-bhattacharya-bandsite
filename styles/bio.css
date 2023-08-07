@@ -65,6 +65,20 @@
   color: #E1E1E1;
 }
 
+.mainWebsiteTitleWrapper {
+  background-image: url("../assets/images/hero-bio.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.mainWebsiteTitleWrapper__header {
+  padding-left: 16px;
+  padding-top: 24px;
+  padding-bottom: 16px;
+  color: #FFFFFF;
+}
+
 .footerSection {
   background-color: #323232;
   padding-top: 16px;

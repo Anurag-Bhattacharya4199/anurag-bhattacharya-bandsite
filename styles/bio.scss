@@ -46,6 +46,20 @@
   color: $Mercury;
 }
 
+.mainWebsiteTitleWrapper {
+  background-image: url("../assets/images/hero-bio.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.mainWebsiteTitleWrapper__header {
+  padding-left: $mobile-padding-between-components;
+  padding-top: $mobile-padding-before-headlines;
+  padding-bottom: $mobile-padding-after-headlines;
+  color: $White;
+}
+
 .footerSection {
   background-color: $BandSite-Black;
   padding-top: $mobile-padding-between-components;
