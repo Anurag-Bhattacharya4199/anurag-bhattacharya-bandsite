@@ -70,6 +70,11 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .mainWebsiteTitleWrapper__header {
@@ -77,6 +82,89 @@
   padding-top: 24px;
   padding-bottom: 16px;
   color: #FFFFFF;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+}
+
+.aboutInformationWrapper__titleHeader {
+  padding-left: 16px;
+  padding-top: 24px;
+  padding-bottom: 16px;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+}
+
+.bandImageWrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+.bandImage {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  height: 200px;
+  width: 350px;
+  padding-left: 16px;
+  padding-bottom: 16px;
+}
+
+.bandQuoteWrapper {
+  padding-left: 16px;
+  padding-bottom: 16px;
+}
+
+.bandQuoteWrapper__quote {
+  color: #000000;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.bandBiographyWrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.bandBiographyWrapper__title {
+  color: #323232;
+  padding-bottom: 16px;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 600;
+}
+
+.bandBiographyWrapper__text {
+  padding-bottom: 16px;
+}
+
+.photoGalleryWrapper {
+  background-color: #E1E1E1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.photoGalleryWrapper__title {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+  padding-left: 16px;
+  padding-bottom: 16px;
+}
+
+.photoGalleryImages__image {
+  height: 250px;
+  width: 350px;
+  padding-left: 16px;
+  padding-bottom: 16px;
 }
 
 .footerSection {
@@ -113,6 +201,11 @@
 .copyrightWrapper {
   display: flex;
   flex-direction: column;
+  padding-top: 24px;
+}
+
+.copyrightWrapper__logo {
+  width: 15 0px;
   padding-top: 24px;
 }
 

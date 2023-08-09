@@ -51,6 +51,11 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .mainWebsiteTitleWrapper__header {
@@ -58,6 +63,79 @@
   padding-top: $mobile-padding-before-headlines;
   padding-bottom: $mobile-padding-after-headlines;
   color: $White;
+  @include mobile-page-section-header-style(24px, 32px, 700);
+}
+
+.aboutInformationWrapper__titleHeader {
+  padding-left: $mobile-padding-between-components;
+  padding-top: $mobile-padding-before-headlines;
+  padding-bottom: $mobile-padding-after-headlines;
+  @include mobile-page-section-header-style(24px, 32px, 700);
+}
+
+.bandImageWrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+.bandImage {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  height: 200px;
+  width: 350px;
+  padding-left: $mobile-padding-between-components;
+  padding-bottom: $mobile-padding-between-components;
+}
+
+.bandQuoteWrapper {
+  padding-left: $mobile-padding-between-components;
+  padding-bottom: $mobile-padding-between-components;
+}
+
+.bandQuoteWrapper__quote {
+  color: $BandSite-DarkBlack;
+  @include mobile-body-footer-style(13px, 18px, 400);
+}
+
+.bandBiographyWrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  padding-left: $mobile-padding-between-components;
+  padding-right: $mobile-padding-between-components;
+}
+
+.bandBiographyWrapper__title {
+  color: $BandSite-Black;
+  padding-bottom: $mobile-padding-between-components;
+  @include mobile-page-subheader-style(14px, 22px, 600)
+}
+
+.bandBiographyWrapper__text {
+  padding-bottom: $mobile-padding-between-components;
+}
+
+.photoGalleryWrapper {
+  background-color: $Mercury;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.photoGalleryWrapper__title {
+  @include mobile-page-section-header-style(24px, 32px, 700);
+  padding-left: $mobile-padding-between-components;
+  padding-bottom: $mobile-padding-between-components;
+}
+
+.photoGalleryImages__image {
+  height: 250px;
+  width: 350px;
+  padding-left: $mobile-padding-between-components;
+  padding-bottom: $mobile-padding-between-components;
 }
 
 .footerSection {
@@ -97,6 +175,10 @@
   padding-top: $mobile-padding-before-headlines;
 }
 
+.copyrightWrapper__logo {
+  width: 15 0px;
+  padding-top: $mobile-padding-before-headlines;
+}
 .copyrightWrapper__info {
   padding-top: $mobile-padding-between-components;
   padding-bottom: $mobile-padding-between-components;
