@@ -34,3 +34,15 @@
   line-height: $line-height;
   font-weight: $font-weight;
 }
+
+@mixin tablet {
+  @media screen and (min-width: $tablet-breakdown) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: $desktop-breakdown) {
+    @content;
+  }
+}
