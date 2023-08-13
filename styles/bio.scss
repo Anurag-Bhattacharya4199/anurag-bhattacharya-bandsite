@@ -1,13 +1,9 @@
-//Make Width 100% for the images
-//BandSite Logo max height and width
-
-//Question: The spacing between the li elements
 @import './partials/mixins';
 
 * {
   @include normal-font-style($main-font-family, normal, normal);
-  padding: 0px;
-  margin: 0px;
+  padding: 0rem;
+  margin: 0rem;
 }
 
 .headerSection {
@@ -18,11 +14,12 @@
   align-items: center;
   background-color: $BandSite-Black;
 }
+
 .bandSiteLogo {
   padding-top: $mobile-padding-after-headlines;
   padding-bottom: $mobile-padding-after-headlines;
-  max-height: 20px;
-  max-width: 120px;
+  max-height: 20%;
+  max-width: 120%;
 }
 
 .main-navigation {
@@ -45,13 +42,13 @@
 
 .main-navigation li:hover {
   color: $White;
-  padding-bottom: 8px;
+  padding-bottom: 1rem;
   border-bottom: 3px solid $White;
 }
 
 .main-navigation__item-active {
   color: $White;
-  padding-bottom: 8px;
+  padding-bottom: 1rem;
   border-bottom: 3px solid $White;
 }
 
@@ -62,6 +59,7 @@
 .mainWebsiteTitleWrapper {
   background: linear-gradient(rgba(50,50,50,0.5), rgba(50,50,50,0.5)), url('../assets/images/hero-bio.jpg') center/cover;
   width: 100%;
+  //What relative unit to use here?
   height: 200px;
   display: flex;
   flex-direction: column;
@@ -73,14 +71,16 @@
   padding-top: $mobile-padding-before-headlines;
   padding-bottom: $mobile-padding-after-headlines;
   color: $White;
-  @include mobile-page-section-header-style(24px, 32px, 700);
+  //What relative unit to use for line-height?
+  @include mobile-page-section-header-style(1.5em, 32px, 700);
 }
 
 .aboutInformationWrapper__titleHeader {
   padding-left: $mobile-padding-between-components;
   padding-top: $mobile-padding-before-headlines;
   padding-bottom: $mobile-padding-after-headlines;
-  @include mobile-page-section-header-style(24px, 32px, 700);
+  //What relative unit to use for line-height?
+  @include mobile-page-section-header-style(1.5em, 32px, 700);
 }
 
 .bandImageWrapper {
@@ -92,6 +92,7 @@
   display: flex;
   text-align: center;
   justify-content: center;
+  //What relative unit to use here?
   height: 200px;
   width: 100%;
 }
@@ -104,7 +105,8 @@
 
 .bandQuoteWrapper p {
   color: $BandSite-Black;
-  @include mobile-page-subheader-style(14px, 22px, 600);
+  //What relative unit to use for line height
+  @include mobile-page-subheader-style(1rem, 22px, 600);
   padding-bottom: $mobile-padding-between-components;
 }
 
@@ -120,7 +122,8 @@
 .bandBiographyWrapper__title {
   color: $BandSite-Black;
   padding-bottom: $mobile-padding-between-components;
-  @include mobile-page-subheader-style(14px, 22px, 600)
+  //What relative unit for line height?
+  @include mobile-page-subheader-style(1rem, 22px, 600)
 }
 
 .bandBiographyWrapper__text {
@@ -135,7 +138,7 @@
 }
 
 .photoGalleryWrapper__title {
-  @include mobile-page-section-header-style(24px, 32px, 700);
+  @include mobile-page-section-header-style(2rem, 32px, 700);
   padding-left: $mobile-padding-between-components;
   padding-bottom: $mobile-padding-between-components;
   padding-top: $mobile-padding-before-headlines;
@@ -147,7 +150,8 @@
   padding-bottom: $mobile-padding-between-components;
 }
 .photoGalleryImages__image {
-  height: 250px;
+  //What relative unit to use here?
+  height: 200px;
   width: 100%;
 }
 
@@ -189,8 +193,8 @@
 
 .copyrightWrapper__logo {
   padding-top: $mobile-padding-before-headlines;
-  max-height: 20px;
-  max-width: 120px;
+  max-height: 10%;
+  max-width: 45%;
 }
 .copyrightWrapper__info {
   padding-top: $mobile-padding-between-components;

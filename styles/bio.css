@@ -20,8 +20,8 @@
   font-family: "AvenirNext";
   font-weight: normal;
   font-style: normal;
-  padding: 0px;
-  margin: 0px;
+  padding: 0rem;
+  margin: 0rem;
 }
 
 .headerSection {
@@ -34,16 +34,16 @@
 }
 
 .bandSiteLogo {
-  padding-top: 16px;
-  padding-bottom: 16px;
-  max-height: 20px;
-  max-width: 120px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  max-height: 20%;
+  max-width: 120%;
 }
 
 .main-navigation {
-  padding-top: 16px;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   width: 100%;
 }
 
@@ -60,13 +60,13 @@
 
 .main-navigation li:hover {
   color: #FFFFFF;
-  padding-bottom: 8px;
+  padding-bottom: 1rem;
   border-bottom: 3px solid #FFFFFF;
 }
 
 .main-navigation__item-active {
   color: #FFFFFF;
-  padding-bottom: 8px;
+  padding-bottom: 1rem;
   border-bottom: 3px solid #FFFFFF;
 }
 
@@ -84,27 +84,27 @@
 }
 
 .mainWebsiteTitleWrapper__header {
-  padding-left: 16px;
-  padding-top: 24px;
-  padding-bottom: 16px;
+  padding-left: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
   color: #FFFFFF;
-  font-size: 24px;
+  font-size: 1.5em;
   line-height: 32px;
   font-weight: 700;
 }
 
 .aboutInformationWrapper__titleHeader {
-  padding-left: 16px;
-  padding-top: 24px;
-  padding-bottom: 16px;
-  font-size: 24px;
+  padding-left: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  font-size: 1.5em;
   line-height: 32px;
   font-weight: 700;
 }
 
 .bandImageWrapper {
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .bandImage {
@@ -116,37 +116,37 @@
 }
 
 .bandQuoteWrapper {
-  padding-top: 16px;
-  padding-left: 16px;
-  padding-bottom: 16px;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-bottom: 1rem;
 }
 
 .bandQuoteWrapper p {
   color: #323232;
-  font-size: 14px;
+  font-size: 1rem;
   line-height: 22px;
   font-weight: 600;
-  padding-bottom: 16px;
+  padding-bottom: 1rem;
 }
 
 .bandBiographyWrapper {
   display: flex;
   flex-direction: column;
   text-align: start;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .bandBiographyWrapper__title {
   color: #323232;
-  padding-bottom: 16px;
-  font-size: 14px;
+  padding-bottom: 1rem;
+  font-size: 1rem;
   line-height: 22px;
   font-weight: 600;
 }
 
 .bandBiographyWrapper__text {
-  padding-bottom: 16px;
+  padding-bottom: 1rem;
 }
 
 .photoGalleryWrapper {
@@ -157,44 +157,44 @@
 }
 
 .photoGalleryWrapper__title {
-  font-size: 24px;
+  font-size: 2rem;
   line-height: 32px;
   font-weight: 700;
-  padding-left: 16px;
-  padding-bottom: 16px;
-  padding-top: 24px;
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+  padding-top: 2rem;
 }
 
 .photoGalleryImages__wrapper {
-  padding-left: 16px;
-  padding-right: 16px;
-  padding-bottom: 16px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
 }
 
 .photoGalleryImages__image {
-  height: 250px;
+  height: 200px;
   width: 100%;
 }
 
 .footerSection {
   background: #323232;
-  padding-top: 16px;
-  padding-left: 16px;
+  padding-top: 1rem;
+  padding-left: 1rem;
 }
 
 .footerSection__title {
   font-weight: bold;
-  padding-bottom: 16px;
+  padding-bottom: 1rem;
   color: #FFFFFF;
 }
 
 .socialIconsWrapper__icon {
-  padding-right: 16px;
-  padding-bottom: 16px;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
 }
 
 .contactInfo__section {
-  padding-bottom: 16px;
+  padding-bottom: 1rem;
 }
 
 .contactInfo__title {
@@ -209,17 +209,17 @@
 .copyrightWrapper {
   display: flex;
   flex-direction: column;
-  padding-top: 24px;
+  padding-top: 2rem;
 }
 
 .copyrightWrapper__logo {
-  padding-top: 24px;
-  max-height: 20px;
-  max-width: 120px;
+  padding-top: 2rem;
+  max-height: 10%;
+  max-width: 45%;
 }
 
 .copyrightWrapper__info {
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   color: #E1E1E1;
 }/*# sourceMappingURL=bio.css.map */
