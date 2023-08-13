@@ -1,3 +1,7 @@
+//Make Width 100% for the images
+//BandSite Logo max height and width
+
+//Question: The spacing between the li elements
 @import './partials/mixins';
 
 * {
@@ -17,40 +21,46 @@
 .bandSiteLogo {
   padding-top: $mobile-padding-after-headlines;
   padding-bottom: $mobile-padding-after-headlines;
+  max-height: 20px;
+  max-width: 120px;
 }
 
 .main-navigation {
-  padding: $mobile-padding-between-components;
+  padding-top: $mobile-padding-between-components;
+  padding-left: $mobile-padding-between-components;
+  padding-right: $mobile-padding-between-components;
+  width: 100%;
+}
+
+.main-navigation__list {
   display: flex;
-  justify-content: center;
   text-align: center;
+  width: 100%;
 }
 
 .main-navigation__list li {
   list-style: none;
-  display: inline;
-  padding: $mobile-padding-between-components;
+  width: 50%;
 }
 
-.main-navigation__list  li:hover {
-  border-bottom: 5px solid $White;
-}
-
-.main-navigation__list li.main-navigation__item-active {
+.main-navigation li:hover {
   color: $White;
-  font-weight: bold;
-  border-bottom: 5px solid $White;
+  padding-bottom: 8px;
+  border-bottom: 3px solid $White;
 }
 
-.main-navigation__list li.main-navigation__item-inactive {
+.main-navigation__item-active {
+  color: $White;
+  padding-bottom: 8px;
+  border-bottom: 3px solid $White;
+}
+
+.main-navigation__item-inactive {
   color: $Mercury;
 }
 
 .mainWebsiteTitleWrapper {
-  background-image: url("../assets/images/hero-bio.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background: linear-gradient(rgba(50,50,50,0.5), rgba(50,50,50,0.5)), url('../assets/images/hero-bio.jpg') center/cover;
   width: 100%;
   height: 200px;
   display: flex;
@@ -74,10 +84,8 @@
 }
 
 .bandImageWrapper {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  justify-content: center;
+  padding-left: $mobile-padding-between-components;
+  padding-right: $mobile-padding-between-components;
 }
 
 .bandImage {
@@ -85,20 +93,21 @@
   text-align: center;
   justify-content: center;
   height: 200px;
-  width: 350px;
-  padding-left: $mobile-padding-between-components;
-  padding-bottom: $mobile-padding-between-components;
+  width: 100%;
 }
 
 .bandQuoteWrapper {
+  padding-top: $mobile-padding-between-components;
   padding-left: $mobile-padding-between-components;
   padding-bottom: $mobile-padding-between-components;
 }
 
-.bandQuoteWrapper__quote {
-  color: $BandSite-DarkBlack;
-  @include mobile-body-footer-style(13px, 18px, 400);
+.bandQuoteWrapper p {
+  color: $BandSite-Black;
+  @include mobile-page-subheader-style(14px, 22px, 600);
+  padding-bottom: $mobile-padding-between-components;
 }
+
 
 .bandBiographyWrapper {
   display: flex;
@@ -129,17 +138,21 @@
   @include mobile-page-section-header-style(24px, 32px, 700);
   padding-left: $mobile-padding-between-components;
   padding-bottom: $mobile-padding-between-components;
-}
+  padding-top: $mobile-padding-before-headlines;
+} 
 
+.photoGalleryImages__wrapper {
+  padding-left: $mobile-padding-between-components;
+  padding-right: $mobile-padding-between-components;
+  padding-bottom: $mobile-padding-between-components;
+}
 .photoGalleryImages__image {
   height: 250px;
-  width: 350px;
-  padding-left: $mobile-padding-between-components;
-  padding-bottom: $mobile-padding-between-components;
+  width: 100%;
 }
 
 .footerSection {
-  background-color: $BandSite-Black;
+  background: $BandSite-Black;
   padding-top: $mobile-padding-between-components;
   padding-left: $mobile-padding-between-components;
 }
@@ -153,7 +166,6 @@
 .socialIconsWrapper__icon {
   padding-right: $mobile-padding-between-components;
   padding-bottom: $mobile-padding-between-components;
-  height: 40px;
 }
 
 .contactInfo__section {
@@ -176,8 +188,9 @@
 }
 
 .copyrightWrapper__logo {
-  width: 15 0px;
   padding-top: $mobile-padding-before-headlines;
+  max-height: 20px;
+  max-width: 120px;
 }
 .copyrightWrapper__info {
   padding-top: $mobile-padding-between-components;
