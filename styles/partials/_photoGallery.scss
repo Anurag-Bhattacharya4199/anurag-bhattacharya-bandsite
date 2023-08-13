@@ -1,0 +1,13 @@
+.photoGalleryWrapper {
+  background-color: $Mercury;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.photoGalleryWrapper__title {
+  @include mobile-page-section-header-style(2rem, 32px, 700);
+  padding-left: $mobile-padding-between-components;
+  padding-bottom: $mobile-padding-between-components;
+  padding-top: $mobile-padding-before-headlines;
+}

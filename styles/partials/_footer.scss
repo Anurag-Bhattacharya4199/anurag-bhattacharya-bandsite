@@ -1,0 +1,36 @@
+.footerSection {
+  background: $BandSite-Black;
+  padding-top: $mobile-padding-between-components;
+  padding-left: $mobile-padding-between-components;
+}
+
+.footerSection__title {
+  font-weight: bold;
+  padding-bottom: $mobile-padding-between-components;
+  color: $White;
+}
+
+.contactInfo__section {
+  padding-bottom: $mobile-padding-between-components;
+}
+
+.contactInfo__title {
+  color: $White;
+  font-weight: bold;
+}
+
+.contactInfo__text {
+  color: $Mercury
+}
+
+.copyrightWrapper{
+  display: flex;
+  flex-direction: column;
+  padding-top: $mobile-padding-before-headlines;
+}
+
+.copyrightWrapper__info {
+  padding-top: $mobile-padding-between-components;
+  padding-bottom: $mobile-padding-between-components;
+  color: $Mercury;
+}

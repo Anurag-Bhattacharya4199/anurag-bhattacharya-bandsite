@@ -1,0 +1,33 @@
+.main-navigation {
+  padding-top: $mobile-padding-between-components;
+  padding-left: $mobile-padding-between-components;
+  padding-right: $mobile-padding-between-components;
+  width: 100%;
+}
+
+.main-navigation__list {
+  display: flex;
+  text-align: center;
+  width: 100%;
+}
+
+.main-navigation__list li {
+  list-style: none;
+  width: 50%;
+}
+
+.main-navigation li:hover {
+  color: $White;
+  padding-bottom: 1rem;
+  border-bottom: 3px solid $White;
+}
+
+.main-navigation__item-active {
+  color: $White;
+  padding-bottom: 1rem;
+  border-bottom: 3px solid $White;
+}
+
+.main-navigation__item-inactive {
+  color: $Mercury;
+}

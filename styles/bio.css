@@ -16,14 +16,6 @@
   font-weight: bold;
   font-style: normal;
 }
-* {
-  font-family: "AvenirNext";
-  font-weight: normal;
-  font-style: normal;
-  padding: 0rem;
-  margin: 0rem;
-}
-
 .headerSection {
   width: 100%;
   display: flex;
@@ -38,6 +30,12 @@
   padding-bottom: 1rem;
   max-height: 20%;
   max-width: 120%;
+}
+
+.copyrightWrapper__logo {
+  padding-top: 2rem;
+  max-height: 10%;
+  max-width: 45%;
 }
 
 .main-navigation {
@@ -102,19 +100,6 @@
   font-weight: 700;
 }
 
-.bandImageWrapper {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-.bandImage {
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  height: 200px;
-  width: 100%;
-}
-
 .bandQuoteWrapper {
   padding-top: 1rem;
   padding-left: 1rem;
@@ -149,6 +134,30 @@
   padding-bottom: 1rem;
 }
 
+.bandImageWrapper {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.bandImage {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  height: 200px;
+  width: 100%;
+}
+
+.photoGalleryImages__wrapper {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+}
+
+.photoGalleryImages__image {
+  height: 200px;
+  width: 100%;
+}
+
 .photoGalleryWrapper {
   background-color: #E1E1E1;
   display: flex;
@@ -165,17 +174,6 @@
   padding-top: 2rem;
 }
 
-.photoGalleryImages__wrapper {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-bottom: 1rem;
-}
-
-.photoGalleryImages__image {
-  height: 200px;
-  width: 100%;
-}
-
 .footerSection {
   background: #323232;
   padding-top: 1rem;
@@ -186,11 +184,6 @@
   font-weight: bold;
   padding-bottom: 1rem;
   color: #FFFFFF;
-}
-
-.socialIconsWrapper__icon {
-  padding-right: 1rem;
-  padding-bottom: 1rem;
 }
 
 .contactInfo__section {
@@ -212,14 +205,21 @@
   padding-top: 2rem;
 }
 
-.copyrightWrapper__logo {
-  padding-top: 2rem;
-  max-height: 10%;
-  max-width: 45%;
-}
-
 .copyrightWrapper__info {
   padding-top: 1rem;
   padding-bottom: 1rem;
   color: #E1E1E1;
+}
+
+.socialIconsWrapper__icon {
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+}
+
+* {
+  font-family: "AvenirNext";
+  font-weight: normal;
+  font-style: normal;
+  padding: 0rem;
+  margin: 0rem;
 }/*# sourceMappingURL=bio.css.map */

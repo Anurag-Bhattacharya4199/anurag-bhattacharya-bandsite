@@ -1,0 +1,24 @@
+.bandImageWrapper {
+  padding-left: $mobile-padding-between-components;
+  padding-right: $mobile-padding-between-components;
+}
+
+.bandImage {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  //What relative unit to use here?
+  height: 200px;
+  width: 100%;
+}
+
+.photoGalleryImages__wrapper {
+  padding-left: $mobile-padding-between-components;
+  padding-right: $mobile-padding-between-components;
+  padding-bottom: $mobile-padding-between-components;
+}
+.photoGalleryImages__image {
+  //What relative unit to use here?
+  height: 200px;
+  width: 100%;
+}

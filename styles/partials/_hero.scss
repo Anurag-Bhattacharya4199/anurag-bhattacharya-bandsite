@@ -1,0 +1,18 @@
+.mainWebsiteTitleWrapper {
+  background: linear-gradient(rgba(50,50,50,0.5), rgba(50,50,50,0.5)), url('../assets/images/hero-bio.jpg') center/cover;
+  width: 100%;
+  //What relative unit to use here?
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.mainWebsiteTitleWrapper__header {
+  padding-left: $mobile-padding-between-components;
+  padding-top: $mobile-padding-before-headlines;
+  padding-bottom: $mobile-padding-after-headlines;
+  color: $White;
+  //What relative unit to use for line-height?
+  @include mobile-page-section-header-style(1.5em, 32px, 700);
+}

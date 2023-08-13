@@ -1,0 +1,39 @@
+.aboutInformationWrapper__titleHeader {
+  padding-left: $mobile-padding-between-components;
+  padding-top: $mobile-padding-before-headlines;
+  padding-bottom: $mobile-padding-after-headlines;
+  //What relative unit to use for line-height?
+  @include mobile-page-section-header-style(1.5em, 32px, 700);
+}
+
+.bandQuoteWrapper {
+  padding-top: $mobile-padding-between-components;
+  padding-left: $mobile-padding-between-components;
+  padding-bottom: $mobile-padding-between-components;
+}
+
+.bandQuoteWrapper p {
+  color: $BandSite-Black;
+  //What relative unit to use for line height
+  @include mobile-page-subheader-style(1rem, 22px, 600);
+  padding-bottom: $mobile-padding-between-components;
+}
+
+.bandBiographyWrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  padding-left: $mobile-padding-between-components;
+  padding-right: $mobile-padding-between-components;
+}
+
+.bandBiographyWrapper__title {
+  color: $BandSite-Black;
+  padding-bottom: $mobile-padding-between-components;
+  //What relative unit for line height?
+  @include mobile-page-subheader-style(1rem, 22px, 600)
+}
+
+.bandBiographyWrapper__text {
+  padding-bottom: $mobile-padding-between-components;
+}
