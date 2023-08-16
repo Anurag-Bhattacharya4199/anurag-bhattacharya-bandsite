@@ -4,20 +4,37 @@
   padding-left: $mobile-padding-between-components;
   padding-top: $mobile-padding-before-headlines;
   padding-bottom: $mobile-padding-between-components;
+
+  @include tablet {
+    padding-left: $desktop-tablet-padding-between-components;
+    padding-top: $desktop-tablet-padding-before-headlines;
+    padding-bottom: $desktop-tablet-padding-between-components;
+  }
 }
 
 .aboutInformationWrapper__titleHeader {
-  @include mobile-page-section-header-style(2rem, 32px, 700);
+  @include text-styles(2rem, 32px, 700);
+  @include tablet {
+    @include text-styles(2.25rem, 44px, 700);
+  }
 }
 
 .bandQuoteWrapper {
   padding-top: $mobile-padding-between-components;
   padding-left: $mobile-padding-between-components;
   padding-bottom: $mobile-padding-between-components;
+  @include tablet {
+    padding-top: $desktop-tablet-padding-between-components;
+    padding-left: $desktop-tablet-padding-between-components;
+    padding-bottom: $desktop-tablet-padding-between-components;
+  }
 }
 
 .bandQuoteWrapper p {
-  @include mobile-page-subheader-style(0.9rem, 22px, 600);
+  @include text-styles(0.9rem, 22px, 600);
+  @include tablet {
+    @include text-styles(2rem, 32px, 600);
+  }
 }
 
 .bandBiographyWrapper__quote {
@@ -30,16 +47,36 @@
   text-align: start;
   padding-left: $mobile-padding-between-components;
   padding-right: $mobile-padding-between-components;
+
+  @include tablet {
+    padding-left: $desktop-tablet-padding-between-components;
+    padding-right: $desktop-tablet-padding-between-components;
+  }
 }
 
 .bandBiographyWrapper__title {
   color: $BandSite-Black;
   padding-bottom: $mobile-padding-between-components;
-  //What relative unit for line height?
-  @include mobile-page-subheader-style(1rem, 22px, 600);
+  @include text-styles(0.9rem, 22px, 600);
+  @include tablet {
+    padding-bottom: $desktop-tablet-padding-between-components;
+    @include text-styles(2rem, 44px, 700);
+  }
 }
 
 .bandBiographyWrapper__text {
   padding-bottom: $mobile-padding-between-components;
-  @include mobile-body-footer-style(0.8rem, 18px, 400);
+  @include text-styles(0.8rem, 18px, 400);
+  @include tablet {
+    padding-bottom: $desktop-tablet-padding-between-components;
+    @include text-styles(0.9rem, 22px, 400);
+  }
+}
+
+@include tablet {
+  .bandBiographyWrapper__content {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: start;
+  }
 }

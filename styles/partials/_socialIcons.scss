@@ -1,4 +1,14 @@
 .socialIconsWrapper__icon {
   padding-right: $mobile-padding-between-components;
   padding-bottom: $mobile-padding-between-components;
+  @include tablet {
+    padding-right: $desktop-tablet-padding-between-components;
+    padding-bottom: $desktop-tablet-padding-between-components;
+  }
+}
+
+.socialIconsWrapper {
+  @include tablet {
+    display: flex;
+  }
 }

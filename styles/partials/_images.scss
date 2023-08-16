@@ -3,6 +3,10 @@
 .bandImageWrapper {
   padding-left: $mobile-padding-between-components;
   padding-right: $mobile-padding-between-components;
+  @include tablet {
+    padding-left: $desktop-tablet-padding-between-components;
+    padding-right: $desktop-tablet-padding-between-components;
+  }
 }
 
 .bandImage {
@@ -17,8 +21,20 @@
   padding-left: $mobile-padding-between-components;
   padding-right: $mobile-padding-between-components;
   padding-bottom: $mobile-padding-between-components;
+  @include tablet {
+    padding-left: $desktop-tablet-padding-between-components;
+    padding-right: $desktop-tablet-padding-between-components;
+    padding-bottom: $desktop-tablet-padding-between-components;
+  }
 }
+
+//Need to work on figuring out images in tablet form
 .photoGalleryImages__image {
   height: auto;
   width: 100%;
+
+  @include tablet {
+    width: 150px;
+    height: 200px;
+  }
 }

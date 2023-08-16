@@ -1,13 +1,32 @@
+@import './mixins';
+
 .photoGalleryWrapper {
   background-color: $Alabaster;
+}
+
+.photoGalleryImages {
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  //Need to figure out tablet form
+  @include tablet {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .photoGalleryWrapper__title {
-  @include mobile-page-section-header-style(2rem, 32px, 700);
+  @include text-styles(2rem, 32px, 700);
   padding-left: $mobile-padding-between-components;
   padding-bottom: $mobile-padding-between-components;
   padding-top: $mobile-padding-before-headlines;
+
+  @include tablet {
+    @include text-styles(2.25rem, 44px, 700);
+    padding-left: $desktop-tablet-padding-between-components;
+    padding-bottom: $desktop-tablet-padding-between-components;
+    padding-top: $desktop-tablet-padding-before-headlines;
+  }
+  
 }

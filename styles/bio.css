@@ -71,11 +71,11 @@
   max-width: 120px;
 }
 
-.bandSiteLogoWrapper, .copyrightWrapper__bandSiteLogoWrapper {
+.bandSiteLogoWrapper {
   padding-top: 2rem;
 }
 @media screen and (min-width: 768px) {
-  .bandSiteLogoWrapper, .copyrightWrapper__bandSiteLogoWrapper {
+  .bandSiteLogoWrapper {
     padding-top: 3rem;
     padding-left: 2.25rem;
     padding-bottom: 2.25rem;
@@ -176,6 +176,11 @@
   flex-direction: column;
   justify-content: center;
 }
+@media screen and (min-width: 768px) {
+  .heroSectionWrapper {
+    height: 400px;
+  }
+}
 
 .heroSectionWrapper__header {
   padding-left: 1rem;
@@ -185,6 +190,16 @@
   font-size: 2rem;
   line-height: 32px;
   font-weight: 700;
+}
+@media screen and (min-width: 768px) {
+  .heroSectionWrapper__header {
+    padding-left: 2.25rem;
+    padding-top: 3rem;
+    padding-bottom: 2.25rem;
+    font-size: 3.75rem;
+    line-height: 44px;
+    font-weight: 700;
+  }
 }
 
 @font-face {
@@ -210,11 +225,25 @@
   padding-top: 2rem;
   padding-bottom: 1rem;
 }
+@media screen and (min-width: 768px) {
+  .aboutInformationWrapper__title {
+    padding-left: 2.25rem;
+    padding-top: 3rem;
+    padding-bottom: 2.25rem;
+  }
+}
 
 .aboutInformationWrapper__titleHeader {
   font-size: 2rem;
   line-height: 32px;
   font-weight: 700;
+}
+@media screen and (min-width: 768px) {
+  .aboutInformationWrapper__titleHeader {
+    font-size: 2.25rem;
+    line-height: 44px;
+    font-weight: 700;
+  }
 }
 
 .bandQuoteWrapper {
@@ -222,11 +251,25 @@
   padding-left: 1rem;
   padding-bottom: 1rem;
 }
+@media screen and (min-width: 768px) {
+  .bandQuoteWrapper {
+    padding-top: 2.25rem;
+    padding-left: 2.25rem;
+    padding-bottom: 2.25rem;
+  }
+}
 
 .bandQuoteWrapper p {
   font-size: 0.9rem;
   line-height: 22px;
   font-weight: 600;
+}
+@media screen and (min-width: 768px) {
+  .bandQuoteWrapper p {
+    font-size: 2rem;
+    line-height: 32px;
+    font-weight: 600;
+  }
 }
 
 .bandBiographyWrapper__quote {
@@ -240,13 +283,27 @@
   padding-left: 1rem;
   padding-right: 1rem;
 }
+@media screen and (min-width: 768px) {
+  .bandBiographyWrapper {
+    padding-left: 2.25rem;
+    padding-right: 2.25rem;
+  }
+}
 
 .bandBiographyWrapper__title {
   color: #323232;
   padding-bottom: 1rem;
-  font-size: 1rem;
+  font-size: 0.9rem;
   line-height: 22px;
   font-weight: 600;
+}
+@media screen and (min-width: 768px) {
+  .bandBiographyWrapper__title {
+    padding-bottom: 2.25rem;
+    font-size: 2rem;
+    line-height: 44px;
+    font-weight: 700;
+  }
 }
 
 .bandBiographyWrapper__text {
@@ -255,7 +312,22 @@
   line-height: 18px;
   font-weight: 400;
 }
+@media screen and (min-width: 768px) {
+  .bandBiographyWrapper__text {
+    padding-bottom: 2.25rem;
+    font-size: 0.9rem;
+    line-height: 22px;
+    font-weight: 400;
+  }
+}
 
+@media screen and (min-width: 768px) {
+  .bandBiographyWrapper__content {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: start;
+  }
+}
 @font-face {
   font-family: "AvenirNext";
   src: url("../../assets/fonts/AvenirNextLTPro-Regular.otf") format("otf");
@@ -278,6 +350,12 @@
   padding-left: 1rem;
   padding-right: 1rem;
 }
+@media screen and (min-width: 768px) {
+  .bandImageWrapper {
+    padding-left: 2.25rem;
+    padding-right: 2.25rem;
+  }
+}
 
 .bandImage {
   display: flex;
@@ -292,17 +370,57 @@
   padding-right: 1rem;
   padding-bottom: 1rem;
 }
+@media screen and (min-width: 768px) {
+  .photoGalleryImages__wrapper {
+    padding-left: 2.25rem;
+    padding-right: 2.25rem;
+    padding-bottom: 2.25rem;
+  }
+}
 
 .photoGalleryImages__image {
   height: auto;
   width: 100%;
 }
+@media screen and (min-width: 768px) {
+  .photoGalleryImages__image {
+    width: 150px;
+    height: 200px;
+  }
+}
 
+@font-face {
+  font-family: "AvenirNext";
+  src: url("../../assets/fonts/AvenirNextLTPro-Regular.otf") format("otf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "AvenirNext";
+  src: url("../../assets/fonts/AvenirNextLTPro-Regular.otf") format("otf");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "AvenirNext";
+  src: url("../../assets/fonts/AvenirNextLTPro-Regular.otf") format("otf");
+  font-weight: bold;
+  font-style: normal;
+}
 .photoGalleryWrapper {
   background-color: #FAFAFA;
+}
+
+.photoGalleryImages {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .photoGalleryImages {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .photoGalleryWrapper__title {
@@ -312,6 +430,16 @@
   padding-left: 1rem;
   padding-bottom: 1rem;
   padding-top: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .photoGalleryWrapper__title {
+    font-size: 2.25rem;
+    line-height: 44px;
+    font-weight: 700;
+    padding-left: 2.25rem;
+    padding-bottom: 2.25rem;
+    padding-top: 3rem;
+  }
 }
 
 @font-face {
@@ -337,11 +465,28 @@
   padding-top: 1rem;
   padding-left: 1rem;
 }
+@media screen and (min-width: 768px) {
+  .footerSection {
+    padding-top: 2.25rem;
+    padding-left: 2.25rem;
+  }
+}
 
 .footerSection__title {
-  font-weight: bold;
+  font-size: 2rem;
+  line-height: 32px;
+  font-weight: 700;
   padding-bottom: 1rem;
   color: #FFFFFF;
+}
+@media screen and (min-width: 768px) {
+  .footerSection__title {
+    font-size: 2.25rem;
+    line-height: 44px;
+    font-weight: 700;
+    padding-bottom: 2.25rem;
+    width: 75%;
+  }
 }
 
 .contactInfo__section {
@@ -377,6 +522,18 @@
 .socialIconsWrapper__icon {
   padding-right: 1rem;
   padding-bottom: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .socialIconsWrapper__icon {
+    padding-right: 2.25rem;
+    padding-bottom: 2.25rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .socialIconsWrapper {
+    display: flex;
+  }
 }
 
 * {

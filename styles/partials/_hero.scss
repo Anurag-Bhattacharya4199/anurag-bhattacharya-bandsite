@@ -7,6 +7,9 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  @include tablet {
+    height: 400px;
+  }
 }
 
 .heroSectionWrapper__header {
@@ -14,5 +17,11 @@
   padding-top: $mobile-padding-before-headlines;
   padding-bottom: $mobile-padding-after-headlines;
   color: $White;
-  @include mobile-page-section-header-style(2rem, 32px, 700);
+  @include text-styles(2rem, 32px, 700);
+  @include tablet {
+    padding-left: $desktop-tablet-padding-between-components;
+    padding-top: $desktop-tablet-padding-before-headlines;
+    padding-bottom: $desktop-tablet-padding-after-headlines;
+    @include text-styles(3.75rem, 44px, 700);
+  }
 }

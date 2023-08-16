@@ -4,12 +4,23 @@
   background: $BandSite-Black;
   padding-top: $mobile-padding-between-components;
   padding-left: $mobile-padding-between-components;
+
+  @include tablet {
+    padding-top: $desktop-tablet-padding-between-components;
+    padding-left: $desktop-tablet-padding-between-components;
+  }
 }
 
 .footerSection__title {
-  font-weight: bold;
+  @include text-styles(2rem, 32px, 700);
   padding-bottom: $mobile-padding-between-components;
   color: $White;
+
+  @include tablet {
+    @include text-styles(2.25rem, 44px, 700);
+    padding-bottom: $desktop-tablet-padding-between-components;
+    width: 75%;
+  }
 }
 
 .contactInfo__section {
@@ -37,3 +48,4 @@
   padding-bottom: $mobile-padding-between-components;
   color: $Mercury;
 }
+

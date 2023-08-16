@@ -5,13 +5,13 @@
   max-width: 120px;
 }
 
-.bandSiteLogoWrapper, .copyrightWrapper__bandSiteLogoWrapper {
+.bandSiteLogoWrapper {
   padding-top: $mobile-padding-before-headlines;
 
   @include tablet {
     padding-top: $desktop-tablet-padding-before-headlines;
     padding-left: $desktop-tablet-padding-between-components;
     padding-bottom: $desktop-tablet-padding-after-headlines;
-    padding-right: $desktop-tablet-padding-between-components ;
+    padding-right: $desktop-tablet-padding-between-components;
   }
 }
