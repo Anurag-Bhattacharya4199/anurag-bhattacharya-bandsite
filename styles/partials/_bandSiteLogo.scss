@@ -1,12 +1,17 @@
+@import './variables';
+
 .bandSiteLogo {
-  padding-top: $mobile-padding-after-headlines;
-  padding-bottom: $mobile-padding-after-headlines;
-  max-height: 20%;
-  max-width: 120%;
+  max-height: 20px;
+  max-width: 120px;
 }
 
-.copyrightWrapper__logo {
+.bandSiteLogoWrapper, .copyrightWrapper__bandSiteLogoWrapper {
   padding-top: $mobile-padding-before-headlines;
-  max-height: 10%;
-  max-width: 45%;
+
+  @include tablet {
+    padding-top: $desktop-tablet-padding-before-headlines;
+    padding-left: $desktop-tablet-padding-between-components;
+    padding-bottom: $desktop-tablet-padding-after-headlines;
+    padding-right: $desktop-tablet-padding-between-components ;
+  }
 }

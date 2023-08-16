@@ -1,31 +1,40 @@
+@import './mixins';
+
+.main-navigation, .main-navigation__list {
+  width: 100%;
+}
+
 .main-navigation {
   padding-top: $mobile-padding-between-components;
-  padding-left: $mobile-padding-between-components;
-  padding-right: $mobile-padding-between-components;
-  width: 100%;
+
+  @include tablet {
+    padding-top: $desktop-tablet-padding-between-components;
+  }
 }
 
 .main-navigation__list {
   display: flex;
   text-align: center;
-  width: 100%;
 }
 
 .main-navigation__list li {
   list-style: none;
   width: 50%;
+  @include text-styles(0.9rem, 32px, 700);
+
+  @include tablet {
+    @include text-styles(2rem, 32px, 600);
+    width: 30%;
+  }
 }
 
-.main-navigation li:hover {
+.main-navigation li:hover, .main-navigation__item-active {
   color: $White;
-  padding-bottom: 1rem;
-  border-bottom: 3px solid $White;
-}
-
-.main-navigation__item-active {
-  color: $White;
-  padding-bottom: 1rem;
-  border-bottom: 3px solid $White;
+  padding-bottom: 0.1rem;
+  border-bottom: 3.5px solid $White;
+  @include tablet {
+    padding-bottom: 2rem;
+  }
 }
 
 .main-navigation__item-inactive {

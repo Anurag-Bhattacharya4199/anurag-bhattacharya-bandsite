@@ -1,3 +1,5 @@
+@import './mixins';
+
 .bandImageWrapper {
   padding-left: $mobile-padding-between-components;
   padding-right: $mobile-padding-between-components;
@@ -7,8 +9,7 @@
   display: flex;
   text-align: center;
   justify-content: center;
-  //What relative unit to use here?
-  height: 200px;
+  height: auto;
   width: 100%;
 }
 
@@ -18,7 +19,6 @@
   padding-bottom: $mobile-padding-between-components;
 }
 .photoGalleryImages__image {
-  //What relative unit to use here?
-  height: 200px;
+  height: auto;
   width: 100%;
 }

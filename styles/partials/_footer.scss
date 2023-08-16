@@ -1,3 +1,5 @@
+@import './mixins';
+
 .footerSection {
   background: $BandSite-Black;
   padding-top: $mobile-padding-between-components;
@@ -16,11 +18,12 @@
 
 .contactInfo__title {
   color: $White;
-  font-weight: bold;
+  @include mobile-body-footer-style(0.8rem, 18px, 700);
 }
 
 .contactInfo__text {
-  color: $Mercury
+  color: $Mercury;
+  @include mobile-body-footer-style(0.8rem, 18px, 400);
 }
 
 .copyrightWrapper{

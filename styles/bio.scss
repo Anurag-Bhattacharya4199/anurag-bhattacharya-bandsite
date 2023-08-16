@@ -11,6 +11,7 @@
 
 * {
   @include normal-font-style($main-font-family, normal, normal);
+  color: $BandSite-Black;
   padding: 0rem;
   margin: 0rem;
 }
