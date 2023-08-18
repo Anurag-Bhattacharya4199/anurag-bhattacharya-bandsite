@@ -113,12 +113,10 @@
     padding-top: 2.25rem;
   }
 }
-
 .main-navigation__list {
   display: flex;
   text-align: center;
 }
-
 .main-navigation__list li {
   list-style: none;
   width: 50%;
@@ -128,11 +126,14 @@
 }
 @media screen and (min-width: 768px) {
   .main-navigation__list li {
-    font-size: 2rem;
+    font-size: 1rem;
     line-height: 32px;
     font-weight: 600;
-    width: 30%;
+    width: 20%;
   }
+}
+.main-navigation__item-inactive {
+  color: #E1E1E1;
 }
 
 .main-navigation li:hover, .main-navigation__item-active {
@@ -144,10 +145,6 @@
   .main-navigation li:hover, .main-navigation__item-active {
     padding-bottom: 2rem;
   }
-}
-
-.main-navigation__item-inactive {
-  color: #E1E1E1;
 }
 
 @font-face {
@@ -181,7 +178,6 @@
     height: 400px;
   }
 }
-
 .heroSectionWrapper__header {
   padding-left: 1rem;
   padding-top: 2rem;
@@ -220,19 +216,29 @@
   font-weight: bold;
   font-style: normal;
 }
-.aboutInformationWrapper__title {
+.aboutInformationWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   padding-left: 1rem;
+  padding-right: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .aboutInformationWrapper {
+    padding-left: 2.25rem;
+    padding-right: 2.25rem;
+  }
+}
+.aboutInformationWrapper__title {
   padding-top: 2rem;
   padding-bottom: 1rem;
 }
 @media screen and (min-width: 768px) {
   .aboutInformationWrapper__title {
-    padding-left: 2.25rem;
     padding-top: 3rem;
     padding-bottom: 2.25rem;
   }
 }
-
 .aboutInformationWrapper__titleHeader {
   font-size: 2rem;
   line-height: 32px;
@@ -248,86 +254,83 @@
 
 .bandQuoteWrapper {
   padding-top: 1rem;
-  padding-left: 1rem;
-  padding-bottom: 1rem;
 }
 @media screen and (min-width: 768px) {
   .bandQuoteWrapper {
     padding-top: 2.25rem;
-    padding-left: 2.25rem;
-    padding-bottom: 2.25rem;
   }
 }
-
-.bandQuoteWrapper p {
-  font-size: 0.9rem;
-  line-height: 22px;
+.bandQuoteWrapper__quote {
+  padding-bottom: 1rem;
+  font-size: 0.8rem;
+  line-height: 18px;
   font-weight: 600;
 }
 @media screen and (min-width: 768px) {
-  .bandQuoteWrapper p {
-    font-size: 2rem;
-    line-height: 32px;
+  .bandQuoteWrapper__quote {
+    padding-bottom: 2.25rem;
+    font-size: 0.9rem;
+    line-height: 22px;
+    font-weight: 600;
+  }
+}
+.bandQuoteWrapper__quotePerson {
+  font-size: 0.8rem;
+  line-height: 18px;
+  font-weight: 600;
+}
+@media screen and (min-width: 768px) {
+  .bandQuoteWrapper__quotePerson {
+    font-size: 0.9rem;
+    line-height: 22px;
     font-weight: 600;
   }
 }
 
-.bandBiographyWrapper__quote {
-  padding-bottom: 1rem;
-}
-
 .bandBiographyWrapper {
-  display: flex;
-  flex-direction: column;
-  text-align: start;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-top: 2rem;
 }
 @media screen and (min-width: 768px) {
   .bandBiographyWrapper {
-    padding-left: 2.25rem;
-    padding-right: 2.25rem;
+    padding-top: 3rem;
   }
 }
-
 .bandBiographyWrapper__title {
-  color: #323232;
-  padding-bottom: 1rem;
   font-size: 0.9rem;
   line-height: 22px;
   font-weight: 600;
+  padding-bottom: 1rem;
 }
 @media screen and (min-width: 768px) {
   .bandBiographyWrapper__title {
-    padding-bottom: 2.25rem;
     font-size: 2rem;
-    line-height: 44px;
-    font-weight: 700;
+    line-height: 32px;
+    font-weight: 600;
+    padding-bottom: 2.25rem;
   }
 }
-
 .bandBiographyWrapper__text {
-  padding-bottom: 1rem;
   font-size: 0.8rem;
   line-height: 18px;
   font-weight: 400;
+  padding-bottom: 1rem;
 }
 @media screen and (min-width: 768px) {
   .bandBiographyWrapper__text {
-    padding-bottom: 2.25rem;
     font-size: 0.9rem;
     line-height: 22px;
     font-weight: 400;
+    padding-bottom: 2.25rem;
   }
 }
 
 @media screen and (min-width: 768px) {
   .bandBiographyWrapper__content {
     display: flex;
-    justify-content: space-evenly;
-    text-align: start;
+    justify-content: space-between;
   }
 }
+
 @font-face {
   font-family: "AvenirNext";
   src: url("../../assets/fonts/AvenirNextLTPro-Regular.otf") format("otf");
@@ -346,17 +349,6 @@
   font-weight: bold;
   font-style: normal;
 }
-.bandImageWrapper {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-@media screen and (min-width: 768px) {
-  .bandImageWrapper {
-    padding-left: 2.25rem;
-    padding-right: 2.25rem;
-  }
-}
-
 .bandImage {
   display: flex;
   text-align: center;
@@ -384,8 +376,13 @@
 }
 @media screen and (min-width: 768px) {
   .photoGalleryImages__image {
-    width: 150px;
-    height: 200px;
+    width: 175px;
+    height: 150px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .photoGalleryImages__image {
+    width: 350px;
   }
 }
 
@@ -410,19 +407,6 @@
 .photoGalleryWrapper {
   background-color: #FAFAFA;
 }
-
-.photoGalleryImages {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-@media screen and (min-width: 768px) {
-  .photoGalleryImages {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-}
-
 .photoGalleryWrapper__title {
   font-size: 2rem;
   line-height: 32px;
@@ -439,6 +423,18 @@
     padding-left: 2.25rem;
     padding-bottom: 2.25rem;
     padding-top: 3rem;
+  }
+}
+
+.photoGalleryImages {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .photoGalleryImages {
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 }
 
@@ -507,18 +503,26 @@
   font-weight: 400;
 }
 
-.copyrightWrapper {
-  display: flex;
-  flex-direction: column;
+.copyrightWrapper__bandSiteLogoWrapper {
   padding-top: 2rem;
 }
 
-.copyrightWrapper__info {
+.copyrightWrapper {
+  display: flex;
+  flex-direction: column;
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+.copyrightWrapper__info {
   color: #E1E1E1;
 }
 
+@media screen and (min-width: 768px) {
+  .socialIconsWrapper {
+    display: flex;
+  }
+}
 .socialIconsWrapper__icon {
   padding-right: 1rem;
   padding-bottom: 1rem;
@@ -527,12 +531,6 @@
   .socialIconsWrapper__icon {
     padding-right: 2.25rem;
     padding-bottom: 2.25rem;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .socialIconsWrapper {
-    display: flex;
   }
 }
 

@@ -29,23 +29,25 @@
 
 .contactInfo__title {
   color: $White;
-  @include mobile-body-footer-style(0.8rem, 18px, 700);
+  @include text-styles(0.8rem, 18px, 700);
 }
 
 .contactInfo__text {
   color: $Mercury;
-  @include mobile-body-footer-style(0.8rem, 18px, 400);
+  @include text-styles(0.8rem, 18px, 400);
 }
 
+.copyrightWrapper__bandSiteLogoWrapper {
+  padding-top: $mobile-padding-before-headlines;
+}
 .copyrightWrapper{
   display: flex;
   flex-direction: column;
-  padding-top: $mobile-padding-before-headlines;
+  padding-top: $mobile-padding-between-components;
+  padding-bottom: $mobile-padding-between-components;
 }
 
 .copyrightWrapper__info {
-  padding-top: $mobile-padding-between-components;
-  padding-bottom: $mobile-padding-between-components;
   color: $Mercury;
 }
 

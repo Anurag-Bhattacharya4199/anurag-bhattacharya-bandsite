@@ -1,14 +1,5 @@
 @import './mixins';
 
-.bandImageWrapper {
-  padding-left: $mobile-padding-between-components;
-  padding-right: $mobile-padding-between-components;
-  @include tablet {
-    padding-left: $desktop-tablet-padding-between-components;
-    padding-right: $desktop-tablet-padding-between-components;
-  }
-}
-
 .bandImage {
   display: flex;
   text-align: center;
@@ -34,7 +25,11 @@
   width: 100%;
 
   @include tablet {
-    width: 150px;
-    height: 200px;
+    width: 175px;
+    height: 150px;
+  }
+
+  @include desktop {
+    width: 350px;
   }
 }

@@ -14,69 +14,6 @@
   font-weight: $font-weight;
 }
 
-@mixin mobile-page-section-header-style($font-size, $line-height, $font-weight)
-{
-  font-size: $font-size;
-  line-height: $line-height;
-  font-weight: $font-weight;
-}
-
-@mixin mobile-page-subheader-style($font-size, $line-height, $font-weight)
-{
-  font-size: $font-size;
-  line-height: $line-height;
-  font-weight: $font-weight;
-}
-
-@mixin mobile-body-footer-style($font-size, $line-height, $font-weight)
-{
-  font-size: $font-size;
-  line-height: $line-height;
-  font-weight: $font-weight;
-}
-
-@mixin mobile-labels-buttons-style($font-size, $line-height, $font-weight)
-{
-  font-size: $font-size;
-  line-height: $line-height;
-  font-weight: $font-weight;
-}
-
-@mixin desktop-tablet-page-header($font-size, $line-height, $font-weight)
-{
-  font-size: $font-size;
-  line-height: $line-height;
-  font-weight: $font-weight;
-}
-
-@mixin desktop-tablet-section-header($font-size, $line-height, $font-weight)
-{
-  font-size: $font-size;
-  line-height: $line-height;
-  font-weight: $font-weight;
-}
-
-@mixin desktop-tablet-subheader-header($font-size,$line-height, $font-weight)
-{
-  font-size: $font-size;
-  line-height: $line-height;
-  font-weight: $font-weight;
-}
-
-@mixin desktop-tablet-body-footer($font-size,$line-height,$font-weight)
-{
-  font-size: $font-size;
-  line-height: $line-height;
-  font-weight: $font-weight;
-}
-
-@mixin desktop-tablet-labels-buttons($font-size, $line-height, $font-weight)
-{
-  font-size: $font-size;
-  line-height: $line-height;
-  font-weight: $font-weight;
-}
-
 
 
 @mixin tablet {

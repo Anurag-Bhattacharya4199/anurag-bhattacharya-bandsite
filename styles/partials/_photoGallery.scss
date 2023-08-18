@@ -2,6 +2,20 @@
 
 .photoGalleryWrapper {
   background-color: $Alabaster;
+
+  &__title {
+    @include text-styles(2rem, 32px, 700);
+  padding-left: $mobile-padding-between-components;
+  padding-bottom: $mobile-padding-between-components;
+  padding-top: $mobile-padding-before-headlines;
+
+  @include tablet {
+    @include text-styles(2.25rem, 44px, 700);
+    padding-left: $desktop-tablet-padding-between-components;
+    padding-bottom: $desktop-tablet-padding-between-components;
+    padding-top: $desktop-tablet-padding-before-headlines;
+  }
+  }
 }
 
 .photoGalleryImages {
@@ -14,19 +28,4 @@
     flex-direction: row;
     flex-wrap: wrap;
   }
-}
-
-.photoGalleryWrapper__title {
-  @include text-styles(2rem, 32px, 700);
-  padding-left: $mobile-padding-between-components;
-  padding-bottom: $mobile-padding-between-components;
-  padding-top: $mobile-padding-before-headlines;
-
-  @include tablet {
-    @include text-styles(2.25rem, 44px, 700);
-    padding-left: $desktop-tablet-padding-between-components;
-    padding-bottom: $desktop-tablet-padding-between-components;
-    padding-top: $desktop-tablet-padding-before-headlines;
-  }
-  
 }

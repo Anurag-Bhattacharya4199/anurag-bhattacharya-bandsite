@@ -1,50 +1,9 @@
 @import './mixins';
 
-.aboutInformationWrapper__title {
-  padding-left: $mobile-padding-between-components;
-  padding-top: $mobile-padding-before-headlines;
-  padding-bottom: $mobile-padding-between-components;
-
-  @include tablet {
-    padding-left: $desktop-tablet-padding-between-components;
-    padding-top: $desktop-tablet-padding-before-headlines;
-    padding-bottom: $desktop-tablet-padding-between-components;
-  }
-}
-
-.aboutInformationWrapper__titleHeader {
-  @include text-styles(2rem, 32px, 700);
-  @include tablet {
-    @include text-styles(2.25rem, 44px, 700);
-  }
-}
-
-.bandQuoteWrapper {
-  padding-top: $mobile-padding-between-components;
-  padding-left: $mobile-padding-between-components;
-  padding-bottom: $mobile-padding-between-components;
-  @include tablet {
-    padding-top: $desktop-tablet-padding-between-components;
-    padding-left: $desktop-tablet-padding-between-components;
-    padding-bottom: $desktop-tablet-padding-between-components;
-  }
-}
-
-.bandQuoteWrapper p {
-  @include text-styles(0.9rem, 22px, 600);
-  @include tablet {
-    @include text-styles(2rem, 32px, 600);
-  }
-}
-
-.bandBiographyWrapper__quote {
-  padding-bottom: $mobile-padding-between-components;
-}
-
-.bandBiographyWrapper {
+.aboutInformationWrapper {
   display: flex;
   flex-direction: column;
-  text-align: start;
+  align-items: flex-start;
   padding-left: $mobile-padding-between-components;
   padding-right: $mobile-padding-between-components;
 
@@ -52,31 +11,83 @@
     padding-left: $desktop-tablet-padding-between-components;
     padding-right: $desktop-tablet-padding-between-components;
   }
-}
 
-.bandBiographyWrapper__title {
-  color: $BandSite-Black;
-  padding-bottom: $mobile-padding-between-components;
-  @include text-styles(0.9rem, 22px, 600);
-  @include tablet {
-    padding-bottom: $desktop-tablet-padding-between-components;
-    @include text-styles(2rem, 44px, 700);
+  &__title {
+    padding-top: $mobile-padding-before-headlines;
+    padding-bottom: $mobile-padding-between-components;
+
+    @include tablet {
+      padding-top: $desktop-tablet-padding-before-headlines;
+      padding-bottom: $desktop-tablet-padding-between-components;
+    }
+  }
+
+  &__titleHeader {
+    @include text-styles(2rem, 32px, 700);
+
+    @include tablet {
+      @include text-styles(2.25rem, 44px, 700);
+    }
   }
 }
 
-.bandBiographyWrapper__text {
-  padding-bottom: $mobile-padding-between-components;
-  @include text-styles(0.8rem, 18px, 400);
+.bandQuoteWrapper {
+  padding-top: $mobile-padding-between-components;
+
   @include tablet {
-    padding-bottom: $desktop-tablet-padding-between-components;
-    @include text-styles(0.9rem, 22px, 400);
+    padding-top: $desktop-tablet-padding-between-components;
+  }
+
+  &__quote {
+    padding-bottom: $mobile-padding-between-components;
+    @include text-styles(0.8rem, 18px, 600);
+
+    @include tablet {
+      padding-bottom: $desktop-tablet-padding-between-components;
+      @include text-styles(0.9rem, 22px, 600);
+    }
+  }
+
+  &__quotePerson {
+    @include text-styles(0.8rem, 18px, 600);
+
+    @include tablet {
+      @include text-styles(0.9rem, 22px, 600);
+    }
   }
 }
 
-@include tablet {
-  .bandBiographyWrapper__content {
+.bandBiographyWrapper {
+  padding-top: $mobile-padding-before-headlines;
+
+  @include tablet {
+    padding-top: $desktop-tablet-padding-before-headlines;
+  }
+
+  &__title {
+    @include text-styles(0.9rem, 22px, 600);
+    padding-bottom: $mobile-padding-after-headlines;
+
+    @include tablet {
+      @include text-styles(2rem, 32px, 600);
+      padding-bottom: $desktop-tablet-padding-after-headlines;
+    }
+  }
+
+  &__text {
+    @include text-styles(0.8rem, 18px, 400);
+    padding-bottom: $mobile-padding-between-components;
+
+    @include tablet {
+      @include text-styles(0.9rem, 22px, 400);
+      padding-bottom: $desktop-tablet-padding-between-components;
+    }
+  }
+}
+
+.bandBiographyWrapper__content {
+  @include tablet {
     display: flex;
-    justify-content: space-evenly;
-    text-align: start;
+    justify-content: space-between;
   }
 }

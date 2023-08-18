@@ -10,10 +10,9 @@
   @include tablet {
     height: 400px;
   }
-}
 
-.heroSectionWrapper__header {
-  padding-left: $mobile-padding-between-components;
+  &__header {
+    padding-left: $mobile-padding-between-components;
   padding-top: $mobile-padding-before-headlines;
   padding-bottom: $mobile-padding-after-headlines;
   color: $White;
@@ -23,5 +22,6 @@
     padding-top: $desktop-tablet-padding-before-headlines;
     padding-bottom: $desktop-tablet-padding-after-headlines;
     @include text-styles(3.75rem, 44px, 700);
+  }
   }
 }
