@@ -2,15 +2,28 @@
 
 .footerSection {
   background-color: $BandSite-DarkBlack;
-}
 
-.footerSection__content {
-  padding-left: $mobile-padding-between-components;
+  &__content {
+    padding-left: $mobile-padding-between-components;
+
+    @include tablet {
+      padding-left: $desktop-tablet-padding-between-components  ;
+    }
+  }
+
+  &__title {
+    color: $White;
+    padding-top: $mobile-padding-before-headlines;
+    @include text-styles(2rem, 32px, 700);
+  }
+
+  &__headerContent {
+    display: flex;
+  }
 }
 
 .contactInfo {
   padding-top: $mobile-padding-between-components;
-
   &__section p {
     color: $White;
     @include text-styles(0.8rem, 18px, 400);
@@ -27,19 +40,15 @@
   &__section-title p {
     color: $White;
     @include text-styles(0.8rem, 18px, 600);
-
   }
 }
 
+.copyrightInfo {
+  padding-bottom: $mobile-padding-between-components;
+}
 .copyrightInfo p {
   color: $White;
   @include text-styles(0.8rem, 18px, 400);
-}
-
-.footerSection__title {
-  color: $White;
-  @include text-styles(2rem, 22px, 600);
-  padding-top: $mobile-padding-before-headlines;
 }
 
 .socialIcons__icon {
@@ -49,6 +58,11 @@
 .socialIcons {
   padding-top: $mobile-padding-between-components;
   display: flex;
+
+  @include tablet {
+    padding-top: 2.25rem;
+    padding-left: $desktop-tablet-padding-between-components;
+  }
 }
 
 .footerBandSiteLogo {
