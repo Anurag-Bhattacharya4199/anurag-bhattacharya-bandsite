@@ -7,7 +7,6 @@
 @import './partials/images';
 @import './partials/photoGallery';
 @import './partials/footer';
-@import './partials/socialIcons';
 
 * {
   @include normal-font-style($main-font-family, normal, normal);

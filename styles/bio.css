@@ -457,81 +457,62 @@
   font-style: normal;
 }
 .footerSection {
-  background: #323232;
-  padding-top: 1rem;
+  background-color: #000000;
+}
+
+.footerSection__content {
   padding-left: 1rem;
 }
-@media screen and (min-width: 768px) {
-  .footerSection {
-    padding-top: 2.25rem;
-    padding-left: 2.25rem;
-  }
-}
 
-.footerSection__title {
-  font-size: 2rem;
-  line-height: 32px;
-  font-weight: 700;
-  padding-bottom: 1rem;
-  color: #FFFFFF;
+.contactInfo {
+  padding-top: 1rem;
 }
-@media screen and (min-width: 768px) {
-  .footerSection__title {
-    font-size: 2.25rem;
-    line-height: 44px;
-    font-weight: 700;
-    padding-bottom: 2.25rem;
-    width: 75%;
-  }
-}
-
-.contactInfo__section {
-  padding-bottom: 1rem;
-}
-
-.contactInfo__title {
+.contactInfo__section p {
   color: #FFFFFF;
   font-size: 0.8rem;
   line-height: 18px;
-  font-weight: 700;
+  font-weight: 400;
+}
+.contactInfo__section {
+  padding-top: 1rem;
+}
+.contactInfo__section-title {
+  padding-top: 1rem;
+}
+.contactInfo__section-title p {
+  color: #FFFFFF;
+  font-size: 0.8rem;
+  line-height: 18px;
+  font-weight: 600;
 }
 
-.contactInfo__text {
-  color: #E1E1E1;
+.copyrightInfo p {
+  color: #FFFFFF;
   font-size: 0.8rem;
   line-height: 18px;
   font-weight: 400;
 }
 
-.copyrightWrapper__bandSiteLogoWrapper {
+.footerSection__title {
+  color: #FFFFFF;
+  font-size: 2rem;
+  line-height: 22px;
+  font-weight: 600;
   padding-top: 2rem;
 }
 
-.copyrightWrapper {
-  display: flex;
-  flex-direction: column;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
-.copyrightWrapper__info {
-  color: #E1E1E1;
-}
-
-@media screen and (min-width: 768px) {
-  .socialIconsWrapper {
-    display: flex;
-  }
-}
-.socialIconsWrapper__icon {
+.socialIcons__icon {
   padding-right: 1rem;
-  padding-bottom: 1rem;
 }
-@media screen and (min-width: 768px) {
-  .socialIconsWrapper__icon {
-    padding-right: 2.25rem;
-    padding-bottom: 2.25rem;
-  }
+
+.socialIcons {
+  padding-top: 1rem;
+  display: flex;
+}
+
+.footerBandSiteLogo {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
 }
 
 * {

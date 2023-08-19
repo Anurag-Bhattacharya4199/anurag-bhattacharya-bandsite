@@ -1,53 +1,57 @@
 @import './mixins';
 
 .footerSection {
-  background: $BandSite-Black;
-  padding-top: $mobile-padding-between-components;
+  background-color: $BandSite-DarkBlack;
+}
+
+.footerSection__content {
   padding-left: $mobile-padding-between-components;
+}
 
-  @include tablet {
-    padding-top: $desktop-tablet-padding-between-components;
-    padding-left: $desktop-tablet-padding-between-components;
+.contactInfo {
+  padding-top: $mobile-padding-between-components;
+
+  &__section p {
+    color: $White;
+    @include text-styles(0.8rem, 18px, 400);
+  }
+
+  &__section {
+    padding-top: $mobile-padding-between-components;
+  }
+
+  &__section-title {
+    padding-top: $mobile-padding-between-components;
+  }
+
+  &__section-title p {
+    color: $White;
+    @include text-styles(0.8rem, 18px, 600);
+
   }
 }
 
-.footerSection__title {
-  @include text-styles(2rem, 32px, 700);
-  padding-bottom: $mobile-padding-between-components;
+.copyrightInfo p {
   color: $White;
-
-  @include tablet {
-    @include text-styles(2.25rem, 44px, 700);
-    padding-bottom: $desktop-tablet-padding-between-components;
-    width: 75%;
-  }
-}
-
-.contactInfo__section {
-  padding-bottom: $mobile-padding-between-components;
-}
-
-.contactInfo__title {
-  color: $White;
-  @include text-styles(0.8rem, 18px, 700);
-}
-
-.contactInfo__text {
-  color: $Mercury;
   @include text-styles(0.8rem, 18px, 400);
 }
 
-.copyrightWrapper__bandSiteLogoWrapper {
+.footerSection__title {
+  color: $White;
+  @include text-styles(2rem, 22px, 600);
   padding-top: $mobile-padding-before-headlines;
 }
-.copyrightWrapper{
-  display: flex;
-  flex-direction: column;
+
+.socialIcons__icon {
+  padding-right: $mobile-padding-between-components;
+}
+
+.socialIcons {
   padding-top: $mobile-padding-between-components;
+  display: flex;
+}
+
+.footerBandSiteLogo {
+  padding-top: $mobile-padding-before-headlines;
   padding-bottom: $mobile-padding-between-components;
 }
-
-.copyrightWrapper__info {
-  color: $Mercury;
-}
-
