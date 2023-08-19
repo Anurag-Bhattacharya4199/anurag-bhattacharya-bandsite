@@ -1,18 +1,21 @@
-@import './variables';
+@import './mixins';
 
-.bandSiteLogo {
-  max-height: 20px;
-  max-width: 120px;
-}
-
-.bandSiteLogoWrapper {
+.main-logo-wrapper 
+{
   padding-top: $mobile-padding-before-headlines;
 
   @include tablet {
-    padding-top: $desktop-tablet-padding-before-headlines;
-    padding-left: $desktop-tablet-padding-between-components;
-    padding-bottom: $desktop-tablet-padding-after-headlines;
-    padding-right: $desktop-tablet-padding-between-components;
+    padding: 
+      $desktop-tablet-padding-before-headlines 
+      $desktop-tablet-padding-between-components 
+      $desktop-tablet-padding-after-headlines 
+      $desktop-tablet-padding-between-components;
   }
 }
+
+.main-logo-wrapper__logo {
+  @include bandSiteLogo-styles(20px, 120px);
+}
+
+
 

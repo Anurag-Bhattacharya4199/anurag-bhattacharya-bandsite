@@ -14,15 +14,31 @@
   font-weight: $font-weight;
 }
 
+@mixin header-section-styles($width, $display, $flex-direction, $justify-content, $align-items, $background-color)
+{
+  width: $width;
+  display: $display;
+  flex-direction: $flex-direction;
+  justify-content: $justify-content;
+  align-items: $align-items;
+  background-color: $background-color;
+}
 
+@mixin bandSiteLogo-styles($max-height, $max-width)
+{
+  max-height: $max-height;
+  max-width: $max-width;
+}
 
-@mixin tablet {
+@mixin tablet 
+{
   @media screen and (min-width: $tablet-breakdown) {
     @content;
   }
 }
 
-@mixin desktop {
+@mixin desktop 
+{
   @media screen and (min-width: $desktop-breakdown) {
     @content;
   }

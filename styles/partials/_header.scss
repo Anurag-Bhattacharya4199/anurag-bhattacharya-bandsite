@@ -1,14 +1,19 @@
 @import './mixins';
 
-.headerSection {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: $BandSite-Black;
+.header-section
+{
+
+  @include header-section-styles(
+    100%, 
+    flex, 
+    column, 
+    center, 
+    center, 
+    $BandSite-Black
+  );
 
   @include tablet {
     flex-direction: row;
   }
+
 }

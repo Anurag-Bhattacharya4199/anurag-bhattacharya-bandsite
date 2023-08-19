@@ -1,31 +1,79 @@
 @import './mixins';
 
-.photoGalleryWrapper {
+.photo-gallery-wrapper {
   background-color: $Alabaster;
+
+  &__content {
+    padding-left: $mobile-padding-between-components;
+    padding-right: $mobile-padding-between-components;
+
+    @include tablet{
+      padding-left: $desktop-tablet-padding-between-components;
+      padding-right: $desktop-tablet-padding-between-components;
+    }
+  }
+
+  &__titleArea {
+    padding-top: $mobile-padding-before-headlines;
+    padding-bottom: $mobile-padding-after-headlines;
+
+    @include tablet {
+      padding-top: $desktop-tablet-padding-before-headlines;
+      padding-bottom: $desktop-tablet-padding-after-headlines;
+    }
+  }
 
   &__title {
     @include text-styles(2rem, 32px, 700);
-  padding-left: $mobile-padding-between-components;
-  padding-bottom: $mobile-padding-between-components;
-  padding-top: $mobile-padding-before-headlines;
 
-  @include tablet {
-    @include text-styles(2.25rem, 44px, 700);
-    padding-left: $desktop-tablet-padding-between-components;
-    padding-bottom: $desktop-tablet-padding-between-components;
-    padding-top: $desktop-tablet-padding-before-headlines;
+    @include tablet {
+      @include text-styles(2.25rem, 44px, 700);
+    }
   }
+
+  &__photo-gallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @include tablet {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
   }
+
+  &__photo-gallery-image-area {
+    padding-bottom: $mobile-padding-between-components;
+
+    @include tablet {
+      padding-right: 1rem;
+      padding-bottom: 1rem;
+    }
+
+    @include desktop {
+      padding-right: 0.5rem;
+      padding-bottom: 0.5rem;
+    }
+  }
+  &__image {
+    height: auto;
+    width: 100%;
+    filter: grayscale(100%);
+
+    @include tablet {
+      width: 215px;
+      height: 150px;
+    }
+
+    @include desktop {
+      width: 450px;
+      height: 150px;
+    }
+  }
+  &__image:hover {
+    filter: grayscale(0%);
+}
 }
 
-.photoGalleryImages {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 
-  //Need to figure out tablet form
-  @include tablet {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-}
+

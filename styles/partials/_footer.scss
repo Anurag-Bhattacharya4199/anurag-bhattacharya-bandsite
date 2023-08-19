@@ -18,7 +18,9 @@
   }
 
   &__headerContent {
-    display: flex;
+    @include tablet {
+      display: flex;
+    }
   }
 }
 

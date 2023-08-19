@@ -1,42 +1,60 @@
 @import './mixins';
 
-.main-navigation, .main-navigation__list {
+.main-navigation, .main-navigation__navigationArea
+{
   width: 100%;
 }
 
 .main-navigation {
   padding-top: $mobile-padding-between-components;
 
-  @include tablet {
+  @include tablet 
+  {
     padding-top: $desktop-tablet-padding-between-components;
   }
 
-  &__list {
+  &__navigationArea 
+  {
     display: flex;
     text-align: center;
   }
 
-  &__list li {
+  &__navigationArea li 
+  {
     list-style: none;
     width: 50%;
-    @include text-styles(0.9rem, 32px, 700);
+    @include text-styles(
+      0.9rem, 
+      32px, 
+      700
+    );
   
     @include tablet {
-      @include text-styles(1rem, 32px, 600);
+      @include text-styles(
+        1rem, 
+        32px, 
+        600
+      );
       width: 20%;
     }
   }
 
-  &__item-inactive {
+  &__item-inactive-state 
+  {
     color: $Mercury;
   }
 }
 
-.main-navigation li:hover, .main-navigation__item-active {
+.main-navigation li:hover, .main-navigation__item-active-state 
+{
   color: $White;
   padding-bottom: 0.1rem;
-  border-bottom: 3.5px solid $White;
-  @include tablet {
+  border-bottom: 
+    3.5px 
+    solid 
+    $White;
+  @include tablet 
+  {
     padding-bottom: 2rem;
   }
 }
