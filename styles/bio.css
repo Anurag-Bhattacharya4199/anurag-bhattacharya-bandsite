@@ -439,6 +439,11 @@
 .footerSection {
   background-color: #000000;
 }
+@media screen and (min-width: 768px) {
+  .footerSection {
+    position: relative;
+  }
+}
 .footerSection__content {
   padding-left: 1rem;
 }
@@ -455,6 +460,14 @@
   font-weight: 700;
 }
 @media screen and (min-width: 768px) {
+  .footerSection__title {
+    padding-top: 3rem;
+    font-size: 2.25rem;
+    line-height: 44px;
+    font-weight: 700;
+  }
+}
+@media screen and (min-width: 768px) {
   .footerSection__headerContent {
     display: flex;
   }
@@ -463,11 +476,24 @@
 .contactInfo {
   padding-top: 1rem;
 }
+@media screen and (min-width: 768px) {
+  .contactInfo {
+    display: flex;
+    padding-top: 2.25rem;
+  }
+}
 .contactInfo__section p {
   color: #FFFFFF;
   font-size: 0.8rem;
   line-height: 18px;
   font-weight: 400;
+}
+@media screen and (min-width: 768px) {
+  .contactInfo__section p {
+    font-size: 0.9rem;
+    line-height: 22px;
+    font-weight: 400;
+  }
 }
 .contactInfo__section {
   padding-top: 1rem;
@@ -481,9 +507,24 @@
   line-height: 18px;
   font-weight: 600;
 }
+@media screen and (min-width: 768px) {
+  .contactInfo__section-title p {
+    font-size: 0.9rem;
+    line-height: 22px;
+    font-weight: 600;
+  }
+}
+.contactInfo__contactSection {
+  padding-right: 2.25rem;
+}
 
 .copyrightInfo {
   padding-bottom: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .copyrightInfo {
+    padding-top: 2.25rem;
+  }
 }
 
 .copyrightInfo p {
@@ -491,6 +532,13 @@
   font-size: 0.8rem;
   line-height: 18px;
   font-weight: 400;
+}
+@media screen and (min-width: 768px) {
+  .copyrightInfo p {
+    font-size: 0.9rem;
+    line-height: 22px;
+    font-weight: 400;
+  }
 }
 
 .socialIcons__icon {
@@ -503,7 +551,7 @@
 }
 @media screen and (min-width: 768px) {
   .socialIcons {
-    padding-top: 2.25rem;
+    padding-top: 3.75rem;
     padding-left: 2.25rem;
   }
 }
@@ -511,6 +559,13 @@
 .footerBandSiteLogo {
   padding-top: 2rem;
   padding-bottom: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .footerBandSiteLogo {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
 }
 
 * {

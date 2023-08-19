@@ -3,6 +3,10 @@
 .footerSection {
   background-color: $BandSite-DarkBlack;
 
+  @include tablet {
+    position: relative;
+  }
+
   &__content {
     padding-left: $mobile-padding-between-components;
 
@@ -15,6 +19,11 @@
     color: $White;
     padding-top: $mobile-padding-before-headlines;
     @include text-styles(2rem, 32px, 700);
+
+    @include tablet {
+      padding-top: $desktop-tablet-padding-before-headlines;
+      @include text-styles(2.25rem, 44px, 700);
+    }
   }
 
   &__headerContent {
@@ -26,9 +35,18 @@
 
 .contactInfo {
   padding-top: $mobile-padding-between-components;
+
+  @include tablet {
+    display: flex;
+    padding-top: $desktop-tablet-padding-between-components;
+  }
   &__section p {
     color: $White;
     @include text-styles(0.8rem, 18px, 400);
+
+    @include tablet {
+      @include text-styles(0.9rem, 22px, 400);
+    }
   }
 
   &__section {
@@ -42,15 +60,31 @@
   &__section-title p {
     color: $White;
     @include text-styles(0.8rem, 18px, 600);
+
+    @include tablet {
+      @include text-styles(0.9rem, 22px, 600);
+    }
+  }
+
+  &__contactSection {
+    padding-right: $desktop-tablet-padding-between-components;
   }
 }
 
 .copyrightInfo {
   padding-bottom: $mobile-padding-between-components;
+
+  @include tablet {
+    padding-top: $desktop-tablet-padding-between-components;
+  }
 }
 .copyrightInfo p {
   color: $White;
   @include text-styles(0.8rem, 18px, 400);
+
+  @include tablet {
+    @include text-styles(0.9rem, 22px, 400);
+  }
 }
 
 .socialIcons__icon {
@@ -62,7 +96,7 @@
   display: flex;
 
   @include tablet {
-    padding-top: 2.25rem;
+    padding-top: 3.75rem;
     padding-left: $desktop-tablet-padding-between-components;
   }
 }
@@ -70,4 +104,10 @@
 .footerBandSiteLogo {
   padding-top: $mobile-padding-before-headlines;
   padding-bottom: $mobile-padding-between-components;
+
+  @include tablet {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
 }
