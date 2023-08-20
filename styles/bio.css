@@ -213,13 +213,11 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding: 0px 1rem;
 }
 @media screen and (min-width: 768px) {
   .biography-wrapper__content {
-    padding-left: 2.25rem;
-    padding-right: 2.25rem;
+    padding: 0px 2.25rem;
   }
 }
 .biography-wrapper__title-area {
@@ -233,8 +231,7 @@
 }
 @media screen and (min-width: 768px) {
   .biography-wrapper__image-wrapper {
-    padding-left: 2.25rem;
-    padding-right: 2.25rem;
+    padding: 0px 2.25rem;
   }
 }
 .biography-wrapper__image {
@@ -250,9 +247,7 @@
 }
 @media screen and (min-width: 768px) {
   .bandMottoWrapper {
-    padding-top: 2.25rem;
-    padding-left: 2.25rem;
-    padding-right: 2.25rem;
+    padding: 2.25rem;
   }
 }
 .bandMottoWrapper__quote {
@@ -288,10 +283,7 @@
 }
 @media screen and (min-width: 768px) {
   .biography-content-wrapper {
-    padding-top: 3rem;
-    padding-left: 2.25rem;
-    padding-right: 2.25rem;
-    padding-bottom: 2.25rem;
+    padding: 3rem 2.25rem 2.25rem 2.25rem;
   }
 }
 .biography-content-wrapper__title {
@@ -357,14 +349,11 @@
   background-color: #FAFAFA;
 }
 .photo-gallery-wrapper__content {
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding: 0px 1rem;
 }
 @media screen and (min-width: 768px) {
   .photo-gallery-wrapper__content {
-    padding-left: 2.25rem;
-    padding-right: 2.25rem;
-    padding-bottom: 2.25rem;
+    padding: 2.25rem;
   }
 }
 .photo-gallery-wrapper__titleArea {

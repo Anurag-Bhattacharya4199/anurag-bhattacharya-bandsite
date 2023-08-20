@@ -4,13 +4,10 @@
   background-color: $Alabaster;
 
   &__content {
-    padding-left: $mobile-padding-between-components;
-    padding-right: $mobile-padding-between-components;
+    padding: 0px $mobile-padding-between-components;
 
     @include tablet{
-      padding-left: $desktop-tablet-padding-between-components;
-      padding-right: $desktop-tablet-padding-between-components;
-      padding-bottom: $desktop-tablet-padding-between-components;
+      padding: $desktop-tablet-padding-between-components;
     }
   }
 
@@ -73,7 +70,7 @@
   }
   &__image:hover {
     filter: grayscale(0%);
-}
+  }
 }
 
 

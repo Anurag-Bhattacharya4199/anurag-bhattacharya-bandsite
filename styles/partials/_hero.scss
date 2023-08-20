@@ -2,12 +2,18 @@
 
 .hero-section-wrapper 
 {
-  background: linear-gradient(rgba(50,50,50,0.5), rgba(50,50,50,0.5)), url('../assets/images/hero-bio.jpg') center/cover;
-  width: 100%;
-  height: 200px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  background: 
+    linear-gradient(rgba(50,50,50,0.5), rgba(50,50,50,0.5)), 
+    url('../assets/images/hero-bio.jpg') 
+    center/cover;
+  @include hero-section-wrapper-styles(
+    100%, 
+    200px, 
+    flex, 
+    column, 
+    center
+  );
+  
   @include tablet 
   {
     height: 400px;

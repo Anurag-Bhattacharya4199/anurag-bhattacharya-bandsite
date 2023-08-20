@@ -14,7 +14,10 @@
 }
 
 .main-logo-wrapper__logo {
-  @include bandSiteLogo-styles(20px, 120px);
+  @include bandSiteLogo-styles(
+    20px, 
+    120px
+  );
 }
 
 

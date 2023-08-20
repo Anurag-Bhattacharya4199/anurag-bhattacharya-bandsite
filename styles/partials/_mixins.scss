@@ -24,6 +24,24 @@
   background-color: $background-color;
 }
 
+@mixin hero-section-wrapper-styles($width, $height, $display, $flex-direction, $justify-content)
+{
+  width: $width;
+  height: $height;
+  display: $display;
+  flex-direction: $flex-direction;
+  justify-content: $justify-content;
+}
+
+@mixin band-image-styles($display, $text-align, $justify-content, $height, $width)
+{
+  display: $display;
+  text-align: $text-align;
+  justify-content: $justify-content;
+  height: $height;
+  width: $width;
+}
+
 @mixin bandSiteLogo-styles($max-height, $max-width)
 {
   max-height: $max-height;
