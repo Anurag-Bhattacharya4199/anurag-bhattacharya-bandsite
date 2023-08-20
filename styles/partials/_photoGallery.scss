@@ -10,6 +10,7 @@
     @include tablet{
       padding-left: $desktop-tablet-padding-between-components;
       padding-right: $desktop-tablet-padding-between-components;
+      padding-bottom: $desktop-tablet-padding-between-components;
     }
   }
 
@@ -62,12 +63,12 @@
 
     @include tablet {
       width: 215px;
-      height: 150px;
+      height: auto;
     }
 
     @include desktop {
-      width: 450px;
-      height: 150px;
+      width: 300px;
+      height: auto;
     }
   }
   &__image:hover {

@@ -24,14 +24,22 @@
   &__title {
     @include text-styles(2rem, 32px, 700);
   }
-}
 
-.biography-wrapper__image {
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  height: auto;
-  width: 100%;
+  &__image-wrapper {
+    @include tablet {
+      padding-left: $desktop-tablet-padding-between-components;
+      padding-right: $desktop-tablet-padding-between-components;
+    }
+  }
+
+  &__image {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+  }
+
 }
 
 .bandMottoWrapper {
@@ -39,6 +47,8 @@
 
   @include tablet {
     padding-top: $desktop-tablet-padding-between-components;
+    padding-left: $desktop-tablet-padding-between-components;
+    padding-right: $desktop-tablet-padding-between-components;
   }
 
   &__quote {
@@ -62,35 +72,44 @@
 
 .biography-content-wrapper {
   padding-top: $mobile-padding-before-headlines;
+  padding-bottom: $mobile-padding-between-components;
 
   @include tablet {
     padding-top: $desktop-tablet-padding-before-headlines;
+    padding-left: $desktop-tablet-padding-between-components;
+    padding-right: $desktop-tablet-padding-between-components;
+    padding-bottom: $desktop-tablet-padding-after-headlines;
   }
 
   &__title {
     @include text-styles(0.9rem, 22px, 600);
-    padding-bottom: $mobile-padding-after-headlines;
-
+    
     @include tablet {
       @include text-styles(2rem, 32px, 600);
-      padding-bottom: $desktop-tablet-padding-after-headlines;
     }
   }
 
-  &__text {
+  &__text, &__text-1stSection {
     @include text-styles(0.8rem, 18px, 400);
     padding-bottom: $mobile-padding-between-components;
-
+    
     @include tablet {
       @include text-styles(0.9rem, 22px, 400);
-      padding-bottom: $desktop-tablet-padding-between-components;
+    }
+  }
+
+  &__text-1stSection {
+    @include tablet {
+      padding-right: $mobile-padding-between-components;
     }
   }
 
   &__content {
+    padding-top: $mobile-padding-between-components;
     @include tablet {
       display: flex;
       justify-content: space-between;
+      padding-top: $desktop-tablet-padding-between-components;
     }
   }
 } 
