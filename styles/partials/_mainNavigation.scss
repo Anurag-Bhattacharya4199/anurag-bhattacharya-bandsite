@@ -1,24 +1,40 @@
+/*
+  Name: Anurag Bhattacharya
+  Project Name: BandSite Project - Sprint 1
+  Document Description: This is the Main Navigation SCSSS Stylesheet
+
+  Diving Deeper:
+  - Main Navigation: Hover effect to let user know which page is active & inactive
+  - Photo Gallery: Photo Gallery Images are greyscale by default and on hover, each image returns to color
+*/
+
+//Mixin SCSS Stylesheet
 @import './mixins';
 
+//Main Navigation Wrapper and Area Styles
 .main-navigation, .main-navigation__navigationArea
 {
   width: 100%;
 }
 
+//Main Navigation Styles
 .main-navigation {
   padding-top: $mobile-padding-between-components;
 
+  //Tablet and Onwards Size Styles
   @include tablet 
   {
     padding-top: $desktop-tablet-padding-between-components;
   }
 
+  //Main Navigation Area Styles
   &__navigationArea 
   {
     display: flex;
     text-align: center;
   }
 
+  //Main Navigation List-item Styles
   &__navigationArea li 
   {
     list-style: none;
@@ -29,6 +45,7 @@
       700
     );
   
+    //Tablet and Onwards Size Styles
     @include tablet {
       @include text-styles(
         1rem, 
@@ -39,12 +56,14 @@
     }
   }
 
+  //Main Navigation Inactive State Styles
   &__item-inactive-state 
   {
     color: $Mercury;
   }
 }
 
+//Main Navigation Hover and Active State Styles
 .main-navigation li:hover, .main-navigation__item-active-state 
 {
   color: $White;
@@ -53,6 +72,8 @@
     3.5px 
     solid 
     $White;
+  
+  //Tablet and Onwards Size Styles
   @include tablet 
   {
     padding-bottom: 2rem;

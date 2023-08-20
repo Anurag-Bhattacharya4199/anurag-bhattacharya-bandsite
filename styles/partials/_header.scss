@@ -1,5 +1,17 @@
+/*
+  Name: Anurag Bhattacharya
+  Project Name: BandSite Project - Sprint 1
+  Document Description: This is the Header Section SCSSS Stylesheet
+
+  Diving Deeper:
+  - Main Navigation: Hover effect to let user know which page is active & inactive
+  - Photo Gallery: Photo Gallery Images are greyscale by default and on hover, each image returns to color
+*/
+
+//Mixin SCSS Stylesheet
 @import './mixins';
 
+//Header Section Styles
 .header-section
 {
 
@@ -12,6 +24,7 @@
     $BandSite-Black
   );
 
+  //Tablet and Onwards Size Styles
   @include tablet {
     flex-direction: row;
   }

@@ -1,13 +1,31 @@
+/*
+  Name: Anurag Bhattacharya
+  Project Name: BandSite Project - Sprint 1
+  Document Description: This is the Band Biography Section SCSSS Stylesheet
+
+  Diving Deeper:
+  - Main Navigation: Hover effect to let user know which page is active & inactive
+  - Photo Gallery: Photo Gallery Images are greyscale by default and on hover, each image returns to color
+*/
+
+//Mixin SCSS Stylesheet
 @import './mixins';
 
-.biography-wrapper {
-  &__content {
+//Biography Wrapper Styles
+.biography-wrapper 
+{
+
+  //Biography Content Styles
+  &__content 
+  {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding: 
       0px 
       $mobile-padding-between-components;
+
+    //Tablet and Onwards Size Styles
     @include tablet 
     {
       padding: 
@@ -16,33 +34,48 @@
     }
   }
 
-  &__title-area {
+  //Biography Title Area Styles
+  &__title-area 
+  {
     padding-top: $mobile-padding-before-headlines;
     padding-bottom: $mobile-padding-after-headlines;
 
-    @include tablet {
+    //Tablet and Onwards Size Styles
+    @include tablet 
+    {
       padding-top: $desktop-tablet-padding-before-headlines;
       padding-bottom: $desktop-tablet-padding-after-headlines;
     }
   }
 
-  &__title {
+  //Biography Title Styles
+  &__title 
+  {
     @include text-styles(2rem, 32px, 700);
 
-    @include tablet {
+    //Tablet and Onwards Size Styles
+    @include tablet 
+    {
       @include text-styles(2.25rem, 44px, 700);
     }
   }
 
-  &__image-wrapper {
-    @include tablet {
+  //Band Image Wrapper Styles
+  &__image-wrapper 
+  {
+
+    //Tablet and Onwards Size Styles
+    @include tablet 
+    {
       padding: 
         0px 
         $desktop-tablet-padding-between-components;
     }
   }
 
-  &__image {
+  //Band Image Styles
+  &__image 
+  {
     @include band-image-styles(
       flex, 
       center, 
@@ -53,14 +86,20 @@
   }
 }
 
-.bandMottoWrapper {
+//BandSite Motto Wrapper Styles
+.bandMottoWrapper 
+{
   padding-top: $mobile-padding-between-components;
 
-  @include tablet {
+  //Tablet and Onwards Size Styles
+  @include tablet 
+  {
     padding: $desktop-tablet-padding-between-components;
   }
 
-  &__quote {
+  //BandSite Motto Styles
+  &__quote, &__person 
+  {
     padding-bottom: $mobile-padding-between-components;
     @include text-styles(
       0.8rem, 
@@ -68,24 +107,10 @@
       600
     );
 
-    @include tablet {
+    //Tablet and Onwards Size Styles
+    @include tablet 
+    {
       padding-bottom: $desktop-tablet-padding-between-components;
-      @include text-styles(
-        0.9rem, 
-        22px, 
-        600
-      );
-    }
-  }
-
-  &__person {
-    @include text-styles(
-      0.8rem, 
-      18px, 
-      600
-    );
-
-    @include tablet {
       @include text-styles(
         0.9rem, 
         22px, 
@@ -95,11 +120,15 @@
   }
 }
 
-.biography-content-wrapper {
+//Band Biography Text Wrapper Styles
+.biography-content-wrapper 
+{
   padding-top: $mobile-padding-before-headlines;
   padding-bottom: $mobile-padding-between-components;
 
-  @include tablet {
+  //Tablet and Onwards Size Styles
+  @include tablet 
+  {
     padding: 
       $desktop-tablet-padding-before-headlines 
       $desktop-tablet-padding-between-components 
@@ -107,14 +136,18 @@
       $desktop-tablet-padding-between-components;
   }
 
-  &__title {
+  //Band Biography Title Styles
+  &__title 
+  {
     @include text-styles(
       0.9rem, 
       22px, 
       600
     );
     
-    @include tablet {
+    //Tablet and Onwards Size Styles
+    @include tablet 
+    {
       @include text-styles(
         2rem, 
         32px, 
@@ -123,7 +156,9 @@
     }
   }
 
-  &__text, &__text-1stSection {
+  //Band Biography Text Styles
+  &__text, &__text-1stSection 
+  {
     padding-bottom: $mobile-padding-between-components;
 
     @include text-styles(
@@ -132,7 +167,9 @@
       400
     );
     
-    @include tablet {
+    //Tablet and Onwards Size Styles
+    @include tablet 
+    {
       @include text-styles(
         0.9rem, 
         22px, 
@@ -140,16 +177,23 @@
     }
   }
 
-  &__text-1stSection {
-    @include tablet {
+  //Band Biography Text Styles
+  &__text-1stSection 
+  {
+    @include tablet 
+    {
       padding-right: $mobile-padding-between-components;
     }
   }
 
-  &__content {
+  //Band Biography Content Styles
+  &__content 
+  {
     padding-top: $mobile-padding-between-components;
 
-    @include tablet {
+    //Tablet and Onwards Size Styles
+    @include tablet 
+    {
       display: flex;
       justify-content: space-between;
       padding-top: $desktop-tablet-padding-between-components;

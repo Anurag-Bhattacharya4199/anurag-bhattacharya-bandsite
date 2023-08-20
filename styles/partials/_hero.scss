@@ -1,5 +1,17 @@
+/*
+  Name: Anurag Bhattacharya
+  Project Name: BandSite Project - Sprint 1
+  Document Description: This is the Hero Section SCSSS Stylesheet
+
+  Diving Deeper:
+  - Main Navigation: Hover effect to let user know which page is active & inactive
+  - Photo Gallery: Photo Gallery Images are greyscale by default and on hover, each image returns to color
+*/
+
+//Mixin SCSS Stylesheet
 @import './mixins';
 
+//Hero Section Wrapper Styles
 .hero-section-wrapper 
 {
   background: 
@@ -14,11 +26,13 @@
     center
   );
   
+  //Tablet and Onwards Size Styles
   @include tablet 
   {
     height: 400px;
   }
 
+  //Hero Section Title Styles
   &__header 
   {
     padding: 
@@ -34,6 +48,7 @@
       700
     );
 
+    //Tablet and Onwards Size Styles
     @include tablet 
     {
       padding: 

@@ -1,14 +1,34 @@
+<!--
+  Name: Anurag Bhattacharya
+  Project Name: BandSite Project - Sprint 1
+  Document Description: This is the Main Biography HTML Page
+
+  Diving Deeper:
+  - Main Navigation: Hover effect to let user know which page is active & inactive
+  - Photo Gallery: Photo Gallery Images are greyscale by default and on hover, each image returns to color
+-->
+
+<!--HTML DOCTYPE-->
 <!DOCTYPE html>
 <html lang="en">
+  <!--HTML Head Section-->
   <head>
+    <!--HTML Meta Data Section-->
     <meta charset="UTF-8" />
+    <!--HTML Viewport Section-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--HTML Page Title-->
     <title>Band-Site</title>
+    <!--HTML Stylesheet Linked-->
     <link rel="stylesheet" type="text/css" href="./styles/bio.css" />
   </head>
+  <!--Body Section-->
   <body>
+    <!--Page Header Section-->
     <header class="header-section">
+      <!--BandSite Main Logo Wrapper-->
       <article class="main-logo-wrapper">
+        <!--BandSite Main Logo - Links to the Biography, Index Page-->
         <a href="./index.html">
           <img
             src="./assets/logos/Logo-bandsite.svg"
@@ -17,21 +37,29 @@
           />
         </a>
       </article>
+      <!--Main Navigation Section-->
       <nav class="main-navigation">
         <ul class="main-navigation__navigationArea">
+          <!--Main Navigation Links-->
           <li class="main-navigation__item-active-state">Biography</li>
           <li class="main-navigation__item-inactive-state">Shows</li>
         </ul>
       </nav>
     </header>
+    <!--Hero Section Wrapper-->
     <section class="hero-section-wrapper">
+      <!--Hero Section Title-->
       <h1 class="hero-section-wrapper__header">The Bees Knees</h1>
     </section>
+    <!--Band Biography Wrapper-->
     <section class="biography-wrapper">
+      <!--Band Biography Content-->
       <div class="biography-wrapper__content">
         <div class="biography-wrapper__title-area">
+          <!--Band Biography Sub-title-->
           <h1 class="biography-wrapper__title">About the Musicians</h1>
         </div>
+        <!--Band Image-->
         <article class="biography-wrapper__image-wrapper">
           <img
             src="./assets/images/band.jpg"
@@ -39,6 +67,7 @@
             class="biography-wrapper__image"
           />
         </article>
+        <!--Band Motto-->
         <article class="bandMottoWrapper">
           <q class="bandMottoWrapper__quote">
             We push each other to be the best. It’s not uncommon for one of us
@@ -48,8 +77,11 @@
             - Bryan Teddy, lead vocalist of The Bees Knees
           </p>
         </article>
+        <!--Band Biography-->
         <article class="biography-content-wrapper">
+          <!--Band Biography Title-->
           <h2 class="biography-content-wrapper__title">The Bees Knees</h2>
+          <!--Band Biography Text-->
           <div class="biography-content-wrapper__content">
             <p class="biography-content-wrapper__text-1stSection">
               The Bees Knees is a pop rock band originating from San Francisco,
@@ -77,12 +109,16 @@
         </article>
       </div>
     </section>
+    <!--Photo Gallery-->
     <section class="photo-gallery-wrapper">
       <div class="photo-gallery-wrapper__content">
         <div class="photo-gallery-wrapper__titleArea">
+          <!--Photo Gallery Title-->
           <h1 class="photo-gallery-wrapper__title">Photo Gallery</h1>
         </div>
+        <!--Photo Gallery Images-->
         <div class="photo-gallery-wrapper__photo-gallery">
+          <!--Photo Gallery Image-->
           <article class="photo-gallery-wrapper__photo-gallery-image-area">
             <img
               src="./assets/images/Photo-gallery-1.jpg"
@@ -90,6 +126,7 @@
               class="photo-gallery-wrapper__image"
             />
           </article>
+          <!--Photo Gallery Image-->
           <article class="photo-gallery-wrapper__photo-gallery-image-area">
             <img
               src="./assets/images/Photo-gallery-2.jpg"
@@ -97,6 +134,7 @@
               class="photo-gallery-wrapper__image"
             />
           </article>
+          <!--Photo Gallery Image-->
           <article class="photo-gallery-wrapper__photo-gallery-image-area">
             <img
               src="./assets/images/Photo-gallery-3.jpg"
@@ -104,6 +142,7 @@
               class="photo-gallery-wrapper__image"
             />
           </article>
+          <!--Photo Gallery Image-->
           <article class="photo-gallery-wrapper__photo-gallery-image-area">
             <img
               src="./assets/images/Photo-gallery-4.jpg"
@@ -111,6 +150,7 @@
               class="photo-gallery-wrapper__image"
             />
           </article>
+          <!--Photo Gallery Image-->
           <article class="photo-gallery-wrapper__photo-gallery-image-area">
             <img
               src="./assets/images/Photo-gallery-5.jpg"
@@ -118,6 +158,7 @@
               class="photo-gallery-wrapper__image"
             />
           </article>
+          <!--Photo Gallery Image-->
           <article class="photo-gallery-wrapper__photo-gallery-image-area">
             <img
               src="./assets/images/Photo-gallery-6.jpg"
@@ -125,6 +166,7 @@
               class="photo-gallery-wrapper__image"
             />
           </article>
+          <!--Photo Gallery Image-->
           <article class="photo-gallery-wrapper__photo-gallery-image-area">
             <img
               src="./assets/images/Photo-gallery-7.jpg"
@@ -132,6 +174,7 @@
               class="photo-gallery-wrapper__image"
             />
           </article>
+          <!--Photo Gallery Image-->
           <article class="photo-gallery-wrapper__photo-gallery-image-area">
             <img
               src="./assets/images/Photo-gallery-8.jpg"
@@ -139,6 +182,7 @@
               class="photo-gallery-wrapper__image"
             />
           </article>
+          <!--Photo Gallery Image-->
           <article class="photo-gallery-wrapper__photo-gallery-image-area">
             <img
               src="./assets/images/Photo-gallery-9.jpg"
@@ -149,7 +193,9 @@
         </div>
       </div>
     </section>
+    <!--Footer Section-->
     <footer class="footerSection">
+      <!--Footer Content-->
       <div class="footerSection__content">
         <div class="footerSection__headerContent">
           <!--Footer Section Title-->
@@ -185,6 +231,7 @@
             </article>
           </div>
         </div>
+        <!--BandSite Contact Information-->
         <div class="contactInfo">
           <div class="contactInfo__contactSection">
             <article class="contactInfo__section-title">
@@ -226,16 +273,17 @@
             </article>
           </div>
         </div>
+        <!--Footer BandSite Logo-->
         <div class="footerBandSiteLogo">
-          \
           <a href="./index.html">
             <img
               src="./assets/logos/Logo-bandsite.svg"
               alt="BandSite Logo"
-              class="bandSiteLogo"
+              class="footerBandSiteLogo__bandSiteLogo"
             />
           </a>
         </div>
+        <!--Copyright Section-->
         <div class="copyrightInfo">
           <p>Copyright The Bees Knees @ 2021 All Rights Reserved</p>
         </div>

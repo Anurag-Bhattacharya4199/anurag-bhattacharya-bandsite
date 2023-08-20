@@ -1,63 +1,91 @@
+/*
+  Name: Anurag Bhattacharya
+  Project Name: BandSite Project - Sprint 1
+  Document Description: This is the Photo Gallery Section SCSSS Stylesheet
+
+  Diving Deeper:
+  - Main Navigation: Hover effect to let user know which page is active & inactive
+  - Photo Gallery: Photo Gallery Images are greyscale by default and on hover, each image returns to color
+*/
+
+//Mixin SCSS Stylesheet
 @import './mixins';
 
+
+//Photo Gallery Wrapper Styles
 .photo-gallery-wrapper {
   background-color: $Alabaster;
 
+  //Photo Gallery Content Styles
   &__content {
     padding: 0px $mobile-padding-between-components;
 
+    //Tablet and Onwards Size Styles
     @include tablet{
       padding: $desktop-tablet-padding-between-components;
     }
   }
 
+
+  //Photo Gallery Title Area Styles
   &__titleArea {
     padding-top: $mobile-padding-before-headlines;
     padding-bottom: $mobile-padding-after-headlines;
 
+    //Tablet and Onwards Size Styles
     @include tablet {
       padding-top: $desktop-tablet-padding-before-headlines;
       padding-bottom: $desktop-tablet-padding-after-headlines;
     }
   }
 
+  //Photo Gallery Title Styles
   &__title {
     @include text-styles(2rem, 32px, 700);
 
+    //Tablet and Onwards Size Styles
     @include tablet {
       @include text-styles(2.25rem, 44px, 700);
     }
   }
 
+  //Photo Gallery Styles
   &__photo-gallery {
     display: flex;
     flex-direction: column;
     text-align: center;
     justify-content: center;
 
+    //Tablet and Onwards Size Styles
     @include tablet {
       flex-direction: row;
       flex-wrap: wrap;
     }
   }
 
+  //Photo Gallery Image Area Styles
   &__photo-gallery-image-area {
     padding-bottom: $mobile-padding-between-components;
 
+    //Tablet and Onwards Size Styles
     @include tablet {
       width: 30%;
       padding-right: 1rem;
     }
 
+    //Desktop and Onwards Size Styles
     @include desktop {
       padding-right: 0.5rem;
     }
   }
+
+  //Photo Gallery Image Styles
   &__image {
     height: auto;
     width: 100%;
     filter: grayscale(100%);
   }
+  //Photo Gallery Image Hover Styles
   &__image:hover {
     filter: grayscale(0%);
   }

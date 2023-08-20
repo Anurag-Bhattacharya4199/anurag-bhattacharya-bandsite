@@ -7,6 +7,33 @@ Diving Deeper:
 This is the Main Home Page SCSS File
 */
 /*All the Partial Sections of the Website imported*/
+/*
+  Name: Anurag Bhattacharya
+  Project Name: BandSite Project - Sprint 1
+  Document Description: This is the Mixins SCSSS Stylesheet
+
+  Diving Deeper:
+  - Main Navigation: Hover effect to let user know which page is active & inactive
+  - Photo Gallery: Photo Gallery Images are greyscale by default and on hover, each image returns to color
+*/
+/*
+  Name: Anurag Bhattacharya
+  Project Name: BandSite Project - Sprint 1
+  Document Description: This is the Photo Gallery Section SCSSS Stylesheet
+
+  Diving Deeper:
+  - Main Navigation: Hover effect to let user know which page is active & inactive
+  - Photo Gallery: Photo Gallery Images are greyscale by default and on hover, each image returns to color
+*/
+/*
+  Name: Anurag Bhattacharya
+  Project Name: BandSite Project - Sprint 1
+  Document Description: This is the Font Styles SCSSS Stylesheet
+
+  Diving Deeper:
+  - Main Navigation: Hover effect to let user know which page is active & inactive
+  - Photo Gallery: Photo Gallery Images are greyscale by default and on hover, each image returns to color
+*/
 @font-face {
   font-family: "AvenirNext";
   src: url("../../assets/fonts/AvenirNextLTPro-Regular.otf") format("otf");
@@ -25,6 +52,45 @@ This is the Main Home Page SCSS File
   font-weight: bold;
   font-style: normal;
 }
+/*All Colors*/
+/*All Padding Styles*/
+/*All Media Queries Breakpoints*/
+/*
+  Name: Anurag Bhattacharya
+  Project Name: BandSite Project - Sprint 1
+  Document Description: This is the Header Section SCSSS Stylesheet
+
+  Diving Deeper:
+  - Main Navigation: Hover effect to let user know which page is active & inactive
+  - Photo Gallery: Photo Gallery Images are greyscale by default and on hover, each image returns to color
+*/
+/*
+  Name: Anurag Bhattacharya
+  Project Name: BandSite Project - Sprint 1
+  Document Description: This is the Mixins SCSSS Stylesheet
+
+  Diving Deeper:
+  - Main Navigation: Hover effect to let user know which page is active & inactive
+  - Photo Gallery: Photo Gallery Images are greyscale by default and on hover, each image returns to color
+*/
+/*
+  Name: Anurag Bhattacharya
+  Project Name: BandSite Project - Sprint 1
+  Document Description: This is the Photo Gallery Section SCSSS Stylesheet
+
+  Diving Deeper:
+  - Main Navigation: Hover effect to let user know which page is active & inactive
+  - Photo Gallery: Photo Gallery Images are greyscale by default and on hover, each image returns to color
+*/
+/*
+  Name: Anurag Bhattacharya
+  Project Name: BandSite Project - Sprint 1
+  Document Description: This is the Font Styles SCSSS Stylesheet
+
+  Diving Deeper:
+  - Main Navigation: Hover effect to let user know which page is active & inactive
+  - Photo Gallery: Photo Gallery Images are greyscale by default and on hover, each image returns to color
+*/
 @font-face {
   font-family: "AvenirNext";
   src: url("../../assets/fonts/AvenirNextLTPro-Regular.otf") format("otf");
@@ -43,6 +109,9 @@ This is the Main Home Page SCSS File
   font-weight: bold;
   font-style: normal;
 }
+/*All Colors*/
+/*All Padding Styles*/
+/*All Media Queries Breakpoints*/
 .header-section {
   width: 100%;
   display: flex;
@@ -57,6 +126,42 @@ This is the Main Home Page SCSS File
   }
 }
 
+/*
+  Name: Anurag Bhattacharya
+  Project Name: BandSite Project - Sprint 1
+  Document Description: This is the Band Site Logo SCSSS Stylesheet
+
+  Diving Deeper:
+  - Main Navigation: Hover effect to let user know which page is active & inactive
+  - Photo Gallery: Photo Gallery Images are greyscale by default and on hover, each image returns to color
+*/
+/*
+  Name: Anurag Bhattacharya
+  Project Name: BandSite Project - Sprint 1
+  Document Description: This is the Mixins SCSSS Stylesheet
+
+  Diving Deeper:
+  - Main Navigation: Hover effect to let user know which page is active & inactive
+  - Photo Gallery: Photo Gallery Images are greyscale by default and on hover, each image returns to color
+*/
+/*
+  Name: Anurag Bhattacharya
+  Project Name: BandSite Project - Sprint 1
+  Document Description: This is the Photo Gallery Section SCSSS Stylesheet
+
+  Diving Deeper:
+  - Main Navigation: Hover effect to let user know which page is active & inactive
+  - Photo Gallery: Photo Gallery Images are greyscale by default and on hover, each image returns to color
+*/
+/*
+  Name: Anurag Bhattacharya
+  Project Name: BandSite Project - Sprint 1
+  Document Description: This is the Font Styles SCSSS Stylesheet
+
+  Diving Deeper:
+  - Main Navigation: Hover effect to let user know which page is active & inactive
+  - Photo Gallery: Photo Gallery Images are greyscale by default and on hover, each image returns to color
+*/
 @font-face {
   font-family: "AvenirNext";
   src: url("../../assets/fonts/AvenirNextLTPro-Regular.otf") format("otf");
@@ -75,6 +180,9 @@ This is the Main Home Page SCSS File
   font-weight: bold;
   font-style: normal;
 }
+/*All Colors*/
+/*All Padding Styles*/
+/*All Media Queries Breakpoints*/
 .main-logo-wrapper {
   padding-top: 2rem;
 }
@@ -84,11 +192,47 @@ This is the Main Home Page SCSS File
   }
 }
 
-.main-logo-wrapper__logo, .bandSiteLogo {
+.main-logo-wrapper__logo, .footerBandSiteLogo__bandSiteLogo {
   max-height: 20px;
   max-width: 120px;
 }
 
+/*
+  Name: Anurag Bhattacharya
+  Project Name: BandSite Project - Sprint 1
+  Document Description: This is the Main Navigation SCSSS Stylesheet
+
+  Diving Deeper:
+  - Main Navigation: Hover effect to let user know which page is active & inactive
+  - Photo Gallery: Photo Gallery Images are greyscale by default and on hover, each image returns to color
+*/
+/*
+  Name: Anurag Bhattacharya
+  Project Name: BandSite Project - Sprint 1
+  Document Description: This is the Mixins SCSSS Stylesheet
+
+  Diving Deeper:
+  - Main Navigation: Hover effect to let user know which page is active & inactive
+  - Photo Gallery: Photo Gallery Images are greyscale by default and on hover, each image returns to color
+*/
+/*
+  Name: Anurag Bhattacharya
+  Project Name: BandSite Project - Sprint 1
+  Document Description: This is the Photo Gallery Section SCSSS Stylesheet
+
+  Diving Deeper:
+  - Main Navigation: Hover effect to let user know which page is active & inactive
+  - Photo Gallery: Photo Gallery Images are greyscale by default and on hover, each image returns to color
+*/
+/*
+  Name: Anurag Bhattacharya
+  Project Name: BandSite Project - Sprint 1
+  Document Description: This is the Font Styles SCSSS Stylesheet
+
+  Diving Deeper:
+  - Main Navigation: Hover effect to let user know which page is active & inactive
+  - Photo Gallery: Photo Gallery Images are greyscale by default and on hover, each image returns to color
+*/
 @font-face {
   font-family: "AvenirNext";
   src: url("../../assets/fonts/AvenirNextLTPro-Regular.otf") format("otf");
@@ -107,6 +251,9 @@ This is the Main Home Page SCSS File
   font-weight: bold;
   font-style: normal;
 }
+/*All Colors*/
+/*All Padding Styles*/
+/*All Media Queries Breakpoints*/
 .main-navigation, .main-navigation__navigationArea {
   width: 100%;
 }
@@ -153,6 +300,42 @@ This is the Main Home Page SCSS File
   }
 }
 
+/*
+  Name: Anurag Bhattacharya
+  Project Name: BandSite Project - Sprint 1
+  Document Description: This is the Hero Section SCSSS Stylesheet
+
+  Diving Deeper:
+  - Main Navigation: Hover effect to let user know which page is active & inactive
+  - Photo Gallery: Photo Gallery Images are greyscale by default and on hover, each image returns to color
+*/
+/*
+  Name: Anurag Bhattacharya
+  Project Name: BandSite Project - Sprint 1
+  Document Description: This is the Mixins SCSSS Stylesheet
+
+  Diving Deeper:
+  - Main Navigation: Hover effect to let user know which page is active & inactive
+  - Photo Gallery: Photo Gallery Images are greyscale by default and on hover, each image returns to color
+*/
+/*
+  Name: Anurag Bhattacharya
+  Project Name: BandSite Project - Sprint 1
+  Document Description: This is the Photo Gallery Section SCSSS Stylesheet
+
+  Diving Deeper:
+  - Main Navigation: Hover effect to let user know which page is active & inactive
+  - Photo Gallery: Photo Gallery Images are greyscale by default and on hover, each image returns to color
+*/
+/*
+  Name: Anurag Bhattacharya
+  Project Name: BandSite Project - Sprint 1
+  Document Description: This is the Font Styles SCSSS Stylesheet
+
+  Diving Deeper:
+  - Main Navigation: Hover effect to let user know which page is active & inactive
+  - Photo Gallery: Photo Gallery Images are greyscale by default and on hover, each image returns to color
+*/
 @font-face {
   font-family: "AvenirNext";
   src: url("../../assets/fonts/AvenirNextLTPro-Regular.otf") format("otf");
@@ -171,6 +354,9 @@ This is the Main Home Page SCSS File
   font-weight: bold;
   font-style: normal;
 }
+/*All Colors*/
+/*All Padding Styles*/
+/*All Media Queries Breakpoints*/
 .hero-section-wrapper {
   background: linear-gradient(rgba(50, 50, 50, 0.5), rgba(50, 50, 50, 0.5)), url("../assets/images/hero-bio.jpg") center/cover;
   width: 100%;
@@ -200,6 +386,42 @@ This is the Main Home Page SCSS File
   }
 }
 
+/*
+  Name: Anurag Bhattacharya
+  Project Name: BandSite Project - Sprint 1
+  Document Description: This is the Band Biography Section SCSSS Stylesheet
+
+  Diving Deeper:
+  - Main Navigation: Hover effect to let user know which page is active & inactive
+  - Photo Gallery: Photo Gallery Images are greyscale by default and on hover, each image returns to color
+*/
+/*
+  Name: Anurag Bhattacharya
+  Project Name: BandSite Project - Sprint 1
+  Document Description: This is the Mixins SCSSS Stylesheet
+
+  Diving Deeper:
+  - Main Navigation: Hover effect to let user know which page is active & inactive
+  - Photo Gallery: Photo Gallery Images are greyscale by default and on hover, each image returns to color
+*/
+/*
+  Name: Anurag Bhattacharya
+  Project Name: BandSite Project - Sprint 1
+  Document Description: This is the Photo Gallery Section SCSSS Stylesheet
+
+  Diving Deeper:
+  - Main Navigation: Hover effect to let user know which page is active & inactive
+  - Photo Gallery: Photo Gallery Images are greyscale by default and on hover, each image returns to color
+*/
+/*
+  Name: Anurag Bhattacharya
+  Project Name: BandSite Project - Sprint 1
+  Document Description: This is the Font Styles SCSSS Stylesheet
+
+  Diving Deeper:
+  - Main Navigation: Hover effect to let user know which page is active & inactive
+  - Photo Gallery: Photo Gallery Images are greyscale by default and on hover, each image returns to color
+*/
 @font-face {
   font-family: "AvenirNext";
   src: url("../../assets/fonts/AvenirNextLTPro-Regular.otf") format("otf");
@@ -218,6 +440,9 @@ This is the Main Home Page SCSS File
   font-weight: bold;
   font-style: normal;
 }
+/*All Colors*/
+/*All Padding Styles*/
+/*All Media Queries Breakpoints*/
 .biography-wrapper__content {
   display: flex;
   flex-direction: column;
@@ -272,27 +497,15 @@ This is the Main Home Page SCSS File
     padding: 2.25rem;
   }
 }
-.bandMottoWrapper__quote {
+.bandMottoWrapper__quote, .bandMottoWrapper__person {
   padding-bottom: 1rem;
   font-size: 0.8rem;
   line-height: 18px;
   font-weight: 600;
 }
 @media screen and (min-width: 768px) {
-  .bandMottoWrapper__quote {
+  .bandMottoWrapper__quote, .bandMottoWrapper__person {
     padding-bottom: 2.25rem;
-    font-size: 0.9rem;
-    line-height: 22px;
-    font-weight: 600;
-  }
-}
-.bandMottoWrapper__person {
-  font-size: 0.8rem;
-  line-height: 18px;
-  font-weight: 600;
-}
-@media screen and (min-width: 768px) {
-  .bandMottoWrapper__person {
     font-size: 0.9rem;
     line-height: 22px;
     font-weight: 600;
@@ -349,6 +562,42 @@ This is the Main Home Page SCSS File
   }
 }
 
+/*
+  Name: Anurag Bhattacharya
+  Project Name: BandSite Project - Sprint 1
+  Document Description: This is the Photo Gallery Section SCSSS Stylesheet
+
+  Diving Deeper:
+  - Main Navigation: Hover effect to let user know which page is active & inactive
+  - Photo Gallery: Photo Gallery Images are greyscale by default and on hover, each image returns to color
+*/
+/*
+  Name: Anurag Bhattacharya
+  Project Name: BandSite Project - Sprint 1
+  Document Description: This is the Mixins SCSSS Stylesheet
+
+  Diving Deeper:
+  - Main Navigation: Hover effect to let user know which page is active & inactive
+  - Photo Gallery: Photo Gallery Images are greyscale by default and on hover, each image returns to color
+*/
+/*
+  Name: Anurag Bhattacharya
+  Project Name: BandSite Project - Sprint 1
+  Document Description: This is the Photo Gallery Section SCSSS Stylesheet
+
+  Diving Deeper:
+  - Main Navigation: Hover effect to let user know which page is active & inactive
+  - Photo Gallery: Photo Gallery Images are greyscale by default and on hover, each image returns to color
+*/
+/*
+  Name: Anurag Bhattacharya
+  Project Name: BandSite Project - Sprint 1
+  Document Description: This is the Font Styles SCSSS Stylesheet
+
+  Diving Deeper:
+  - Main Navigation: Hover effect to let user know which page is active & inactive
+  - Photo Gallery: Photo Gallery Images are greyscale by default and on hover, each image returns to color
+*/
 @font-face {
   font-family: "AvenirNext";
   src: url("../../assets/fonts/AvenirNextLTPro-Regular.otf") format("otf");
@@ -367,6 +616,9 @@ This is the Main Home Page SCSS File
   font-weight: bold;
   font-style: normal;
 }
+/*All Colors*/
+/*All Padding Styles*/
+/*All Media Queries Breakpoints*/
 .photo-gallery-wrapper {
   background-color: #FAFAFA;
 }
@@ -435,6 +687,42 @@ This is the Main Home Page SCSS File
   filter: grayscale(0%);
 }
 
+/*
+  Name: Anurag Bhattacharya
+  Project Name: BandSite Project - Sprint 1
+  Document Description: This is the Footer Section SCSSS Stylesheet
+
+  Diving Deeper:
+  - Main Navigation: Hover effect to let user know which page is active & inactive
+  - Photo Gallery: Photo Gallery Images are greyscale by default and on hover, each image returns to color
+*/
+/*
+  Name: Anurag Bhattacharya
+  Project Name: BandSite Project - Sprint 1
+  Document Description: This is the Mixins SCSSS Stylesheet
+
+  Diving Deeper:
+  - Main Navigation: Hover effect to let user know which page is active & inactive
+  - Photo Gallery: Photo Gallery Images are greyscale by default and on hover, each image returns to color
+*/
+/*
+  Name: Anurag Bhattacharya
+  Project Name: BandSite Project - Sprint 1
+  Document Description: This is the Photo Gallery Section SCSSS Stylesheet
+
+  Diving Deeper:
+  - Main Navigation: Hover effect to let user know which page is active & inactive
+  - Photo Gallery: Photo Gallery Images are greyscale by default and on hover, each image returns to color
+*/
+/*
+  Name: Anurag Bhattacharya
+  Project Name: BandSite Project - Sprint 1
+  Document Description: This is the Font Styles SCSSS Stylesheet
+
+  Diving Deeper:
+  - Main Navigation: Hover effect to let user know which page is active & inactive
+  - Photo Gallery: Photo Gallery Images are greyscale by default and on hover, each image returns to color
+*/
 @font-face {
   font-family: "AvenirNext";
   src: url("../../assets/fonts/AvenirNextLTPro-Regular.otf") format("otf");
@@ -453,6 +741,9 @@ This is the Main Home Page SCSS File
   font-weight: bold;
   font-style: normal;
 }
+/*All Colors*/
+/*All Padding Styles*/
+/*All Media Queries Breakpoints*/
 .footerSection {
   background-color: #000000;
 }
@@ -543,7 +834,6 @@ This is the Main Home Page SCSS File
     padding-top: 2.25rem;
   }
 }
-
 .copyrightInfo p {
   color: #FFFFFF;
   font-size: 0.8rem;

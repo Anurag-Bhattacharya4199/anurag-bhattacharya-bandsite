@@ -1,18 +1,36 @@
-@font-face {
+/*
+  Name: Anurag Bhattacharya
+  Project Name: BandSite Project - Sprint 1
+  Document Description: This is the Font Styles SCSSS Stylesheet
+
+  Diving Deeper:
+  - Main Navigation: Hover effect to let user know which page is active & inactive
+  - Photo Gallery: Photo Gallery Images are greyscale by default and on hover, each image returns to color
+*/
+
+//Normal Font Styles
+@font-face 
+{
   font-family: 'AvenirNext';
   src: url("../../assets/fonts/AvenirNextLTPro-Regular.otf") format("otf");
   font-weight: normal;
   font-style: normal;
 }
 
-@font-face {
+
+//Demi Font Styles
+@font-face 
+{
   font-family: 'AvenirNext';
   src: url("../../assets/fonts/AvenirNextLTPro-Regular.otf") format("otf");
   font-weight: 600;
   font-style: normal;
 }
 
-@font-face {
+
+//Bold Font Styles
+@font-face 
+{
   font-family: 'AvenirNext';
   src: url("../../assets/fonts/AvenirNextLTPro-Regular.otf") format("otf");
   font-weight: bold;

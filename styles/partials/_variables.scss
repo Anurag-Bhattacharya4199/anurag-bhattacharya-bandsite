@@ -1,31 +1,63 @@
+/*
+  Name: Anurag Bhattacharya
+  Project Name: BandSite Project - Sprint 1
+  Document Description: This is the Photo Gallery Section SCSSS Stylesheet
+
+  Diving Deeper:
+  - Main Navigation: Hover effect to let user know which page is active & inactive
+  - Photo Gallery: Photo Gallery Images are greyscale by default and on hover, each image returns to color
+*/
+
+//Font SCSS Stylesheet
 @import './fonts';
 
+//Main Font Family of Website
 $main-font-family: 'AvenirNext';
 
+/*All Colors*/
+
+//BandSite Black Color
 $BandSite-Black: #323232;
 
+//Silver Color
 $Silver: #AFAFAF;
 
+//White Color
 $White: #FFFFFF;
 
+//BandSite-DarkBlack Color
 $BandSite-DarkBlack: #000000;
 
+//Mercury Color
 $Mercury: #E1E1E1;
 
+//Alabaster Color
 $Alabaster: #FAFAFA;
 
+/*All Padding Styles*/
+
+//Mobile Padding Before Headlines
 $mobile-padding-before-headlines: 2rem;
 
+//Mobile Padding After Headlines
 $mobile-padding-after-headlines: 1rem;
 
+//Mobile Padding Between Components
 $mobile-padding-between-components: 1rem;
 
+//Desktop & Tablet Padding Before Headlines
 $desktop-tablet-padding-before-headlines: 3rem;
 
+//Desktop & Tablet Padding After Headlines
 $desktop-tablet-padding-after-headlines: 2.25rem;
 
+//Dekstop & tablet Padding Between Components
 $desktop-tablet-padding-between-components: 2.25rem;
 
+/*All Media Queries Breakpoints*/
+
+//Tablet Breakpoint
 $tablet-breakdown: 768px; 
 
+//Desktop Breakpoint
 $desktop-breakdown: 1280px;

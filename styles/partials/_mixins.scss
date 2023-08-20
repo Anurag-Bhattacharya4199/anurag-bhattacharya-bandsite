@@ -1,5 +1,17 @@
+/*
+  Name: Anurag Bhattacharya
+  Project Name: BandSite Project - Sprint 1
+  Document Description: This is the Mixins SCSSS Stylesheet
+
+  Diving Deeper:
+  - Main Navigation: Hover effect to let user know which page is active & inactive
+  - Photo Gallery: Photo Gallery Images are greyscale by default and on hover, each image returns to color
+*/
+
+//Variables SCSS Stylesheet
 @import './variables';
 
+//Normal Font Style Mixin
 @mixin normal-font-style($font-family, $font-weight, $font-style)
 {
   font-family: $font-family;
@@ -7,6 +19,7 @@
   font-style: $font-style;
 }
 
+//Text Styles Mixin
 @mixin text-styles($font-size, $line-height, $font-weight)
 {
   font-size: $font-size;
@@ -14,6 +27,7 @@
   font-weight: $font-weight;
 }
 
+//Header Section Styles Mixin
 @mixin header-section-styles($width, $display, $flex-direction, $justify-content, $align-items, $background-color)
 {
   width: $width;
@@ -24,6 +38,7 @@
   background-color: $background-color;
 }
 
+//Hero Section Styles Mixin
 @mixin hero-section-wrapper-styles($width, $height, $display, $flex-direction, $justify-content)
 {
   width: $width;
@@ -33,6 +48,7 @@
   justify-content: $justify-content;
 }
 
+//Band Image Styles Mixin
 @mixin band-image-styles($display, $text-align, $justify-content, $height, $width)
 {
   display: $display;
@@ -42,12 +58,14 @@
   width: $width;
 }
 
+//BandSite Logo Styles Mixin
 @mixin bandSiteLogo-styles($max-height, $max-width)
 {
   max-height: $max-height;
   max-width: $max-width;
 }
 
+//Tablet Dimension Styles Mixin
 @mixin tablet 
 {
   @media screen and (min-width: $tablet-breakdown) {
@@ -55,6 +73,7 @@
   }
 }
 
+//Desktop Dimension Styles Mixin
 @mixin desktop 
 {
   @media screen and (min-width: $desktop-breakdown) {
