@@ -35,11 +35,13 @@
   }
 
   &__headerContent {
+
     @include tablet {
       display: flex;
     }
   }
 }
+
 
 .contactInfo {
   padding-top: $mobile-padding-between-components;

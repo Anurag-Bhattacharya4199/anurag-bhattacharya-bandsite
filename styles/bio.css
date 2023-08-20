@@ -1,3 +1,12 @@
+/*
+Name: Anurag Bhattacharya
+Project Name: BandSite Project - Sprint 1
+Diving Deeper:
+- On Navigation Bar, Hover pseudo-class used to reconize tab user is in
+- For Photo Gallery, by default, images are greyscaled, on hover, they turn to color
+This is the Main Home Page SCSS File
+*/
+/*All the Partial Sections of the Website imported*/
 @font-face {
   font-family: "AvenirNext";
   src: url("../../assets/fonts/AvenirNextLTPro-Regular.otf") format("otf");
@@ -75,7 +84,7 @@
   }
 }
 
-.main-logo-wrapper__logo {
+.main-logo-wrapper__logo, .bandSiteLogo {
   max-height: 20px;
   max-width: 120px;
 }
@@ -224,10 +233,23 @@
   padding-top: 2rem;
   padding-bottom: 1rem;
 }
+@media screen and (min-width: 768px) {
+  .biography-wrapper__title-area {
+    padding-top: 3rem;
+    padding-bottom: 2.25rem;
+  }
+}
 .biography-wrapper__title {
   font-size: 2rem;
   line-height: 32px;
   font-weight: 700;
+}
+@media screen and (min-width: 768px) {
+  .biography-wrapper__title {
+    font-size: 2.25rem;
+    line-height: 44px;
+    font-weight: 700;
+  }
 }
 @media screen and (min-width: 768px) {
   .biography-wrapper__image-wrapper {
@@ -299,10 +321,10 @@
   }
 }
 .biography-content-wrapper__text, .biography-content-wrapper__text-1stSection {
+  padding-bottom: 1rem;
   font-size: 0.8rem;
   line-height: 18px;
   font-weight: 400;
-  padding-bottom: 1rem;
 }
 @media screen and (min-width: 768px) {
   .biography-content-wrapper__text, .biography-content-wrapper__text-1stSection {
@@ -381,6 +403,7 @@
 .photo-gallery-wrapper__photo-gallery {
   display: flex;
   flex-direction: column;
+  text-align: center;
   justify-content: center;
 }
 @media screen and (min-width: 768px) {
@@ -394,32 +417,19 @@
 }
 @media screen and (min-width: 768px) {
   .photo-gallery-wrapper__photo-gallery-image-area {
+    width: 30%;
     padding-right: 1rem;
-    padding-bottom: 1rem;
   }
 }
 @media screen and (min-width: 1280px) {
   .photo-gallery-wrapper__photo-gallery-image-area {
     padding-right: 0.5rem;
-    padding-bottom: 0.5rem;
   }
 }
 .photo-gallery-wrapper__image {
   height: auto;
   width: 100%;
   filter: grayscale(100%);
-}
-@media screen and (min-width: 768px) {
-  .photo-gallery-wrapper__image {
-    width: 215px;
-    height: auto;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .photo-gallery-wrapper__image {
-    width: 300px;
-    height: auto;
-  }
 }
 .photo-gallery-wrapper__image:hover {
   filter: grayscale(0%);

@@ -13,7 +13,7 @@
   }
 }
 
-.main-logo-wrapper__logo {
+.main-logo-wrapper__logo, .bandSiteLogo {
   @include bandSiteLogo-styles(
     20px, 
     120px

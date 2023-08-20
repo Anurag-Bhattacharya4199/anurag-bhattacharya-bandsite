@@ -1,12 +1,39 @@
+/*
+Name: Anurag Bhattacharya
+Project Name: BandSite Project - Sprint 1
+Diving Deeper:
+- On Navigation Bar, Hover pseudo-class used to reconize tab user is in
+- For Photo Gallery, by default, images are greyscaled, on hover, they turn to color
+This is the Main Home Page SCSS File
+*/
+
+/*All the Partial Sections of the Website imported*/
+
+//Mixins
 @import './partials/mixins';
+
+//Header Section
 @import './partials/header';
+
+//Main Logo
 @import './partials/bandSiteLogo';
+
+//Main Navigation
 @import './partials/mainNavigation';
+
+//Hero Section
 @import './partials/hero';
+
+//Band Biography Section
 @import './partials/aboutInformation';
+
+//Photo Gallery Section
 @import './partials/photoGallery';
+
+//Footer Section
 @import './partials/footer';
 
+//Global Styles
 * {
   @include normal-font-style($main-font-family, normal, normal);
   color: $BandSite-Black;
