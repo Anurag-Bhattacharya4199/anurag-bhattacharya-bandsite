@@ -1,0 +1,15 @@
+.sound-cloud-section 
+{
+  padding-left: $mobile-padding-between-components;
+  padding-right: $mobile-padding-between-components;
+  width: 300px;  
+
+  @include tablet {
+    padding-left: $desktop-tablet-padding-between-components;
+    width: 700px;
+  }
+
+  @include desktop {
+    width: 400px;
+  }
+}

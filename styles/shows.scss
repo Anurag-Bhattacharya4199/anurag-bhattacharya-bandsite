@@ -1,0 +1,25 @@
+//Mixins
+@import './partials/mixins';
+
+//Header Section
+@import './partials/header';
+
+//Main Logo
+@import './partials/bandSiteLogo';
+
+//Main Navigation
+@import './partials/mainNavigation';
+
+//Hero Section
+@import './partials/hero';
+
+@import './partials/soundcloud';
+
+@import './partials/footer';
+
+* {
+  @include normal-font-style($main-font-family, normal, normal);
+  color: $BandSite-Black;
+  padding: 0rem;
+  margin: 0rem;
+}
