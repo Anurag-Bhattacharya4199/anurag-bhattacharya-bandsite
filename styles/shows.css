@@ -390,19 +390,23 @@
     height: 450px;
   }
 }
+.hero-section-wrapper-shows__content {
+  padding: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .hero-section-wrapper-shows__content {
+    padding: 2.25rem;
+  }
+}
 .hero-section-wrapper-shows__sectionHeader {
   color: #FFFFFF;
-  padding-left: 1rem;
   padding-bottom: 1rem;
-  padding-top: 2rem;
   font-size: 0.9rem;
   line-height: 22px;
   font-weight: 600;
 }
 @media screen and (min-width: 768px) {
   .hero-section-wrapper-shows__sectionHeader {
-    padding-left: 2.25rem;
-    padding-top: 3rem;
     padding-bottom: 2.25rem;
     font-size: 2rem;
     line-height: 32px;
@@ -411,7 +415,6 @@
 }
 .hero-section-wrapper-shows__header {
   color: #FFFFFF;
-  padding-left: 1rem;
   padding-bottom: 1rem;
   font-size: 2rem;
   line-height: 32px;
@@ -419,11 +422,15 @@
 }
 @media screen and (min-width: 768px) {
   .hero-section-wrapper-shows__header {
-    padding-left: 2.25rem;
     padding-bottom: 2.25rem;
     font-size: 3.75rem;
     line-height: 44px;
     font-weight: 700;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hero-section-wrapper-shows__header {
+    padding-right: 2.25rem;
   }
 }
 
@@ -433,20 +440,17 @@
   }
 }
 
-.sound-cloud-section {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  width: 300px;
+.hero__sound-cloud iframe {
+  width: 100%;
 }
 @media screen and (min-width: 768px) {
-  .sound-cloud-section {
-    padding-left: 2.25rem;
-    width: 700px;
+  .hero__sound-cloud iframe {
+    width: 75%;
   }
 }
 @media screen and (min-width: 1280px) {
-  .sound-cloud-section {
-    width: 400px;
+  .hero__sound-cloud iframe {
+    width: 450px;
   }
 }
 

@@ -78,12 +78,17 @@
     height: 450px;
   }
 
+  &__content {
+    padding: $mobile-padding-between-components;
+
+    @include tablet {
+      padding: $desktop-tablet-padding-between-components;
+    }
+  }
   &__sectionHeader
   {
     color: $White;
-    padding-left: $mobile-padding-between-components;
-    padding-bottom: $mobile-padding-between-components;
-    padding-top: $mobile-padding-before-headlines;
+    padding-bottom: $mobile-padding-after-headlines;
     @include text-styles(
       0.9rem, 
       22px, 
@@ -92,8 +97,6 @@
 
     @include tablet 
     {
-      padding-left: $desktop-tablet-padding-between-components;
-      padding-top: $desktop-tablet-padding-before-headlines;
       padding-bottom: $desktop-tablet-padding-after-headlines;
       @include text-styles(2rem, 32px, 600);
     }
@@ -102,7 +105,6 @@
   &__header 
   {
     color: $White;
-    padding-left: $mobile-padding-between-components;
     padding-bottom: $mobile-padding-after-headlines;
 
     @include text-styles(
@@ -114,9 +116,12 @@
     //Tablet and Onwards Size Styles
     @include tablet 
     {
-      padding-left: $desktop-tablet-padding-between-components;
       padding-bottom: $desktop-tablet-padding-after-headlines;
       @include text-styles(3.75rem, 44px, 700);
+    }
+
+    @include desktop {
+      padding-right: $desktop-tablet-padding-between-components;
     }
   }
 }
@@ -124,5 +129,15 @@
 .header-soundcloud-section {
   @include desktop {
     display: flex;
+  }
+}
+
+.hero__sound-cloud iframe {
+  width: 100%;
+  @include tablet {
+    width: 75%;
+  }
+  @include desktop {
+    width: 450px;
   }
 }
