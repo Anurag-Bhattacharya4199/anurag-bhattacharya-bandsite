@@ -285,13 +285,15 @@ This is the Main Home Page SCSS File
     width: 20%;
   }
 }
+.main-navigation__navigationArea li a {
+  text-decoration: none;
+}
 .main-navigation__item-inactive-state {
   color: #E1E1E1;
 }
 
 .main-navigation li:hover, .main-navigation__item-active-state {
   color: #FFFFFF;
-  padding-bottom: 0.1rem;
   border-bottom: 3.5px solid #FFFFFF;
 }
 @media screen and (min-width: 768px) {

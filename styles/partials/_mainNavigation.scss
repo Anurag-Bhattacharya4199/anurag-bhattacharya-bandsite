@@ -56,6 +56,10 @@
     }
   }
 
+  &__navigationArea li a {
+    text-decoration: none;
+  }
+
   //Main Navigation Inactive State Styles
   &__item-inactive-state 
   {
@@ -67,7 +71,6 @@
 .main-navigation li:hover, .main-navigation__item-active-state 
 {
   color: $White;
-  padding-bottom: 0.1rem;
   border-bottom: 
     3.5px 
     solid 
