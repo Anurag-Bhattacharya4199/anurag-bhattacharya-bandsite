@@ -769,6 +769,112 @@ This is the Main Home Page SCSS File
 /*
   Name: Anurag Bhattacharya
   Project Name: BandSite Project - Sprint 1
+  Document Description: This is the Mixins SCSSS Stylesheet
+
+  Diving Deeper:
+  - Main Navigation: Hover effect to let user know which page is active & inactive
+  - Photo Gallery: Photo Gallery Images are greyscale by default and on hover, each image returns to color
+*/
+/*
+  Name: Anurag Bhattacharya
+  Project Name: BandSite Project - Sprint 1
+  Document Description: This is the Photo Gallery Section SCSSS Stylesheet
+
+  Diving Deeper:
+  - Main Navigation: Hover effect to let user know which page is active & inactive
+  - Photo Gallery: Photo Gallery Images are greyscale by default and on hover, each image returns to color
+*/
+/*
+  Name: Anurag Bhattacharya
+  Project Name: BandSite Project - Sprint 1
+  Document Description: This is the Font Styles SCSSS Stylesheet
+
+  Diving Deeper:
+  - Main Navigation: Hover effect to let user know which page is active & inactive
+  - Photo Gallery: Photo Gallery Images are greyscale by default and on hover, each image returns to color
+*/
+@font-face {
+  font-family: "AvenirNext";
+  src: url("../../assets/fonts/AvenirNextLTPro-Regular.otf") format("otf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "AvenirNext";
+  src: url("../../assets/fonts/AvenirNextLTPro-Regular.otf") format("otf");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "AvenirNext";
+  src: url("../../assets/fonts/AvenirNextLTPro-Regular.otf") format("otf");
+  font-weight: bold;
+  font-style: normal;
+}
+/*All Colors*/
+/*All Padding Styles*/
+/*All Media Queries Breakpoints*/
+.commentsForm {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.commentsForm__headerTitle {
+  font-size: 2rem;
+  line-height: 32px;
+  font-weight: 700;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+.commentsForm__imageWrapper {
+  padding-right: 1rem;
+}
+.commentsForm__avater {
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+}
+
+.comments-form {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1rem;
+}
+.comments-form__submitButton {
+  height: 40px;
+  width: 100%;
+  border-radius: 4px;
+  background-color: #323232;
+  color: #FFFFFF;
+}
+.comments-form__submitButton:hover {
+  background-color: #000000;
+}
+
+label {
+  color: #AFAFAF;
+  padding-bottom: 4px;
+}
+
+input, textarea {
+  min-height: 36px;
+  width: 100%;
+  border-radius: 4px;
+  padding: 12px;
+  border: 1px solid #E1E1E1;
+  margin-bottom: 1rem;
+}
+
+input:active, textarea:active {
+  border: 1px solid #323232;
+}
+
+.commentsFormSection {
+  display: flex;
+}
+
+/*
+  Name: Anurag Bhattacharya
+  Project Name: BandSite Project - Sprint 1
   Document Description: This is the Footer Section SCSSS Stylesheet
 
   Diving Deeper:

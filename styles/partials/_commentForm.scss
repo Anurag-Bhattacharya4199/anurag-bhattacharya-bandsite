@@ -1,0 +1,62 @@
+@import './mixins';
+
+.commentsForm {
+  padding-left: $mobile-padding-between-components;
+  padding-right: $mobile-padding-between-components;
+
+  &__headerTitle {
+    @include text-styles(2rem, 32px, 700);
+    padding-top: $mobile-padding-before-headlines;
+    padding-bottom: $mobile-padding-after-headlines;
+  }
+
+  &__imageWrapper {
+    padding-right: $mobile-padding-between-components;
+  }
+
+  &__avater {
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+}
+}
+
+.comments-form {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: $mobile-padding-between-components;
+
+  &__submitButton {
+    height: 40px;
+    width: 100%;
+    border-radius: 4px;
+    background-color: $BandSite-Black;
+    color: $White;
+  }
+
+  &__submitButton:hover {
+    background-color: $BandSite-DarkBlack;
+  }
+}
+
+label {
+  color: $Silver;
+  padding-bottom: 4px;
+}
+input,textarea {
+  min-height: 36px;
+  width: 100%;
+  border-radius: 4px;
+  padding: 12px;
+  border: 1px solid $Mercury;
+  margin-bottom: $mobile-padding-between-components;
+}
+
+input:active, textarea:active {
+  border: 1px solid $BandSite-Black;
+}
+
+
+.commentsFormSection {
+  display: flex;
+}

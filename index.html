@@ -194,13 +194,38 @@
         </div>
       </div>
     </section>
-    <section>
-      <title>Join the Conversation</title>
-      <div class="form-section">
-        <img src="./assets/images/Mohan-muruge.jpg" alt="Comments Image" />
-        <form></form>
+    <section class="commentsForm">
+      <h1 class="commentsForm__headerTitle">Join the Conversation</h1>
+      <div class="commentsFormSection">
+        <div class="commentsForm__imageWrapper">
+          <img
+            src="./assets/images/Mohan-muruge.jpg"
+            alt="Form Avater"
+            class="commentsForm__avater"
+          />
+        </div>
+
+        <form id="comments-form" class="comments-form">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Enter your name"
+            required
+          />
+          <label for="comment">Comment</label>
+          <textarea
+            name="comment"
+            id="comment"
+            placeholder="Add a new comment"
+            required
+          ></textarea>
+          <button type="submit" class="comments-form__submitButton">
+            COMMENT
+          </button>
+        </form>
       </div>
-      <div class="comments-section"></div>
     </section>
     <!--Footer Section-->
     <footer class="footerSection">
