@@ -40,18 +40,6 @@ This is the Main Home Page SCSS File
   font-weight: normal;
   font-style: normal;
 }
-@font-face {
-  font-family: "AvenirNext";
-  src: url("../../assets/fonts/AvenirNextLTPro-Regular.otf") format("otf");
-  font-weight: 600;
-  font-style: normal;
-}
-@font-face {
-  font-family: "AvenirNext";
-  src: url("../../assets/fonts/AvenirNextLTPro-Regular.otf") format("otf");
-  font-weight: bold;
-  font-style: normal;
-}
 /*All Colors*/
 /*All Padding Styles*/
 /*All Media Queries Breakpoints*/
@@ -95,18 +83,6 @@ This is the Main Home Page SCSS File
   font-family: "AvenirNext";
   src: url("../../assets/fonts/AvenirNextLTPro-Regular.otf") format("otf");
   font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "AvenirNext";
-  src: url("../../assets/fonts/AvenirNextLTPro-Regular.otf") format("otf");
-  font-weight: 600;
-  font-style: normal;
-}
-@font-face {
-  font-family: "AvenirNext";
-  src: url("../../assets/fonts/AvenirNextLTPro-Regular.otf") format("otf");
-  font-weight: bold;
   font-style: normal;
 }
 /*All Colors*/
@@ -168,18 +144,6 @@ This is the Main Home Page SCSS File
   font-weight: normal;
   font-style: normal;
 }
-@font-face {
-  font-family: "AvenirNext";
-  src: url("../../assets/fonts/AvenirNextLTPro-Regular.otf") format("otf");
-  font-weight: 600;
-  font-style: normal;
-}
-@font-face {
-  font-family: "AvenirNext";
-  src: url("../../assets/fonts/AvenirNextLTPro-Regular.otf") format("otf");
-  font-weight: bold;
-  font-style: normal;
-}
 /*All Colors*/
 /*All Padding Styles*/
 /*All Media Queries Breakpoints*/
@@ -239,18 +203,6 @@ This is the Main Home Page SCSS File
   font-weight: normal;
   font-style: normal;
 }
-@font-face {
-  font-family: "AvenirNext";
-  src: url("../../assets/fonts/AvenirNextLTPro-Regular.otf") format("otf");
-  font-weight: 600;
-  font-style: normal;
-}
-@font-face {
-  font-family: "AvenirNext";
-  src: url("../../assets/fonts/AvenirNextLTPro-Regular.otf") format("otf");
-  font-weight: bold;
-  font-style: normal;
-}
 /*All Colors*/
 /*All Padding Styles*/
 /*All Media Queries Breakpoints*/
@@ -301,6 +253,9 @@ This is the Main Home Page SCSS File
     padding-bottom: 2rem;
   }
 }
+.main-navigation li:hover:hover, .main-navigation__item-active-state:hover {
+  cursor: pointer;
+}
 
 /*
   Name: Anurag Bhattacharya
@@ -342,18 +297,6 @@ This is the Main Home Page SCSS File
   font-family: "AvenirNext";
   src: url("../../assets/fonts/AvenirNextLTPro-Regular.otf") format("otf");
   font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "AvenirNext";
-  src: url("../../assets/fonts/AvenirNextLTPro-Regular.otf") format("otf");
-  font-weight: 600;
-  font-style: normal;
-}
-@font-face {
-  font-family: "AvenirNext";
-  src: url("../../assets/fonts/AvenirNextLTPro-Regular.otf") format("otf");
-  font-weight: bold;
   font-style: normal;
 }
 /*All Colors*/
@@ -505,18 +448,6 @@ This is the Main Home Page SCSS File
   font-family: "AvenirNext";
   src: url("../../assets/fonts/AvenirNextLTPro-Regular.otf") format("otf");
   font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "AvenirNext";
-  src: url("../../assets/fonts/AvenirNextLTPro-Regular.otf") format("otf");
-  font-weight: 600;
-  font-style: normal;
-}
-@font-face {
-  font-family: "AvenirNext";
-  src: url("../../assets/fonts/AvenirNextLTPro-Regular.otf") format("otf");
-  font-weight: bold;
   font-style: normal;
 }
 /*All Colors*/
@@ -683,18 +614,6 @@ This is the Main Home Page SCSS File
   font-weight: normal;
   font-style: normal;
 }
-@font-face {
-  font-family: "AvenirNext";
-  src: url("../../assets/fonts/AvenirNextLTPro-Regular.otf") format("otf");
-  font-weight: 600;
-  font-style: normal;
-}
-@font-face {
-  font-family: "AvenirNext";
-  src: url("../../assets/fonts/AvenirNextLTPro-Regular.otf") format("otf");
-  font-weight: bold;
-  font-style: normal;
-}
 /*All Colors*/
 /*All Padding Styles*/
 /*All Media Queries Breakpoints*/
@@ -799,77 +718,233 @@ This is the Main Home Page SCSS File
   font-weight: normal;
   font-style: normal;
 }
-@font-face {
-  font-family: "AvenirNext";
-  src: url("../../assets/fonts/AvenirNextLTPro-Regular.otf") format("otf");
-  font-weight: 600;
-  font-style: normal;
-}
-@font-face {
-  font-family: "AvenirNext";
-  src: url("../../assets/fonts/AvenirNextLTPro-Regular.otf") format("otf");
-  font-weight: bold;
-  font-style: normal;
-}
 /*All Colors*/
 /*All Padding Styles*/
 /*All Media Queries Breakpoints*/
-.commentsForm {
+.bandComments {
   padding-left: 1rem;
   padding-right: 1rem;
 }
-.commentsForm__headerTitle {
+@media screen and (min-width: 768px) {
+  .bandComments {
+    padding-left: 2.25rem;
+    padding-right: 2.25rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .bandComments {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+.bandComments__title {
   font-size: 2rem;
   line-height: 32px;
   font-weight: 700;
   padding-top: 2rem;
   padding-bottom: 1rem;
 }
+@media screen and (min-width: 768px) {
+  .bandComments__title {
+    font-size: 2.25rem;
+    line-height: 44px;
+    font-weight: 700;
+  }
+}
+@media screen and (min-width: 768px) {
+  .bandComments__commentsForm-plus-comments {
+    padding-left: 2.25rem;
+    padding-right: 2.25rem;
+  }
+}
+
+.commentsForm {
+  display: flex;
+}
+@media screen and (min-width: 768px) {
+  .commentsForm {
+    position: relative;
+  }
+}
 .commentsForm__imageWrapper {
   padding-right: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .commentsForm__imageWrapper {
+    padding-right: 1rem;
+  }
 }
 .commentsForm__avater {
   border-radius: 50%;
   width: 36px;
   height: 36px;
 }
-
-.comments-form {
+@media screen and (min-width: 768px) {
+  .commentsForm__avater {
+    width: 48px;
+    height: 48px;
+  }
+}
+.commentsForm__form {
   display: flex;
   flex-direction: column;
-  padding-bottom: 1rem;
+  gap: 4px;
 }
-.comments-form__submitButton {
+@media screen and (min-width: 768px) {
+  .commentsForm__form {
+    width: 100%;
+  }
+}
+.commentsForm__submitButtonWrapper {
+  padding-top: 1rem;
+}
+.commentsForm__submitButton {
+  background-color: #323232;
+  color: #FFFFFF;
   height: 40px;
   width: 100%;
   border-radius: 4px;
-  background-color: #323232;
-  color: #FFFFFF;
 }
-.comments-form__submitButton:hover {
-  background-color: #000000;
+@media screen and (min-width: 768px) {
+  .commentsForm__submitButton {
+    width: 150px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
 }
 
 label {
+  font-size: 0.8rem;
+  line-height: 18px;
+  font-weight: 400;
   color: #AFAFAF;
-  padding-bottom: 4px;
+}
+@media screen and (min-width: 768px) {
+  label {
+    font-size: 0.9rem;
+    line-height: 22px;
+    font-weight: 400;
+  }
 }
 
-input, textarea {
-  min-height: 36px;
+label#commentLabel {
+  padding-top: 1rem;
+}
+@media screen and (min-width: 768px) {
+  label#commentLabel {
+    padding-top: 2.25rem;
+  }
+}
+
+input {
+  height: 36px;
   width: 100%;
   border-radius: 4px;
   padding: 12px;
   border: 1px solid #E1E1E1;
-  margin-bottom: 1rem;
 }
-
-input:active, textarea:active {
+@media screen and (min-width: 768px) {
+  input {
+    height: 48px;
+    padding: 16px;
+  }
+}
+input:active {
   border: 1px solid #323232;
 }
 
-.commentsFormSection {
+.commentsPanel {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .commentsPanel {
+    padding-top: 2.25rem;
+    padding-bottom: 2.25rem;
+  }
+}
+.commentsPanel__comment {
   display: flex;
+  border-top: 1px solid #E1E1E1;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .commentsPanel__comment {
+    padding-top: 2.25rem;
+    padding-bottom: 2.25rem;
+  }
+}
+.commentsPanel__commentContent {
+  width: 100%;
+}
+.commentsPanel__avaterWrapper {
+  padding-right: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .commentsPanel__avaterWrapper {
+    padding-right: 2.25rem;
+  }
+}
+.commentsPanel__avater {
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  background-color: #E1E1E1;
+}
+@media screen and (min-width: 768px) {
+  .commentsPanel__avater {
+    width: 48px;
+    height: 48px;
+  }
+}
+.commentsPanel__headingContent {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .commentsPanel__headingContent {
+    padding-bottom: 2.25rem;
+  }
+}
+.commentsPanel__title {
+  font-size: 0.8rem;
+  line-height: 18px;
+  font-weight: 600;
+}
+@media screen and (min-width: 768px) {
+  .commentsPanel__title {
+    font-size: 0.9rem;
+    line-height: 22px;
+    font-weight: 600;
+  }
+}
+.commentsPanel__date {
+  font-size: 0.8rem;
+  line-height: 18px;
+  font-weight: 400;
+  color: #AFAFAF;
+}
+@media screen and (min-width: 768px) {
+  .commentsPanel__date {
+    font-size: 0.9rem;
+    line-height: 22px;
+    font-weight: 400;
+  }
+}
+.commentsPanel__personComment {
+  font-size: 0.8rem;
+  line-height: 18px;
+  font-weight: 400;
+}
+@media screen and (min-width: 768px) {
+  .commentsPanel__personComment {
+    font-size: 0.9rem;
+    line-height: 22px;
+    font-weight: 400;
+  }
 }
 
 /*
@@ -912,18 +987,6 @@ input:active, textarea:active {
   font-family: "AvenirNext";
   src: url("../../assets/fonts/AvenirNextLTPro-Regular.otf") format("otf");
   font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "AvenirNext";
-  src: url("../../assets/fonts/AvenirNextLTPro-Regular.otf") format("otf");
-  font-weight: 600;
-  font-style: normal;
-}
-@font-face {
-  font-family: "AvenirNext";
-  src: url("../../assets/fonts/AvenirNextLTPro-Regular.otf") format("otf");
-  font-weight: bold;
   font-style: normal;
 }
 /*All Colors*/
@@ -1062,8 +1125,6 @@ input:active, textarea:active {
 
 * {
   font-family: "AvenirNext";
-  font-weight: normal;
-  font-style: normal;
   color: #323232;
   padding: 0rem;
   margin: 0rem;

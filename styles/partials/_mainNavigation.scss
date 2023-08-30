@@ -71,14 +71,18 @@
 .main-navigation li:hover, .main-navigation__item-active-state 
 {
   color: $White;
-  border-bottom: 
-    3.5px 
-    solid 
-    $White;
-  
-  //Tablet and Onwards Size Styles
-  @include tablet 
-  {
-    padding-bottom: 2rem;
+    border-bottom: 
+      3.5px 
+      solid 
+      $White;
+      
+      //Tablet and Onwards Size Styles
+      @include tablet 
+      {
+        padding-bottom: 2rem;
+      }
+
+  &:hover {
+    cursor: pointer;
   }
 }

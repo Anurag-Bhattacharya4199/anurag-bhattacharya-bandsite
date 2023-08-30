@@ -12,6 +12,8 @@ This is the Main Home Page SCSS File
 //Mixins
 @import './partials/mixins';
 
+//@import './partials/variables';
+
 //Header Section
 @import './partials/header';
 
@@ -30,14 +32,15 @@ This is the Main Home Page SCSS File
 //Photo Gallery Section
 @import './partials/photoGallery';
 
-@import './partials/commentForm';
+@import './partials/_commentsSection';
 
 //Footer Section
 @import './partials/footer';
 
 //Global Styles
 * {
-  @include normal-font-style($main-font-family, normal, normal);
+  font-family: $main-font-family;
+  //@include normal-font-style($main-font-family, normal, normal);
   color: $BandSite-Black;
   padding: 0rem;
   margin: 0rem;

@@ -21,6 +21,7 @@
     <title>Band-Site</title>
     <!--HTML Stylesheet Linked-->
     <link rel="stylesheet" type="text/css" href="./styles/bio.css" />
+    <script src="./scripts/index-page.js" defer></script>
   </head>
   <!--Body Section-->
   <body>
@@ -194,39 +195,41 @@
         </div>
       </div>
     </section>
-    <section class="commentsForm">
-      <h1 class="commentsForm__headerTitle">Join the Conversation</h1>
-      <div class="commentsFormSection">
-        <div class="commentsForm__imageWrapper">
-          <img
-            src="./assets/images/Mohan-muruge.jpg"
-            alt="Form Avater"
-            class="commentsForm__avater"
-          />
-        </div>
-
-        <form id="comments-form" class="comments-form">
-          <label for="name">Name</label>
-          <input
-            type="text"
-            name="name"
-            id="name"
-            placeholder="Enter your name"
-            required
-          />
-          <label for="comment">Comment</label>
-          <textarea
-            name="comment"
-            id="comment"
-            placeholder="Add a new comment"
-            required
-          ></textarea>
-          <button type="submit" class="comments-form__submitButton">
-            COMMENT
-          </button>
-        </form>
+    <div class="bandComments">
+      <h1 class="bandComments__title">Join the Conversation</h1>
+      <div class="bandComments__commentsForm-plus-comments">
+        <section class="commentsForm">
+          <div class="commentsForm__imageWrapper">
+            <img
+              src="./assets/images/Mohan-muruge.jpg"
+              alt="Form Avater"
+              class="commentsForm__avater"
+            />
+          </div>
+          <form id="commentsForm__form" class="commentsForm__form">
+            <label for="name">NAME</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Enter your name"
+            />
+            <label for="comment" id="commentLabel">COMMENT</label>
+            <input type="text" name="comment" id="comment" placeholder="Add a new comment"></input>
+            <div class="commentsForm__submitButtonWrapper">
+              <button type="submit" class="commentsForm__submitButton">
+                COMMENT
+              </button>
+            </div>
+          </form>
+        </section>
+        <section class="commentsPanel">
+          <div class="commentsPanel__commentList">
+            <!--Articles here-->
+          </div>
+        </section>
       </div>
-    </section>
+    </div>
     <!--Footer Section-->
     <footer class="footerSection">
       <!--Footer Content-->
