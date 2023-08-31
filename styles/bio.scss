@@ -9,10 +9,8 @@ This is the Main Home Page SCSS File
 
 /*All the Partial Sections of the Website imported*/
 
-//Mixins
-@import './partials/mixins';
-
-//@import './partials/variables';
+//Fonts
+@import './partials/fonts';
 
 //Header Section
 @import './partials/header';
@@ -39,9 +37,9 @@ This is the Main Home Page SCSS File
 
 //Global Styles
 * {
-  font-family: $main-font-family;
-  //@include normal-font-style($main-font-family, normal, normal);
-  color: $BandSite-Black;
-  padding: 0rem;
-  margin: 0rem;
+  margin: 0;
+  padding: 0;
+  font-family: 'Avenir-Regular';
+  font-weight: normal;
+  font-style: normal;
 }

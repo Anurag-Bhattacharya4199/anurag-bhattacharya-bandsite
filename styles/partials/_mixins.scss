@@ -11,14 +11,6 @@
 //Variables SCSS Stylesheet
 @import './variables';
 
-//Normal Font Style Mixin
-@mixin normal-font-style($font-family, $font-weight, $font-style)
-{
-  font-family: $font-family;
-  font-weight: $font-weight;
-  font-style: $font-style;
-}
-
 //Text Styles Mixin
 @mixin text-styles($font-size, $line-height, $font-weight)
 {

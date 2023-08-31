@@ -11,6 +11,8 @@
 //Mixin SCSS Stylesheet
 @import './mixins';
 
+@import './fonts';
+
 //Footer Section Styles
 .footerSection 
 {
@@ -39,6 +41,7 @@
   {
     color: $White;
     padding-top: $mobile-padding-before-headlines;
+    font-family: "AvenirNext-Bold";
     @include text-styles(
       2rem, 
       32px, 
@@ -118,6 +121,7 @@
   &__section-title p 
   {
     color: $White;
+    font-family: "AvenirNext-Demi";
     @include text-styles(
       0.8rem, 
       18px, 

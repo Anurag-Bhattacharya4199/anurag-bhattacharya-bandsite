@@ -12,3 +12,14 @@ const bandShowInfo = [
     location: "San Francisco, CA",
   },
 ];
+
+function displayBandShows(bandShowInfo) {
+  const bandShowsEl = document.querySelector("bandShows");
+
+  const bandShowsTitle = document.createElement("h2");
+  bandShowsTitle.classList.add("bandShows__mainTitle");
+  bandShowsTitle.innerText = "Shows";
+  bandShowEl.appendChild(bandShowsTitle);
+}
+
+displayBandShows(bandShowInfo);

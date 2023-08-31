@@ -1,5 +1,4 @@
-//Mixins
-@import './partials/mixins';
+@import './partials/fonts';
 
 //Header Section
 @import './partials/header';
@@ -18,8 +17,9 @@
 @import './partials/footer';
 
 * {
-  @include normal-font-style($main-font-family, normal, normal);
-  color: $BandSite-Black;
-  padding: 0rem;
-  margin: 0rem;
+  margin: 0;
+  padding: 0;
+  font-family: 'Avenir-Regular';
+  font-weight: normal;
+  font-style: normal;
 }

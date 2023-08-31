@@ -1,5 +1,7 @@
 @import './mixins';
 
+@import './fonts';
+
 .bandComments {
   padding-left: $mobile-padding-between-components;
   padding-right: $mobile-padding-between-components;
@@ -16,6 +18,7 @@
   }
 
   &__title {
+    font-family: "AvenirNext-Bold";
     @include text-styles(2rem, 32px, 700);
     padding-top: $mobile-padding-before-headlines;
     padding-bottom: $mobile-padding-after-headlines;
@@ -189,6 +192,7 @@ input {
   }
 
   &__title {
+    font-family: "AvenirNext-Demi";
     @include text-styles(0.8rem, 18px, 600);
 
     @include tablet {

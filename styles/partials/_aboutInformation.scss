@@ -11,6 +11,8 @@
 //Mixin SCSS Stylesheet
 @import './mixins';
 
+@import './fonts';
+
 //Biography Wrapper Styles
 .biography-wrapper 
 {
@@ -51,6 +53,7 @@
   //Biography Title Styles
   &__title 
   {
+    font-family: "AvenirNext-Bold";
     @include text-styles(2rem, 32px, 700);
 
     //Tablet and Onwards Size Styles
@@ -100,6 +103,7 @@
   //BandSite Motto Styles
   &__quote, &__person 
   {
+    font-family: "AvenirNext-Demi";
     padding-bottom: $mobile-padding-between-components;
     @include text-styles(
       0.8rem, 
@@ -139,6 +143,7 @@
   //Band Biography Title Styles
   &__title 
   {
+    font-family: "AvenirNext-Demi";
     @include text-styles(
       0.9rem, 
       22px, 

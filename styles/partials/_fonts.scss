@@ -11,29 +11,23 @@
 //Normal Font Styles
 @font-face 
 {
-  font-family: 'AvenirNext';
+  font-family: 'AvenirNext-Regular';
   src: url("../../assets/fonts/AvenirNextLTPro-Regular.otf") format("otf");
-  font-weight: normal;
-  font-style: normal;
 }
 
 
 //Demi Font Styles
-// @font-face 
-// {
-//   font-family: 'AvenirNext';
-//   src: url("../../assets/fonts/AvenirNextLTPro-Regular.otf") format("otf");
-//   font-weight: 600;
-//   font-style: normal;
-// }
+@font-face 
+{
+  font-family: 'AvenirNext-Demi';
+  src: url("../../assets/fonts/AvenirNextLTPro-Regular.otf") format("otf");
+}
 
 
-// //Bold Font Styles
-// @font-face 
-// {
-//   font-family: 'AvenirNext';
-//   src: url("../../assets/fonts/AvenirNextLTPro-Regular.otf") format("otf");
-//   font-weight: bold;
-//   font-style: normal;
-// }
+//Bold Font Styles
+@font-face 
+{
+  font-family: 'AvenirNext-Bold';
+  src: url("../../assets/fonts/AvenirNextLTPro-Regular.otf") format("otf");
+}
 

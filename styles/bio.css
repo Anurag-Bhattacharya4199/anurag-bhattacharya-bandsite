@@ -10,24 +10,6 @@ This is the Main Home Page SCSS File
 /*
   Name: Anurag Bhattacharya
   Project Name: BandSite Project - Sprint 1
-  Document Description: This is the Mixins SCSSS Stylesheet
-
-  Diving Deeper:
-  - Main Navigation: Hover effect to let user know which page is active & inactive
-  - Photo Gallery: Photo Gallery Images are greyscale by default and on hover, each image returns to color
-*/
-/*
-  Name: Anurag Bhattacharya
-  Project Name: BandSite Project - Sprint 1
-  Document Description: This is the Photo Gallery Section SCSSS Stylesheet
-
-  Diving Deeper:
-  - Main Navigation: Hover effect to let user know which page is active & inactive
-  - Photo Gallery: Photo Gallery Images are greyscale by default and on hover, each image returns to color
-*/
-/*
-  Name: Anurag Bhattacharya
-  Project Name: BandSite Project - Sprint 1
   Document Description: This is the Font Styles SCSSS Stylesheet
 
   Diving Deeper:
@@ -35,14 +17,17 @@ This is the Main Home Page SCSS File
   - Photo Gallery: Photo Gallery Images are greyscale by default and on hover, each image returns to color
 */
 @font-face {
-  font-family: "AvenirNext";
+  font-family: "AvenirNext-Regular";
   src: url("../../assets/fonts/AvenirNextLTPro-Regular.otf") format("otf");
-  font-weight: normal;
-  font-style: normal;
 }
-/*All Colors*/
-/*All Padding Styles*/
-/*All Media Queries Breakpoints*/
+@font-face {
+  font-family: "AvenirNext-Demi";
+  src: url("../../assets/fonts/AvenirNextLTPro-Regular.otf") format("otf");
+}
+@font-face {
+  font-family: "AvenirNext-Bold";
+  src: url("../../assets/fonts/AvenirNextLTPro-Regular.otf") format("otf");
+}
 /*
   Name: Anurag Bhattacharya
   Project Name: BandSite Project - Sprint 1
@@ -70,21 +55,6 @@ This is the Main Home Page SCSS File
   - Main Navigation: Hover effect to let user know which page is active & inactive
   - Photo Gallery: Photo Gallery Images are greyscale by default and on hover, each image returns to color
 */
-/*
-  Name: Anurag Bhattacharya
-  Project Name: BandSite Project - Sprint 1
-  Document Description: This is the Font Styles SCSSS Stylesheet
-
-  Diving Deeper:
-  - Main Navigation: Hover effect to let user know which page is active & inactive
-  - Photo Gallery: Photo Gallery Images are greyscale by default and on hover, each image returns to color
-*/
-@font-face {
-  font-family: "AvenirNext";
-  src: url("../../assets/fonts/AvenirNextLTPro-Regular.otf") format("otf");
-  font-weight: normal;
-  font-style: normal;
-}
 /*All Colors*/
 /*All Padding Styles*/
 /*All Media Queries Breakpoints*/
@@ -129,21 +99,6 @@ This is the Main Home Page SCSS File
   - Main Navigation: Hover effect to let user know which page is active & inactive
   - Photo Gallery: Photo Gallery Images are greyscale by default and on hover, each image returns to color
 */
-/*
-  Name: Anurag Bhattacharya
-  Project Name: BandSite Project - Sprint 1
-  Document Description: This is the Font Styles SCSSS Stylesheet
-
-  Diving Deeper:
-  - Main Navigation: Hover effect to let user know which page is active & inactive
-  - Photo Gallery: Photo Gallery Images are greyscale by default and on hover, each image returns to color
-*/
-@font-face {
-  font-family: "AvenirNext";
-  src: url("../../assets/fonts/AvenirNextLTPro-Regular.otf") format("otf");
-  font-weight: normal;
-  font-style: normal;
-}
 /*All Colors*/
 /*All Padding Styles*/
 /*All Media Queries Breakpoints*/
@@ -188,6 +143,9 @@ This is the Main Home Page SCSS File
   - Main Navigation: Hover effect to let user know which page is active & inactive
   - Photo Gallery: Photo Gallery Images are greyscale by default and on hover, each image returns to color
 */
+/*All Colors*/
+/*All Padding Styles*/
+/*All Media Queries Breakpoints*/
 /*
   Name: Anurag Bhattacharya
   Project Name: BandSite Project - Sprint 1
@@ -198,14 +156,17 @@ This is the Main Home Page SCSS File
   - Photo Gallery: Photo Gallery Images are greyscale by default and on hover, each image returns to color
 */
 @font-face {
-  font-family: "AvenirNext";
+  font-family: "AvenirNext-Regular";
   src: url("../../assets/fonts/AvenirNextLTPro-Regular.otf") format("otf");
-  font-weight: normal;
-  font-style: normal;
 }
-/*All Colors*/
-/*All Padding Styles*/
-/*All Media Queries Breakpoints*/
+@font-face {
+  font-family: "AvenirNext-Demi";
+  src: url("../../assets/fonts/AvenirNextLTPro-Regular.otf") format("otf");
+}
+@font-face {
+  font-family: "AvenirNext-Bold";
+  src: url("../../assets/fonts/AvenirNextLTPro-Regular.otf") format("otf");
+}
 .main-navigation, .main-navigation__navigationArea {
   width: 100%;
 }
@@ -225,12 +186,14 @@ This is the Main Home Page SCSS File
 .main-navigation__navigationArea li {
   list-style: none;
   width: 50%;
+  font-family: "AvenirNext-Bold";
   font-size: 0.9rem;
   line-height: 32px;
   font-weight: 700;
 }
 @media screen and (min-width: 768px) {
   .main-navigation__navigationArea li {
+    font-family: "AvenirNext-Demi";
     font-size: 1rem;
     line-height: 32px;
     font-weight: 600;
@@ -291,6 +254,9 @@ This is the Main Home Page SCSS File
   - Main Navigation: Hover effect to let user know which page is active & inactive
   - Photo Gallery: Photo Gallery Images are greyscale by default and on hover, each image returns to color
 */
+/*All Colors*/
+/*All Padding Styles*/
+/*All Media Queries Breakpoints*/
 /*
   Name: Anurag Bhattacharya
   Project Name: BandSite Project - Sprint 1
@@ -301,14 +267,17 @@ This is the Main Home Page SCSS File
   - Photo Gallery: Photo Gallery Images are greyscale by default and on hover, each image returns to color
 */
 @font-face {
-  font-family: "AvenirNext";
+  font-family: "AvenirNext-Regular";
   src: url("../../assets/fonts/AvenirNextLTPro-Regular.otf") format("otf");
-  font-weight: normal;
-  font-style: normal;
 }
-/*All Colors*/
-/*All Padding Styles*/
-/*All Media Queries Breakpoints*/
+@font-face {
+  font-family: "AvenirNext-Demi";
+  src: url("../../assets/fonts/AvenirNextLTPro-Regular.otf") format("otf");
+}
+@font-face {
+  font-family: "AvenirNext-Bold";
+  src: url("../../assets/fonts/AvenirNextLTPro-Regular.otf") format("otf");
+}
 .hero-section-wrapper {
   background: linear-gradient(rgba(50, 50, 50, 0.5), rgba(50, 50, 50, 0.5)), url("../assets/images/hero-bio.jpg") center/cover;
   width: 100%;
@@ -325,6 +294,7 @@ This is the Main Home Page SCSS File
 .hero-section-wrapper__header {
   padding: 2rem 1rem 1rem 1rem;
   color: #FFFFFF;
+  font-family: "AvenirNext-Bold";
   font-size: 2rem;
   line-height: 32px;
   font-weight: 700;
@@ -362,6 +332,7 @@ This is the Main Home Page SCSS File
 .hero-section-wrapper-shows__sectionHeader {
   color: #FFFFFF;
   padding-bottom: 1rem;
+  font-family: "AvenirNext-Demi";
   font-size: 0.9rem;
   line-height: 22px;
   font-weight: 600;
@@ -377,6 +348,7 @@ This is the Main Home Page SCSS File
 .hero-section-wrapper-shows__header {
   color: #FFFFFF;
   padding-bottom: 1rem;
+  font-family: "AvenirNext-Bold";
   font-size: 2rem;
   line-height: 32px;
   font-weight: 700;
@@ -442,6 +414,9 @@ This is the Main Home Page SCSS File
   - Main Navigation: Hover effect to let user know which page is active & inactive
   - Photo Gallery: Photo Gallery Images are greyscale by default and on hover, each image returns to color
 */
+/*All Colors*/
+/*All Padding Styles*/
+/*All Media Queries Breakpoints*/
 /*
   Name: Anurag Bhattacharya
   Project Name: BandSite Project - Sprint 1
@@ -452,14 +427,17 @@ This is the Main Home Page SCSS File
   - Photo Gallery: Photo Gallery Images are greyscale by default and on hover, each image returns to color
 */
 @font-face {
-  font-family: "AvenirNext";
+  font-family: "AvenirNext-Regular";
   src: url("../../assets/fonts/AvenirNextLTPro-Regular.otf") format("otf");
-  font-weight: normal;
-  font-style: normal;
 }
-/*All Colors*/
-/*All Padding Styles*/
-/*All Media Queries Breakpoints*/
+@font-face {
+  font-family: "AvenirNext-Demi";
+  src: url("../../assets/fonts/AvenirNextLTPro-Regular.otf") format("otf");
+}
+@font-face {
+  font-family: "AvenirNext-Bold";
+  src: url("../../assets/fonts/AvenirNextLTPro-Regular.otf") format("otf");
+}
 .biography-wrapper__content {
   display: flex;
   flex-direction: column;
@@ -482,6 +460,7 @@ This is the Main Home Page SCSS File
   }
 }
 .biography-wrapper__title {
+  font-family: "AvenirNext-Bold";
   font-size: 2rem;
   line-height: 32px;
   font-weight: 700;
@@ -515,6 +494,7 @@ This is the Main Home Page SCSS File
   }
 }
 .bandMottoWrapper__quote, .bandMottoWrapper__person {
+  font-family: "AvenirNext-Demi";
   padding-bottom: 1rem;
   font-size: 0.8rem;
   line-height: 18px;
@@ -539,6 +519,7 @@ This is the Main Home Page SCSS File
   }
 }
 .biography-content-wrapper__title {
+  font-family: "AvenirNext-Demi";
   font-size: 0.9rem;
   line-height: 22px;
   font-weight: 600;
@@ -606,21 +587,6 @@ This is the Main Home Page SCSS File
   - Main Navigation: Hover effect to let user know which page is active & inactive
   - Photo Gallery: Photo Gallery Images are greyscale by default and on hover, each image returns to color
 */
-/*
-  Name: Anurag Bhattacharya
-  Project Name: BandSite Project - Sprint 1
-  Document Description: This is the Font Styles SCSSS Stylesheet
-
-  Diving Deeper:
-  - Main Navigation: Hover effect to let user know which page is active & inactive
-  - Photo Gallery: Photo Gallery Images are greyscale by default and on hover, each image returns to color
-*/
-@font-face {
-  font-family: "AvenirNext";
-  src: url("../../assets/fonts/AvenirNextLTPro-Regular.otf") format("otf");
-  font-weight: normal;
-  font-style: normal;
-}
 /*All Colors*/
 /*All Padding Styles*/
 /*All Media Queries Breakpoints*/
@@ -646,6 +612,7 @@ This is the Main Home Page SCSS File
   }
 }
 .photo-gallery-wrapper__title {
+  font-family: "AvenirNext-Bold";
   font-size: 2rem;
   line-height: 32px;
   font-weight: 700;
@@ -710,6 +677,9 @@ This is the Main Home Page SCSS File
   - Main Navigation: Hover effect to let user know which page is active & inactive
   - Photo Gallery: Photo Gallery Images are greyscale by default and on hover, each image returns to color
 */
+/*All Colors*/
+/*All Padding Styles*/
+/*All Media Queries Breakpoints*/
 /*
   Name: Anurag Bhattacharya
   Project Name: BandSite Project - Sprint 1
@@ -720,14 +690,17 @@ This is the Main Home Page SCSS File
   - Photo Gallery: Photo Gallery Images are greyscale by default and on hover, each image returns to color
 */
 @font-face {
-  font-family: "AvenirNext";
+  font-family: "AvenirNext-Regular";
   src: url("../../assets/fonts/AvenirNextLTPro-Regular.otf") format("otf");
-  font-weight: normal;
-  font-style: normal;
 }
-/*All Colors*/
-/*All Padding Styles*/
-/*All Media Queries Breakpoints*/
+@font-face {
+  font-family: "AvenirNext-Demi";
+  src: url("../../assets/fonts/AvenirNextLTPro-Regular.otf") format("otf");
+}
+@font-face {
+  font-family: "AvenirNext-Bold";
+  src: url("../../assets/fonts/AvenirNextLTPro-Regular.otf") format("otf");
+}
 .bandComments {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -746,6 +719,7 @@ This is the Main Home Page SCSS File
   }
 }
 .bandComments__title {
+  font-family: "AvenirNext-Bold";
   font-size: 2rem;
   line-height: 32px;
   font-weight: 700;
@@ -926,6 +900,7 @@ input:active {
   }
 }
 .commentsPanel__title {
+  font-family: "AvenirNext-Demi";
   font-size: 0.8rem;
   line-height: 18px;
   font-weight: 600;
@@ -990,6 +965,9 @@ input:active {
   - Main Navigation: Hover effect to let user know which page is active & inactive
   - Photo Gallery: Photo Gallery Images are greyscale by default and on hover, each image returns to color
 */
+/*All Colors*/
+/*All Padding Styles*/
+/*All Media Queries Breakpoints*/
 /*
   Name: Anurag Bhattacharya
   Project Name: BandSite Project - Sprint 1
@@ -1000,14 +978,17 @@ input:active {
   - Photo Gallery: Photo Gallery Images are greyscale by default and on hover, each image returns to color
 */
 @font-face {
-  font-family: "AvenirNext";
+  font-family: "AvenirNext-Regular";
   src: url("../../assets/fonts/AvenirNextLTPro-Regular.otf") format("otf");
-  font-weight: normal;
-  font-style: normal;
 }
-/*All Colors*/
-/*All Padding Styles*/
-/*All Media Queries Breakpoints*/
+@font-face {
+  font-family: "AvenirNext-Demi";
+  src: url("../../assets/fonts/AvenirNextLTPro-Regular.otf") format("otf");
+}
+@font-face {
+  font-family: "AvenirNext-Bold";
+  src: url("../../assets/fonts/AvenirNextLTPro-Regular.otf") format("otf");
+}
 .footerSection {
   background-color: #000000;
 }
@@ -1027,6 +1008,7 @@ input:active {
 .footerSection__title {
   color: #FFFFFF;
   padding-top: 2rem;
+  font-family: "AvenirNext-Bold";
   font-size: 2rem;
   line-height: 32px;
   font-weight: 700;
@@ -1075,6 +1057,7 @@ input:active {
 }
 .contactInfo__section-title p {
   color: #FFFFFF;
+  font-family: "AvenirNext-Demi";
   font-size: 0.8rem;
   line-height: 18px;
   font-weight: 600;
@@ -1140,8 +1123,9 @@ input:active {
 }
 
 * {
-  font-family: "AvenirNext";
-  color: #323232;
-  padding: 0rem;
-  margin: 0rem;
+  margin: 0;
+  padding: 0;
+  font-family: "Avenir-Regular";
+  font-weight: normal;
+  font-style: normal;
 }/*# sourceMappingURL=bio.css.map */

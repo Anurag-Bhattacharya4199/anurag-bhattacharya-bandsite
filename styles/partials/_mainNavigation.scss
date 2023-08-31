@@ -11,6 +11,8 @@
 //Mixin SCSS Stylesheet
 @import './mixins';
 
+@import './fonts';
+
 //Main Navigation Wrapper and Area Styles
 .main-navigation, .main-navigation__navigationArea
 {
@@ -39,6 +41,7 @@
   {
     list-style: none;
     width: 50%;
+    font-family: "AvenirNext-Bold";
     @include text-styles(
       0.9rem, 
       32px, 
@@ -47,6 +50,7 @@
   
     //Tablet and Onwards Size Styles
     @include tablet {
+      font-family: "AvenirNext-Demi";
       @include text-styles(
         1rem, 
         32px, 
