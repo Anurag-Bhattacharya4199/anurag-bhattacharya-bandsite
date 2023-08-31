@@ -58,17 +58,30 @@
 
   &__navigationArea li a {
     text-decoration: none;
+    color: $White;
   }
 
   //Main Navigation Inactive State Styles
   &__item-inactive-state 
   {
     color: $Mercury;
+
+    &:hover {
+      color: $White;
+    }
+  }
+
+  &__navigationArea li a.inactive-link {
+    color: $Mercury;
+
+    &:hover {
+      color: $White;
+    } 
   }
 }
 
 //Main Navigation Hover and Active State Styles
-.main-navigation li:hover, .main-navigation__item-active-state 
+.main-navigation li:hover, .main-navigation__item-active-state
 {
   color: $White;
     border-bottom: 
@@ -81,8 +94,4 @@
       {
         padding-bottom: 2rem;
       }
-
-  &:hover {
-    cursor: pointer;
-  }
 }

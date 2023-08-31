@@ -230,9 +230,19 @@
 }
 .main-navigation__navigationArea li a {
   text-decoration: none;
+  color: #FFFFFF;
 }
 .main-navigation__item-inactive-state {
   color: #E1E1E1;
+}
+.main-navigation__item-inactive-state:hover {
+  color: #FFFFFF;
+}
+.main-navigation__navigationArea li a.inactive-link {
+  color: #E1E1E1;
+}
+.main-navigation__navigationArea li a.inactive-link:hover {
+  color: #FFFFFF;
 }
 
 .main-navigation li:hover, .main-navigation__item-active-state {
@@ -243,9 +253,6 @@
   .main-navigation li:hover, .main-navigation__item-active-state {
     padding-bottom: 2rem;
   }
-}
-.main-navigation li:hover:hover, .main-navigation__item-active-state:hover {
-  cursor: pointer;
 }
 
 /*
