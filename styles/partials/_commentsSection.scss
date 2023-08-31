@@ -35,9 +35,12 @@
 
 .commentsForm {
   display: flex;
+  padding-bottom: $mobile-padding-between-components;
+  border-bottom: 1px solid $Mercury;
 
   @include tablet {
     position: relative;
+    padding-bottom: $desktop-tablet-padding-between-components;
   }
 
   &__imageWrapper {
@@ -71,6 +74,11 @@
 
   &__submitButtonWrapper {
     padding-top: $mobile-padding-between-components;
+    
+    @include tablet {
+      display: flex;
+      justify-content: flex-end;
+    }
   }
 
   &__submitButton {
@@ -136,7 +144,7 @@ input {
 
   &__comment {
     display: flex;
-    border-top: 1px solid $Mercury;
+    border-bottom: 1px solid $Mercury;
     padding-top: $mobile-padding-between-components;
     padding-bottom: $mobile-padding-between-components;
 

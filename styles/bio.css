@@ -761,10 +761,13 @@ This is the Main Home Page SCSS File
 
 .commentsForm {
   display: flex;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #E1E1E1;
 }
 @media screen and (min-width: 768px) {
   .commentsForm {
     position: relative;
+    padding-bottom: 2.25rem;
   }
 }
 .commentsForm__imageWrapper {
@@ -798,6 +801,12 @@ This is the Main Home Page SCSS File
 }
 .commentsForm__submitButtonWrapper {
   padding-top: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .commentsForm__submitButtonWrapper {
+    display: flex;
+    justify-content: flex-end;
+  }
 }
 .commentsForm__submitButton {
   background-color: #323232;
@@ -866,7 +875,7 @@ input:active {
 }
 .commentsPanel__comment {
   display: flex;
-  border-top: 1px solid #E1E1E1;
+  border-bottom: 1px solid #E1E1E1;
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
