@@ -1,2 +1,58 @@
 @import './mixins';
 
+.bandShows {
+    &__mainTitle {
+        padding-left: $mobile-padding-between-components;
+        padding-top: $mobile-padding-before-headlines;
+        padding-bottom: $mobile-padding-after-headlines;
+        font-family: "AvenirNext-Bold";
+        @include text-styles(2rem, 32px, 700);
+    }
+
+    &__headerContent {
+        display: none;
+    }
+
+    &__showData {
+        border-bottom: 1px solid $Mercury;
+        padding-bottom: $mobile-padding-between-components;
+    }
+
+    &__showContent {
+        padding-left: $mobile-padding-between-components;
+        padding-right: $mobile-padding-between-components;
+    }
+
+    &__dateTitle, &__venueTitle, &__locationTitle {
+        padding-top: $mobile-padding-before-headlines;
+        padding-bottom: $mobile-padding-after-headlines;
+        font-family: "AvenirNext-Demi";
+        color: $Silver;
+        @include text-styles(0.8rem, 18px, 600);
+    }
+
+    &__date {
+        font-family: "AvenirNext-Bold";
+        @include text-styles(0.8rem, 18px, 700);
+    }
+
+    &__venue, &__location {
+        @include text-styles(0.8rem, 18px, 400);
+    }
+
+    &__buttonWrapper {
+        padding-top: $mobile-padding-between-components;
+    }
+
+    &__button {
+        height: 40px;
+        width: 100%;
+        border-radius: 4px;
+        background-color: $BandSite-Black;
+        color: $White;
+
+        &:hover {
+            background-color: $BandSite-DarkBlack;
+        }
+    }
+}

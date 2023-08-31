@@ -399,6 +399,60 @@
 /*All Colors*/
 /*All Padding Styles*/
 /*All Media Queries Breakpoints*/
+.bandShows__mainTitle {
+  padding-left: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  font-family: "AvenirNext-Bold";
+  font-size: 2rem;
+  line-height: 32px;
+  font-weight: 700;
+}
+.bandShows__headerContent {
+  display: none;
+}
+.bandShows__showData {
+  border-bottom: 1px solid #E1E1E1;
+  padding-bottom: 1rem;
+}
+.bandShows__showContent {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.bandShows__dateTitle, .bandShows__venueTitle, .bandShows__locationTitle {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  font-family: "AvenirNext-Demi";
+  color: #AFAFAF;
+  font-size: 0.8rem;
+  line-height: 18px;
+  font-weight: 600;
+}
+.bandShows__date {
+  font-family: "AvenirNext-Bold";
+  font-size: 0.8rem;
+  line-height: 18px;
+  font-weight: 700;
+}
+.bandShows__venue, .bandShows__location {
+  font-size: 0.8rem;
+  line-height: 18px;
+  font-weight: 400;
+}
+.bandShows__buttonWrapper {
+  padding-top: 1rem;
+}
+.bandShows__button {
+  height: 40px;
+  width: 100%;
+  border-radius: 4px;
+  background-color: #323232;
+  color: #FFFFFF;
+}
+.bandShows__button:hover {
+  background-color: #000000;
+}
+
 /*
   Name: Anurag Bhattacharya
   Project Name: BandSite Project - Sprint 1
