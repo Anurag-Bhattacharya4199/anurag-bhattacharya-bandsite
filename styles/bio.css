@@ -378,7 +378,7 @@ This is the Main Home Page SCSS File
 }
 @media screen and (min-width: 768px) {
   .hero__sound-cloud iframe {
-    width: 75%;
+    width: 65%;
   }
 }
 @media screen and (min-width: 1280px) {

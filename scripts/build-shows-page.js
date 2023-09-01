@@ -48,17 +48,17 @@ function displayShows(bandShowsArray) {
   bandShowsHeaderWrapper.appendChild(bandShowsHeaderContent);
 
   const bandShowDateHeader = document.createElement("h3");
-  bandShowDateHeader.classList.add("shows__headerContent-date");
+  bandShowDateHeader.classList.add("bandShows__headerContent-date");
   bandShowDateHeader.innerText = "DATE";
   bandShowsHeaderContent.appendChild(bandShowDateHeader);
 
   const bandShowVenueHeader = document.createElement("h3");
-  bandShowVenueHeader.classList.add("shows__headerContent-venue");
+  bandShowVenueHeader.classList.add("bandShows__headerContent-venue");
   bandShowVenueHeader.innerText = "VENUE";
   bandShowsHeaderContent.appendChild(bandShowVenueHeader);
 
   const bandShowLocationHeader = document.createElement("h3");
-  bandShowLocationHeader.classList.add("shows__headerContent-location");
+  bandShowLocationHeader.classList.add("bandShows__headerContent-location");
   bandShowLocationHeader.innerText = "LOCATION";
   bandShowsHeaderContent.appendChild(bandShowLocationHeader);
 
