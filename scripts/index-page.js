@@ -41,7 +41,6 @@ function createCommentCard(commentsList) {
 
   const date = document.createElement("p");
   date.classList.add("commentsPanel__date");
-  console.log(commentsList);
   date.innerText = commentsList.date;
 
   const commentEl = document.createElement("span");

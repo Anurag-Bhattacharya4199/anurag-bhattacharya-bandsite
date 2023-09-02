@@ -423,15 +423,14 @@
 }
 .bandShows__dateTitle, .bandShows__venueTitle, .bandShows__locationTitle {
   color: #AFAFAF;
-  padding-bottom: 1rem;
   padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 .bandShows__date {
   font-family: "AvenirNext-Demi";
   font-size: 0.9rem;
   line-height: 22px;
   font-weight: 600;
-  padding-bottom: 1rem;
 }
 .bandShows__venue, .bandShows__location {
   font-size: 0.8rem;
@@ -451,101 +450,6 @@
   background-color: #000000;
 }
 
-@media screen and (min-width: 768px) {
-  .bandShows__mainTitle {
-    padding-left: 2.25rem;
-    padding-top: 3rem;
-    padding-bottom: 2.25rem;
-    font-size: 2.25rem;
-    line-height: 44px;
-    font-weight: 700;
-  }
-  .bandShows__headerContent {
-    display: flex;
-    justify-content: space-between;
-    padding-left: 2.25rem;
-    width: 95%;
-  }
-  .bandShows__headerContent-date, .bandShows__headerContent-venue, .bandShows__headerContent-location {
-    color: #AFAFAF;
-    font-family: "AvenirNext-Demi";
-    font-size: 0.9rem;
-    line-height: 22px;
-    font-weight: 600;
-  }
-  .bandShows__hidden {
-    visibility: hidden;
-    width: 10rem;
-  }
-  .bandShows__dateTitle, .bandShows__venueTitle, .bandShows__locationTitle {
-    display: none;
-  }
-  .bandShows__showData {
-    padding-top: 24px;
-    padding-bottom: 24px;
-    padding-left: 18px;
-    padding-right: 18px;
-    width: 100%;
-  }
-  .bandShows__showData:hover {
-    background-color: #FAFAFA;
-  }
-  .bandShows__showContent {
-    display: flex;
-    text-align: center;
-    justify-content: space-between;
-    width: 90%;
-  }
-  .bandShows__date {
-    padding-bottom: 0px;
-    font-family: "AvenirNext-Demi";
-    font-size: 0.9rem;
-    line-height: 22px;
-    font-weight: 600;
-  }
-  .bandShows__venue, .bandShows__location {
-    font-size: 0.9rem;
-    line-height: 22px;
-    font-weight: 400;
-  }
-  .bandShows__buttonWrapper {
-    padding-top: 0px;
-  }
-  .bandShows__button {
-    width: 150px;
-    padding-left: 32px;
-    padding-right: 32px;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .bandShows {
-    display: flex;
-  }
-  .bandShows__mainTitle {
-    padding-left: 4rem;
-    font-size: 2.25rem;
-    line-height: 44px;
-    font-weight: 700;
-  }
-  .bandShows__headerWrapper {
-    padding-left: 4rem;
-    padding-top: 5rem;
-    width: 100%;
-  }
-  .bandShows__headerContent {
-    display: flex;
-    justify-content: space-between;
-    padding-left: 2.25rem;
-    width: 100%;
-  }
-  .bandShows__headerContent-date, .bandShows__headerContent-venue, .bandShows__headerContent-location {
-    color: #AFAFAF;
-    font-family: "AvenirNext-Demi";
-    font-size: 0.9rem;
-    line-height: 22px;
-    font-weight: 600;
-  }
-}
 /*
   Name: Anurag Bhattacharya
   Project Name: BandSite Project - Sprint 1
@@ -599,10 +503,12 @@
 }
 .footerSection {
   background-color: #000000;
+  margin-top: 1rem;
 }
 @media screen and (min-width: 768px) {
   .footerSection {
     position: relative;
+    margin-top: 0px;
   }
 }
 .footerSection__content {

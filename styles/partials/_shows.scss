@@ -27,14 +27,14 @@
 
     &__dateTitle, &__venueTitle, &__locationTitle {
         color: $Silver;
-        padding-bottom: $mobile-padding-between-components;
         padding-top: $mobile-padding-between-components;
+        padding-bottom: $mobile-padding-between-components;
+        
     }
 
     &__date {
         font-family: "AvenirNext-Demi";
         @include text-styles(0.9rem, 22px, 600);
-        padding-bottom: $mobile-padding-after-headlines;
     }
 
     &__venue, &__location {
@@ -53,104 +53,6 @@
 
         &:hover {
             background-color: $BandSite-DarkBlack;
-        }
-    }
-}
-
-@include tablet {
-    .bandShows {
-        &__mainTitle {
-            padding-left: $desktop-tablet-padding-between-components;
-            padding-top: $desktop-tablet-padding-before-headlines;
-            padding-bottom: $desktop-tablet-padding-after-headlines;
-            @include text-styles(2.25rem, 44px, 700);
-        }
-
-        &__headerContent {
-            display: flex;
-            justify-content: space-between;
-            padding-left: $desktop-tablet-padding-between-components;
-            width: 95%;
-
-            &-date, &-venue, &-location {
-                color: $Silver;
-                font-family: "AvenirNext-Demi";
-                @include text-styles(0.9rem, 22px, 600);
-            }
-        }
-        &__hidden {
-            visibility: hidden;
-            width: 10rem;
-        }
-        &__dateTitle, &__venueTitle, &__locationTitle {
-            display: none;
-        }
-
-        &__showData {
-            padding-top: 24px;
-            padding-bottom: 24px;
-            padding-left: 18px;
-            padding-right: 18px;
-            width: 100%;
-
-            &:hover {
-                background-color: $Alabaster;
-            }
-        }
-        &__showContent {
-            display: flex;
-            text-align: center;
-            justify-content: space-between;
-            width: 90%;
-        }
-        &__date {
-            padding-bottom: 0px;
-            font-family: "AvenirNext-Demi";
-            @include text-styles(0.9rem, 22px, 600);
-        }
-
-        &__venue, &__location {
-            @include text-styles(0.9rem, 22px, 400);
-        }
-
-        &__buttonWrapper {
-            padding-top: 0px;
-        }
-
-        &__button {
-            width: 150px;
-            padding-left: 32px;
-            padding-right: 32px;
-        }
-    }
-}
-
-@include desktop {
-    .bandShows {
-        display: flex;
-
-        &__mainTitle {
-            padding-left: 4rem;
-            @include text-styles(2.25rem, 44px, 700);
-        }
-
-        &__headerWrapper {
-            padding-left: 4rem;
-            padding-top: 5rem;
-            width: 100%;
-        }
-
-        &__headerContent {
-            display: flex;
-            justify-content: space-between;
-            padding-left: $desktop-tablet-padding-between-components;
-            width: 100%;
-
-            &-date, &-venue, &-location {
-                color: $Silver;
-                font-family: "AvenirNext-Demi";
-                @include text-styles(0.9rem, 22px, 600);
-            }
         }
     }
 }

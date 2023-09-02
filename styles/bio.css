@@ -991,10 +991,12 @@ input:active {
 }
 .footerSection {
   background-color: #000000;
+  margin-top: 1rem;
 }
 @media screen and (min-width: 768px) {
   .footerSection {
     position: relative;
+    margin-top: 0px;
   }
 }
 .footerSection__content {

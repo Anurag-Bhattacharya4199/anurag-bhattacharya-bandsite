@@ -17,11 +17,13 @@
 .footerSection 
 {
   background-color: $BandSite-DarkBlack;
+  margin-top: $mobile-padding-between-components;
 
   //Tablet and Onwards Size Styles
   @include tablet 
   {
     position: relative;
+    margin-top: 0px;
   }
 
   //Footer Content Styles
