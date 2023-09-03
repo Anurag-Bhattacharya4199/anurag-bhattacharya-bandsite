@@ -996,7 +996,6 @@ input:active {
 @media screen and (min-width: 768px) {
   .footerSection {
     position: relative;
-    margin-top: 0px;
   }
 }
 .footerSection__content {

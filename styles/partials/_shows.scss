@@ -3,6 +3,26 @@
 .bandShows {
     &__headerContent {
         display: none;
+
+        @include tablet {
+            display: flex;
+            width: 70%;
+            padding-left: $desktop-tablet-padding-between-components;
+            justify-content: space-between;
+        }
+
+        @include desktop {
+            width: 100%;
+        }
+    }
+
+    &__headerContent-date, &__headerContent-venue, &__headerContent-location {
+        @include tablet {
+            padding-top: 24px;
+            padding-bottom: 24px;
+            padding-left: 18px;
+            padding-right: 18px;
+        }
     }
 
     &__mainTitle {
@@ -11,6 +31,13 @@
         padding-bottom: $mobile-padding-after-headlines;
         font-family: "AvenirNext-Bold";
         @include text-styles(2rem, 32px, 700);
+
+        @include tablet {
+            padding-left: $desktop-tablet-padding-between-components;
+            padding-top: $desktop-tablet-padding-before-headlines;
+            padding-bottom: $desktop-tablet-padding-after-headlines;
+            @include text-styles(2.25rem, 44px, 700);
+        }
     }
     
     &__showData {
@@ -18,31 +45,68 @@
         padding-bottom: $mobile-padding-between-components;
         display: flex;
         flex-direction: column;
+
+        @include tablet {
+            margin-left: $desktop-tablet-padding-between-components;
+            margin-right: $desktop-tablet-padding-between-components;
+            text-align: center;
+        }
     }
 
     &__showContent {
         padding-left: $mobile-padding-between-components;
         padding-right: $mobile-padding-between-components;
+
+        @include tablet {
+            display: flex;
+            justify-content: space-between;
+            padding-left: 0px;
+            padding-right: 0px;
+        }
     }
 
     &__dateTitle, &__venueTitle, &__locationTitle {
         color: $Silver;
         padding-top: $mobile-padding-between-components;
         padding-bottom: $mobile-padding-between-components;
-        
+
+        @include tablet {
+            display: none;
+        }
     }
 
     &__date {
         font-family: "AvenirNext-Demi";
         @include text-styles(0.9rem, 22px, 600);
+
+        @include tablet {
+            padding-top: 24px;
+            padding-bottom: 24px;
+            padding-left: 18px;
+            padding-right: 18px;
+        }
     }
 
     &__venue, &__location {
         @include text-styles(0.8rem, 18px, 400);
+
+        @include tablet {
+            padding-top: 24px;
+            padding-bottom: 24px;
+            padding-left: 18px;
+            padding-right: 18px; 
+        }
     }
 
     &__buttonWrapper {
         padding-top: $mobile-padding-between-components;
+
+        @include tablet {
+            padding-top: 24px;
+            padding-bottom: 24px;
+            padding-left: 18px;
+            padding-right: 18px;
+        }
     }
 
     &__button {
@@ -53,6 +117,12 @@
 
         &:hover {
             background-color: $BandSite-DarkBlack;
+        }
+
+        @include tablet {
+            width: 150px;
+            padding-left: 32px;
+            padding-right: 32px;
         }
     }
 }

@@ -402,6 +402,27 @@
 .bandShows__headerContent {
   display: none;
 }
+@media screen and (min-width: 768px) {
+  .bandShows__headerContent {
+    display: flex;
+    width: 70%;
+    padding-left: 2.25rem;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .bandShows__headerContent {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .bandShows__headerContent-date, .bandShows__headerContent-venue, .bandShows__headerContent-location {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+}
 .bandShows__mainTitle {
   padding-left: 1rem;
   padding-top: 2rem;
@@ -411,20 +432,50 @@
   line-height: 32px;
   font-weight: 700;
 }
+@media screen and (min-width: 768px) {
+  .bandShows__mainTitle {
+    padding-left: 2.25rem;
+    padding-top: 3rem;
+    padding-bottom: 2.25rem;
+    font-size: 2.25rem;
+    line-height: 44px;
+    font-weight: 700;
+  }
+}
 .bandShows__showData {
   border-bottom: 1px solid #E1E1E1;
   padding-bottom: 1rem;
   display: flex;
   flex-direction: column;
 }
+@media screen and (min-width: 768px) {
+  .bandShows__showData {
+    margin-left: 2.25rem;
+    margin-right: 2.25rem;
+    text-align: center;
+  }
+}
 .bandShows__showContent {
   padding-left: 1rem;
   padding-right: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .bandShows__showContent {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 }
 .bandShows__dateTitle, .bandShows__venueTitle, .bandShows__locationTitle {
   color: #AFAFAF;
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .bandShows__dateTitle, .bandShows__venueTitle, .bandShows__locationTitle {
+    display: none;
+  }
 }
 .bandShows__date {
   font-family: "AvenirNext-Demi";
@@ -432,13 +483,37 @@
   line-height: 22px;
   font-weight: 600;
 }
+@media screen and (min-width: 768px) {
+  .bandShows__date {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+}
 .bandShows__venue, .bandShows__location {
   font-size: 0.8rem;
   line-height: 18px;
   font-weight: 400;
 }
+@media screen and (min-width: 768px) {
+  .bandShows__venue, .bandShows__location {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+}
 .bandShows__buttonWrapper {
   padding-top: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .bandShows__buttonWrapper {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-left: 18px;
+    padding-right: 18px;
+  }
 }
 .bandShows__button {
   width: 100%;
@@ -448,6 +523,13 @@
 }
 .bandShows__button:hover {
   background-color: #000000;
+}
+@media screen and (min-width: 768px) {
+  .bandShows__button {
+    width: 150px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
 }
 
 /*
@@ -508,7 +590,6 @@
 @media screen and (min-width: 768px) {
   .footerSection {
     position: relative;
-    margin-top: 0px;
   }
 }
 .footerSection__content {
