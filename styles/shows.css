@@ -381,9 +381,7 @@
   }
 }
 .bandShows__mainTitle {
-  padding-left: 1rem;
-  padding-top: 2rem;
-  padding-bottom: 1rem;
+  padding: 2rem 0px 1rem 1rem;
   font-family: "AvenirNext-Bold";
   font-size: 2rem;
   line-height: 32px;
@@ -391,9 +389,7 @@
 }
 @media screen and (min-width: 768px) {
   .bandShows__mainTitle {
-    padding-left: 2.25rem;
-    padding-top: 3rem;
-    padding-bottom: 2.25rem;
+    padding: 2rem 0px 1rem 1rem;
     font-size: 2.25rem;
     line-height: 44px;
     font-weight: 700;
@@ -416,8 +412,7 @@
   background-color: #E1E1E1;
 }
 .bandShows__showContent {
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding: 0px 1rem;
 }
 @media screen and (min-width: 768px) {
   .bandShows__showContent {
@@ -429,8 +424,7 @@
 }
 .bandShows__dateTitle, .bandShows__venueTitle, .bandShows__locationTitle {
   color: #AFAFAF;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding: 1rem 0px;
 }
 @media screen and (min-width: 768px) {
   .bandShows__dateTitle, .bandShows__venueTitle, .bandShows__locationTitle {
@@ -593,8 +587,7 @@
 }
 @media screen and (min-width: 768px) {
   .bandSiteFooter__socialIcons {
-    padding-top: 3.75rem;
-    padding-left: 2.25rem;
+    padding: 3.75rem 0px 0px 2.25rem;
   }
 }
 .bandSiteFooter__socialIcons-icon {
@@ -606,8 +599,7 @@
 @media screen and (min-width: 768px) {
   .bandSiteFooter__contactInfo {
     display: flex;
-    padding-top: 2.25rem;
-    padding-bottom: 2.25rem;
+    padding: 2.25rem 0px;
   }
 }
 @media screen and (min-width: 768px) {

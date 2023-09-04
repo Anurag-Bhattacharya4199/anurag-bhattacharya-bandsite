@@ -3,12 +3,10 @@
 @import './fonts';
 
 .bandComments {
-  padding-left: $mobile-padding-between-components;
-  padding-right: $mobile-padding-between-components;
+  padding: 0px $mobile-padding-between-components;
 
   @include tablet {
-    padding-left: $desktop-tablet-padding-between-components;
-    padding-right: $desktop-tablet-padding-between-components;
+    padding: 0px $desktop-tablet-padding-between-components;
   }
 
   @include desktop {
@@ -30,8 +28,7 @@
 
   &__content {
     @include tablet {
-      padding-left: $desktop-tablet-padding-between-components;
-      padding-right: $desktop-tablet-padding-between-components;
+      padding: 0px $desktop-tablet-padding-between-components;
     }
   }
 }
@@ -137,23 +134,19 @@ input {
 }
 
 .commentsPanel {
-  padding-top: $mobile-padding-between-components;
-  padding-bottom: $mobile-padding-between-components;
+  padding: $mobile-padding-between-components 0px;
 
   @include tablet {
-    padding-top: $desktop-tablet-padding-between-components;
-    padding-bottom: $desktop-tablet-padding-between-components;
+    padding: $desktop-tablet-padding-between-components 0px;
   }
 
   &__comment {
     display: flex;
     border-bottom: 1px solid $Mercury;
-    padding-top: $mobile-padding-between-components;
-    padding-bottom: $mobile-padding-between-components;
+    padding: $mobile-padding-between-components 0px;
 
     @include tablet {
-      padding-top: $desktop-tablet-padding-between-components;
-      padding-bottom: $desktop-tablet-padding-between-components;
+      padding: $desktop-tablet-padding-between-components 0px;
     }
   }
 

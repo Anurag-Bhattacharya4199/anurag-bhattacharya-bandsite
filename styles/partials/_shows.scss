@@ -34,16 +34,12 @@
     }
 
     &__mainTitle {
-        padding-left: $mobile-padding-between-components;
-        padding-top: $mobile-padding-before-headlines;
-        padding-bottom: $mobile-padding-after-headlines;
+        padding: $mobile-padding-before-headlines 0px $mobile-padding-after-headlines $mobile-padding-between-components;
         font-family: "AvenirNext-Bold";
         @include text-styles(2rem, 32px, 700);
 
         @include tablet {
-            padding-left: $desktop-tablet-padding-between-components;
-            padding-top: $desktop-tablet-padding-before-headlines;
-            padding-bottom: $desktop-tablet-padding-after-headlines;
+            padding: $mobile-padding-before-headlines 0px $mobile-padding-after-headlines $mobile-padding-between-components;
             @include text-styles(2.25rem, 44px, 700);
         }
     }
@@ -66,8 +62,7 @@
     }
 
     &__showContent {
-        padding-left: $mobile-padding-between-components;
-        padding-right: $mobile-padding-between-components;
+        padding: 0px $mobile-padding-between-components;
 
         @include tablet {
             display: flex;
@@ -79,8 +74,7 @@
 
     &__dateTitle, &__venueTitle, &__locationTitle {
         color: $Silver;
-        padding-top: $mobile-padding-between-components;
-        padding-bottom: $mobile-padding-between-components;
+        padding: $mobile-padding-between-components 0px;
 
         @include tablet {
             display: none;

@@ -450,8 +450,7 @@ This is the Main Home Page SCSS File
 }
 .bandMottoWrapper__quote, .bandMottoWrapper__person {
   font-family: "AvenirNext-Demi";
-  padding-bottom: 1rem;
-  padding-top: 1rem;
+  padding: 1rem 0px;
   font-size: 0.8rem;
   line-height: 18px;
   font-weight: 600;
@@ -691,13 +690,11 @@ This is the Main Home Page SCSS File
   font-style: normal;
 }
 .bandComments {
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding: 0px 1rem;
 }
 @media screen and (min-width: 768px) {
   .bandComments {
-    padding-left: 2.25rem;
-    padding-right: 2.25rem;
+    padding: 0px 2.25rem;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -724,8 +721,7 @@ This is the Main Home Page SCSS File
 }
 @media screen and (min-width: 768px) {
   .bandComments__content {
-    padding-left: 2.25rem;
-    padding-right: 2.25rem;
+    padding: 0px 2.25rem;
   }
 }
 
@@ -834,25 +830,21 @@ input:active {
 }
 
 .commentsPanel {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding: 1rem 0px;
 }
 @media screen and (min-width: 768px) {
   .commentsPanel {
-    padding-top: 2.25rem;
-    padding-bottom: 2.25rem;
+    padding: 2.25rem 0px;
   }
 }
 .commentsPanel__comment {
   display: flex;
   border-bottom: 1px solid #E1E1E1;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding: 1rem 0px;
 }
 @media screen and (min-width: 768px) {
   .commentsPanel__comment {
-    padding-top: 2.25rem;
-    padding-bottom: 2.25rem;
+    padding: 2.25rem 0px;
   }
 }
 .commentsPanel__commentContent {
@@ -1028,8 +1020,7 @@ input:active {
 }
 @media screen and (min-width: 768px) {
   .bandSiteFooter__socialIcons {
-    padding-top: 3.75rem;
-    padding-left: 2.25rem;
+    padding: 3.75rem 0px 0px 2.25rem;
   }
 }
 .bandSiteFooter__socialIcons-icon {
@@ -1041,8 +1032,7 @@ input:active {
 @media screen and (min-width: 768px) {
   .bandSiteFooter__contactInfo {
     display: flex;
-    padding-top: 2.25rem;
-    padding-bottom: 2.25rem;
+    padding: 2.25rem 0px;
   }
 }
 @media screen and (min-width: 768px) {

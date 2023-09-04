@@ -104,8 +104,7 @@
   &__quote, &__person 
   {
     font-family: "AvenirNext-Demi";
-    padding-bottom: $mobile-padding-between-components;
-    padding-top: $mobile-padding-between-components;
+    padding: $mobile-padding-between-components 0px;
     @include text-styles(
       0.8rem, 
       18px, 
