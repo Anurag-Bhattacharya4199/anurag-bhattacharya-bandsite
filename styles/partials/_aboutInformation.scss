@@ -14,7 +14,7 @@
 @import './fonts';
 
 //Biography Wrapper Styles
-.biography-wrapper 
+.bioWrapper 
 {
 
   //Biography Content Styles
@@ -37,7 +37,7 @@
   }
 
   //Biography Title Area Styles
-  &__title-area 
+  &__mainTitle-wrapper 
   {
     padding-top: $mobile-padding-before-headlines;
     padding-bottom: $mobile-padding-after-headlines;
@@ -51,7 +51,7 @@
   }
 
   //Biography Title Styles
-  &__title 
+  &__mainTitle
   {
     font-family: "AvenirNext-Bold";
     @include text-styles(2rem, 32px, 700);
@@ -105,6 +105,7 @@
   {
     font-family: "AvenirNext-Demi";
     padding-bottom: $mobile-padding-between-components;
+    padding-top: $mobile-padding-between-components;
     @include text-styles(
       0.8rem, 
       18px, 
@@ -125,7 +126,7 @@
 }
 
 //Band Biography Text Wrapper Styles
-.biography-content-wrapper 
+.bioContentWrapper
 {
   padding-top: $mobile-padding-before-headlines;
   padding-bottom: $mobile-padding-between-components;
@@ -141,7 +142,7 @@
   }
 
   //Band Biography Title Styles
-  &__title 
+  &__mainTitle
   {
     font-family: "AvenirNext-Demi";
     @include text-styles(
@@ -161,8 +162,22 @@
     }
   }
 
+  //Band Biography Content Styles
+  &__content 
+  {
+    padding-top: $mobile-padding-between-components;
+
+    //Tablet and Onwards Size Styles
+    @include tablet 
+    {
+      display: flex;
+      justify-content: space-between;
+      padding-top: $desktop-tablet-padding-between-components;
+    }
+  }
+
   //Band Biography Text Styles
-  &__text, &__text-1stSection 
+  &__content-1, &__content-2 
   {
     padding-bottom: $mobile-padding-between-components;
 
@@ -183,25 +198,11 @@
   }
 
   //Band Biography Text Styles
-  &__text-1stSection 
+  &__content-1 
   {
     @include tablet 
     {
       padding-right: $mobile-padding-between-components;
-    }
-  }
-
-  //Band Biography Content Styles
-  &__content 
-  {
-    padding-top: $mobile-padding-between-components;
-
-    //Tablet and Onwards Size Styles
-    @include tablet 
-    {
-      display: flex;
-      justify-content: space-between;
-      padding-top: $desktop-tablet-padding-between-components;
     }
   }
 }

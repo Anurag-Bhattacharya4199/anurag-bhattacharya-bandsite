@@ -59,7 +59,7 @@ function createCommentCard(commentsList) {
 }
 
 function renderComments() {
-  const commentsEl = document.querySelector(".commentsPanel__commentList");
+  const commentsEl = document.querySelector(".commentsPanel__content");
 
   commentsEl.innerHTML = "";
 

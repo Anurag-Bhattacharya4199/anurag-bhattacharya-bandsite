@@ -17,7 +17,7 @@
     justify-content: center;
   }
 
-  &__title {
+  &__mainTitle {
     font-family: "AvenirNext-Bold";
     @include text-styles(2rem, 32px, 700);
     padding-top: $mobile-padding-before-headlines;
@@ -28,7 +28,7 @@
     }
   }
 
-  &__commentsForm-plus-comments {
+  &__content {
     @include tablet {
       padding-left: $desktop-tablet-padding-between-components;
       padding-right: $desktop-tablet-padding-between-components;
@@ -46,7 +46,7 @@
     padding-bottom: $desktop-tablet-padding-between-components;
   }
 
-  &__imageWrapper {
+  &__avaterWrapper {
     padding-right: $mobile-padding-between-components;
 
     @include tablet {

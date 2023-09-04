@@ -14,7 +14,7 @@
 @import './fonts';
 
 //Hero Section Wrapper Styles
-.hero-section-wrapper 
+.heroWrapper
 {
   background: 
     linear-gradient(rgba(50,50,50,0.5), rgba(50,50,50,0.5)), 
@@ -32,6 +32,10 @@
   @include tablet 
   {
     height: 400px;
+  }
+
+  @include desktop {
+    height: 600px;
   }
 
   //Hero Section Title Styles
@@ -63,7 +67,7 @@
   }
 }
 
-.hero-section-wrapper-shows {
+.heroWrapper-shows {
   background: 
     linear-gradient(rgba(50,50,50,0.5), rgba(50,50,50,0.5)), 
     url('../assets/images/hero-shows.jpg') 
@@ -87,7 +91,7 @@
       padding: $desktop-tablet-padding-between-components;
     }
   }
-  &__sectionHeader
+  &__mainHeader
   {
     color: $White;
     padding-bottom: $mobile-padding-after-headlines;
@@ -105,7 +109,7 @@
     }
   }
 
-  &__header 
+  &__subHeader 
   {
     color: $White;
     padding-bottom: $mobile-padding-after-headlines;
@@ -127,20 +131,20 @@
       padding-right: $desktop-tablet-padding-between-components;
     }
   }
-}
 
-.header-soundcloud-section {
-  @include desktop {
-    display: flex;
+  &__soundCloud {
+    @include desktop {
+      display: flex;
+    }
   }
-}
 
-.hero__sound-cloud iframe {
-  width: 100%;
+  &__soundCloudBox iframe {
+    width: 100%;
   @include tablet {
     width: 65%;
   }
   @include desktop {
     width: 450px;
+  }
   }
 }

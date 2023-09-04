@@ -64,94 +64,6 @@ This is the Main Home Page SCSS File
 /*All Colors*/
 /*All Padding Styles*/
 /*All Media Queries Breakpoints*/
-.header-section {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #323232;
-}
-@media screen and (min-width: 768px) {
-  .header-section {
-    flex-direction: row;
-  }
-}
-
-/*
-  Name: Anurag Bhattacharya
-  Project Name: BandSite Project - Sprint 1
-  Document Description: This is the Band Site Logo SCSSS Stylesheet
-
-  Diving Deeper:
-  - Main Navigation: Hover effect to let user know which page is active & inactive
-  - Photo Gallery: Photo Gallery Images are greyscale by default and on hover, each image returns to color
-*/
-/*
-  Name: Anurag Bhattacharya
-  Project Name: BandSite Project - Sprint 1
-  Document Description: This is the Mixins SCSSS Stylesheet
-
-  Diving Deeper:
-  - Main Navigation: Hover effect to let user know which page is active & inactive
-  - Photo Gallery: Photo Gallery Images are greyscale by default and on hover, each image returns to color
-*/
-/*
-  Name: Anurag Bhattacharya
-  Project Name: BandSite Project - Sprint 1
-  Document Description: This is the Photo Gallery Section SCSSS Stylesheet
-
-  Diving Deeper:
-  - Main Navigation: Hover effect to let user know which page is active & inactive
-  - Photo Gallery: Photo Gallery Images are greyscale by default and on hover, each image returns to color
-*/
-/*All Colors*/
-/*All Padding Styles*/
-/*All Media Queries Breakpoints*/
-.main-logo-wrapper {
-  padding-top: 2rem;
-}
-@media screen and (min-width: 768px) {
-  .main-logo-wrapper {
-    padding: 3rem 2.25rem 2.25rem 2.25rem;
-  }
-}
-
-.main-logo-wrapper__logo, .footerBandSiteLogo__bandSiteLogo {
-  max-height: 20px;
-  max-width: 120px;
-}
-
-/*
-  Name: Anurag Bhattacharya
-  Project Name: BandSite Project - Sprint 1
-  Document Description: This is the Main Navigation SCSSS Stylesheet
-
-  Diving Deeper:
-  - Main Navigation: Hover effect to let user know which page is active & inactive
-  - Photo Gallery: Photo Gallery Images are greyscale by default and on hover, each image returns to color
-*/
-/*
-  Name: Anurag Bhattacharya
-  Project Name: BandSite Project - Sprint 1
-  Document Description: This is the Mixins SCSSS Stylesheet
-
-  Diving Deeper:
-  - Main Navigation: Hover effect to let user know which page is active & inactive
-  - Photo Gallery: Photo Gallery Images are greyscale by default and on hover, each image returns to color
-*/
-/*
-  Name: Anurag Bhattacharya
-  Project Name: BandSite Project - Sprint 1
-  Document Description: This is the Photo Gallery Section SCSSS Stylesheet
-
-  Diving Deeper:
-  - Main Navigation: Hover effect to let user know which page is active & inactive
-  - Photo Gallery: Photo Gallery Images are greyscale by default and on hover, each image returns to color
-*/
-/*All Colors*/
-/*All Padding Styles*/
-/*All Media Queries Breakpoints*/
 /*
   Name: Anurag Bhattacharya
   Project Name: BandSite Project - Sprint 1
@@ -179,23 +91,46 @@ This is the Main Home Page SCSS File
   font-weight: 700;
   font-style: normal;
 }
-.main-navigation, .main-navigation__navigationArea {
+.mainHeader {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #323232;
 }
-
-.main-navigation {
+@media screen and (min-width: 768px) {
+  .mainHeader {
+    flex-direction: row;
+  }
+}
+.mainHeader__bandSiteLogo-wrapper {
+  padding-top: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .mainHeader__bandSiteLogo-wrapper {
+    padding: 3rem 2.25rem 2.25rem 2.25rem;
+  }
+}
+.mainHeader__bandSiteLogo-wrapper-image {
+  max-height: 20px;
+  max-width: 120px;
+}
+.mainHeader__mainNavigation {
+  width: 100%;
   padding-top: 1rem;
 }
 @media screen and (min-width: 768px) {
-  .main-navigation {
+  .mainHeader__mainNavigation {
     padding-top: 2.25rem;
   }
 }
-.main-navigation__navigationArea {
+.mainHeader__mainNavigation-list {
+  width: 100%;
   display: flex;
   text-align: center;
 }
-.main-navigation__navigationArea li {
+.mainHeader__mainNavigation-list li {
   list-style: none;
   width: 50%;
   font-family: "AvenirNext-Bold";
@@ -204,7 +139,7 @@ This is the Main Home Page SCSS File
   font-weight: 700;
 }
 @media screen and (min-width: 768px) {
-  .main-navigation__navigationArea li {
+  .mainHeader__mainNavigation-list li {
     font-family: "AvenirNext-Demi";
     font-size: 1rem;
     line-height: 32px;
@@ -212,29 +147,22 @@ This is the Main Home Page SCSS File
     width: 20%;
   }
 }
-.main-navigation__navigationArea li a {
+.mainHeader__mainNavigation-list li a {
   text-decoration: none;
   color: #FFFFFF;
 }
-.main-navigation__item-inactive-state {
+.mainHeader__mainNavigation-list li a.mainHeader__mainNavigation-inactive-list {
   color: #E1E1E1;
 }
-.main-navigation__item-inactive-state:hover {
+.mainHeader__mainNavigation-list li a.mainHeader__mainNavigation-inactive-list:hover {
   color: #FFFFFF;
 }
-.main-navigation__navigationArea li a.inactive-link {
-  color: #E1E1E1;
-}
-.main-navigation__navigationArea li a.inactive-link:hover {
-  color: #FFFFFF;
-}
-
-.main-navigation li:hover, .main-navigation__item-active-state {
+.mainHeader__mainNavigation-list li:hover, .mainHeader__mainNavigation-list-active {
   color: #FFFFFF;
   border-bottom: 3.5px solid #FFFFFF;
 }
 @media screen and (min-width: 768px) {
-  .main-navigation li:hover, .main-navigation__item-active-state {
+  .mainHeader__mainNavigation-list li:hover, .mainHeader__mainNavigation-list-active {
     padding-bottom: 2rem;
   }
 }
@@ -296,7 +224,7 @@ This is the Main Home Page SCSS File
   font-weight: 700;
   font-style: normal;
 }
-.hero-section-wrapper {
+.heroWrapper {
   background: linear-gradient(rgba(50, 50, 50, 0.5), rgba(50, 50, 50, 0.5)), url("../assets/images/hero-bio.jpg") center/cover;
   width: 100%;
   height: 200px;
@@ -305,11 +233,16 @@ This is the Main Home Page SCSS File
   justify-content: center;
 }
 @media screen and (min-width: 768px) {
-  .hero-section-wrapper {
+  .heroWrapper {
     height: 400px;
   }
 }
-.hero-section-wrapper__header {
+@media screen and (min-width: 1280px) {
+  .heroWrapper {
+    height: 600px;
+  }
+}
+.heroWrapper__header {
   padding: 2rem 1rem 1rem 1rem;
   color: #FFFFFF;
   font-family: "AvenirNext-Bold";
@@ -318,7 +251,7 @@ This is the Main Home Page SCSS File
   font-weight: 700;
 }
 @media screen and (min-width: 768px) {
-  .hero-section-wrapper__header {
+  .heroWrapper__header {
     padding: 3rem 2.25rem 2.25rem 2.25rem;
     font-size: 3.75rem;
     line-height: 44px;
@@ -326,7 +259,7 @@ This is the Main Home Page SCSS File
   }
 }
 
-.hero-section-wrapper-shows {
+.heroWrapper-shows {
   background: linear-gradient(rgba(50, 50, 50, 0.5), rgba(50, 50, 50, 0.5)), url("../assets/images/hero-shows.jpg") center/cover;
   width: 100%;
   height: 350px;
@@ -335,19 +268,19 @@ This is the Main Home Page SCSS File
   justify-content: center;
 }
 @media screen and (min-width: 768px) {
-  .hero-section-wrapper-shows {
+  .heroWrapper-shows {
     height: 450px;
   }
 }
-.hero-section-wrapper-shows__content {
+.heroWrapper-shows__content {
   padding: 1rem;
 }
 @media screen and (min-width: 768px) {
-  .hero-section-wrapper-shows__content {
+  .heroWrapper-shows__content {
     padding: 2.25rem;
   }
 }
-.hero-section-wrapper-shows__sectionHeader {
+.heroWrapper-shows__mainHeader {
   color: #FFFFFF;
   padding-bottom: 1rem;
   font-family: "AvenirNext-Demi";
@@ -356,14 +289,14 @@ This is the Main Home Page SCSS File
   font-weight: 600;
 }
 @media screen and (min-width: 768px) {
-  .hero-section-wrapper-shows__sectionHeader {
+  .heroWrapper-shows__mainHeader {
     padding-bottom: 2.25rem;
     font-size: 2rem;
     line-height: 32px;
     font-weight: 600;
   }
 }
-.hero-section-wrapper-shows__header {
+.heroWrapper-shows__subHeader {
   color: #FFFFFF;
   padding-bottom: 1rem;
   font-family: "AvenirNext-Bold";
@@ -372,7 +305,7 @@ This is the Main Home Page SCSS File
   font-weight: 700;
 }
 @media screen and (min-width: 768px) {
-  .hero-section-wrapper-shows__header {
+  .heroWrapper-shows__subHeader {
     padding-bottom: 2.25rem;
     font-size: 3.75rem;
     line-height: 44px;
@@ -380,27 +313,25 @@ This is the Main Home Page SCSS File
   }
 }
 @media screen and (min-width: 1280px) {
-  .hero-section-wrapper-shows__header {
+  .heroWrapper-shows__subHeader {
     padding-right: 2.25rem;
   }
 }
-
 @media screen and (min-width: 1280px) {
-  .header-soundcloud-section {
+  .heroWrapper-shows__soundCloud {
     display: flex;
   }
 }
-
-.hero__sound-cloud iframe {
+.heroWrapper-shows__soundCloudBox iframe {
   width: 100%;
 }
 @media screen and (min-width: 768px) {
-  .hero__sound-cloud iframe {
+  .heroWrapper-shows__soundCloudBox iframe {
     width: 65%;
   }
 }
 @media screen and (min-width: 1280px) {
-  .hero__sound-cloud iframe {
+  .heroWrapper-shows__soundCloudBox iframe {
     width: 450px;
   }
 }
@@ -462,46 +393,46 @@ This is the Main Home Page SCSS File
   font-weight: 700;
   font-style: normal;
 }
-.biography-wrapper__content {
+.bioWrapper__content {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 0px 1rem;
 }
 @media screen and (min-width: 768px) {
-  .biography-wrapper__content {
+  .bioWrapper__content {
     padding: 0px 2.25rem;
   }
 }
-.biography-wrapper__title-area {
+.bioWrapper__mainTitle-wrapper {
   padding-top: 2rem;
   padding-bottom: 1rem;
 }
 @media screen and (min-width: 768px) {
-  .biography-wrapper__title-area {
+  .bioWrapper__mainTitle-wrapper {
     padding-top: 3rem;
     padding-bottom: 2.25rem;
   }
 }
-.biography-wrapper__title {
+.bioWrapper__mainTitle {
   font-family: "AvenirNext-Bold";
   font-size: 2rem;
   line-height: 32px;
   font-weight: 700;
 }
 @media screen and (min-width: 768px) {
-  .biography-wrapper__title {
+  .bioWrapper__mainTitle {
     font-size: 2.25rem;
     line-height: 44px;
     font-weight: 700;
   }
 }
 @media screen and (min-width: 768px) {
-  .biography-wrapper__image-wrapper {
+  .bioWrapper__image-wrapper {
     padding: 0px 2.25rem;
   }
 }
-.biography-wrapper__image {
+.bioWrapper__image {
   display: flex;
   text-align: center;
   justify-content: center;
@@ -520,6 +451,7 @@ This is the Main Home Page SCSS File
 .bandMottoWrapper__quote, .bandMottoWrapper__person {
   font-family: "AvenirNext-Demi";
   padding-bottom: 1rem;
+  padding-top: 1rem;
   font-size: 0.8rem;
   line-height: 18px;
   font-weight: 600;
@@ -533,54 +465,54 @@ This is the Main Home Page SCSS File
   }
 }
 
-.biography-content-wrapper {
+.bioContentWrapper {
   padding-top: 2rem;
   padding-bottom: 1rem;
 }
 @media screen and (min-width: 768px) {
-  .biography-content-wrapper {
+  .bioContentWrapper {
     padding: 3rem 2.25rem 2.25rem 2.25rem;
   }
 }
-.biography-content-wrapper__title {
+.bioContentWrapper__mainTitle {
   font-family: "AvenirNext-Demi";
   font-size: 0.9rem;
   line-height: 22px;
   font-weight: 600;
 }
 @media screen and (min-width: 768px) {
-  .biography-content-wrapper__title {
+  .bioContentWrapper__mainTitle {
     font-size: 2rem;
     line-height: 32px;
     font-weight: 600;
   }
 }
-.biography-content-wrapper__text, .biography-content-wrapper__text-1stSection {
+.bioContentWrapper__content {
+  padding-top: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .bioContentWrapper__content {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2.25rem;
+  }
+}
+.bioContentWrapper__content-1, .bioContentWrapper__content-2 {
   padding-bottom: 1rem;
   font-size: 0.8rem;
   line-height: 18px;
   font-weight: 400;
 }
 @media screen and (min-width: 768px) {
-  .biography-content-wrapper__text, .biography-content-wrapper__text-1stSection {
+  .bioContentWrapper__content-1, .bioContentWrapper__content-2 {
     font-size: 0.9rem;
     line-height: 22px;
     font-weight: 400;
   }
 }
 @media screen and (min-width: 768px) {
-  .biography-content-wrapper__text-1stSection {
+  .bioContentWrapper__content-1 {
     padding-right: 1rem;
-  }
-}
-.biography-content-wrapper__content {
-  padding-top: 1rem;
-}
-@media screen and (min-width: 768px) {
-  .biography-content-wrapper__content {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 2.25rem;
   }
 }
 
@@ -614,72 +546,99 @@ This is the Main Home Page SCSS File
 /*All Colors*/
 /*All Padding Styles*/
 /*All Media Queries Breakpoints*/
-.photo-gallery-wrapper {
+/*
+  Name: Anurag Bhattacharya
+  Project Name: BandSite Project - Sprint 1
+  Document Description: This is the Font Styles SCSSS Stylesheet
+
+  Diving Deeper:
+  - Main Navigation: Hover effect to let user know which page is active & inactive
+  - Photo Gallery: Photo Gallery Images are greyscale by default and on hover, each image returns to color
+*/
+@font-face {
+  font-family: "AvenirNext-Regular";
+  src: url("../../assets/fonts/AvenirNextLTPro.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "AvenirNext-Demi";
+  src: url("../../assets/fonts/AvenirNextLTProDemi.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "AvenirNext-Bold";
+  src: url("../../assets/fonts/AvenirNextLTProBold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+.photoGalleryWrapper {
   background-color: #FAFAFA;
 }
-.photo-gallery-wrapper__content {
+.photoGalleryWrapper__content {
   padding: 0px 1rem;
 }
 @media screen and (min-width: 768px) {
-  .photo-gallery-wrapper__content {
+  .photoGalleryWrapper__content {
     padding: 2.25rem;
   }
 }
-.photo-gallery-wrapper__titleArea {
+.photoGalleryWrapper__mainTitleWrapper {
   padding-top: 2rem;
   padding-bottom: 1rem;
 }
 @media screen and (min-width: 768px) {
-  .photo-gallery-wrapper__titleArea {
+  .photoGalleryWrapper__mainTitleWrapper {
     padding-top: 3rem;
     padding-bottom: 2.25rem;
   }
 }
-.photo-gallery-wrapper__title {
+.photoGalleryWrapper__mainTitle {
   font-family: "AvenirNext-Bold";
   font-size: 2rem;
   line-height: 32px;
   font-weight: 700;
 }
 @media screen and (min-width: 768px) {
-  .photo-gallery-wrapper__title {
+  .photoGalleryWrapper__mainTitle {
     font-size: 2.25rem;
     line-height: 44px;
     font-weight: 700;
   }
 }
-.photo-gallery-wrapper__photo-gallery {
+.photoGalleryWrapper__photo-gallery {
   display: flex;
   flex-direction: column;
   text-align: center;
   justify-content: center;
 }
 @media screen and (min-width: 768px) {
-  .photo-gallery-wrapper__photo-gallery {
+  .photoGalleryWrapper__photo-gallery {
     flex-direction: row;
     flex-wrap: wrap;
   }
 }
-.photo-gallery-wrapper__photo-gallery-image-area {
+.photoGalleryWrapper__photo-gallery-area {
   padding-bottom: 1rem;
 }
 @media screen and (min-width: 768px) {
-  .photo-gallery-wrapper__photo-gallery-image-area {
+  .photoGalleryWrapper__photo-gallery-area {
     width: 30%;
     padding-right: 1rem;
   }
 }
 @media screen and (min-width: 1280px) {
-  .photo-gallery-wrapper__photo-gallery-image-area {
+  .photoGalleryWrapper__photo-gallery-area {
     padding-right: 0.5rem;
   }
 }
-.photo-gallery-wrapper__image {
+.photoGalleryWrapper__photo {
   height: auto;
   width: 100%;
   filter: grayscale(100%);
 }
-.photo-gallery-wrapper__image:hover {
+.photoGalleryWrapper__photo:hover {
   filter: grayscale(0%);
 }
 
@@ -748,7 +707,7 @@ This is the Main Home Page SCSS File
     justify-content: center;
   }
 }
-.bandComments__title {
+.bandComments__mainTitle {
   font-family: "AvenirNext-Bold";
   font-size: 2rem;
   line-height: 32px;
@@ -757,14 +716,14 @@ This is the Main Home Page SCSS File
   padding-bottom: 1rem;
 }
 @media screen and (min-width: 768px) {
-  .bandComments__title {
+  .bandComments__mainTitle {
     font-size: 2.25rem;
     line-height: 44px;
     font-weight: 700;
   }
 }
 @media screen and (min-width: 768px) {
-  .bandComments__commentsForm-plus-comments {
+  .bandComments__content {
     padding-left: 2.25rem;
     padding-right: 2.25rem;
   }
@@ -781,11 +740,11 @@ This is the Main Home Page SCSS File
     padding-bottom: 2.25rem;
   }
 }
-.commentsForm__imageWrapper {
+.commentsForm__avaterWrapper {
   padding-right: 1rem;
 }
 @media screen and (min-width: 768px) {
-  .commentsForm__imageWrapper {
+  .commentsForm__avaterWrapper {
     padding-right: 1rem;
   }
 }
@@ -1025,24 +984,23 @@ input:active {
   font-weight: 700;
   font-style: normal;
 }
-.footerSection {
+.bandSiteFooter {
   background-color: #000000;
-  margin-top: 1rem;
 }
 @media screen and (min-width: 768px) {
-  .footerSection {
+  .bandSiteFooter {
     position: relative;
   }
 }
-.footerSection__content {
+.bandSiteFooter__content {
   padding-left: 1rem;
 }
 @media screen and (min-width: 768px) {
-  .footerSection__content {
+  .bandSiteFooter__content {
     padding-left: 2.25rem;
   }
 }
-.footerSection__title {
+.bandSiteFooter__mainTitle {
   color: #FFFFFF;
   padding-top: 2rem;
   font-family: "AvenirNext-Bold";
@@ -1051,7 +1009,7 @@ input:active {
   font-weight: 700;
 }
 @media screen and (min-width: 768px) {
-  .footerSection__title {
+  .bandSiteFooter__mainTitle {
     padding-top: 3rem;
     font-size: 2.25rem;
     line-height: 44px;
@@ -1059,100 +1017,72 @@ input:active {
   }
 }
 @media screen and (min-width: 768px) {
-  .footerSection__headerContent {
+  .bandSiteFooter__headerContent {
     display: flex;
   }
 }
-
-.contactInfo {
+.bandSiteFooter__socialIcons {
+  padding-top: 1rem;
+  display: flex;
+}
+@media screen and (min-width: 768px) {
+  .bandSiteFooter__socialIcons {
+    padding-top: 3.75rem;
+    padding-left: 2.25rem;
+  }
+}
+.bandSiteFooter__socialIcons-icon {
+  padding-right: 1rem;
+}
+.bandSiteFooter__contactInfo {
   padding-top: 1rem;
 }
 @media screen and (min-width: 768px) {
-  .contactInfo {
+  .bandSiteFooter__contactInfo {
     display: flex;
     padding-top: 2.25rem;
   }
 }
-.contactInfo__section p {
-  color: #FFFFFF;
-  font-size: 0.8rem;
-  line-height: 18px;
-  font-weight: 400;
-}
 @media screen and (min-width: 768px) {
-  .contactInfo__section p {
-    font-size: 0.9rem;
-    line-height: 22px;
-    font-weight: 400;
+  .bandSiteFooter__contactInfo-content {
+    padding-right: 2.25rem;
   }
 }
-.contactInfo__section {
-  padding-top: 1rem;
-}
-.contactInfo__section-title {
-  padding-top: 1rem;
-}
-.contactInfo__section-title p {
+.bandSiteFooter__contactInfo-heading p {
   color: #FFFFFF;
-  font-family: "AvenirNext-Demi";
   font-size: 0.8rem;
   line-height: 18px;
   font-weight: 600;
 }
 @media screen and (min-width: 768px) {
-  .contactInfo__section-title p {
+  .bandSiteFooter__contactInfo-heading p {
     font-size: 0.9rem;
     line-height: 22px;
     font-weight: 600;
   }
 }
-.contactInfo__contactSection {
-  padding-right: 2.25rem;
-}
-
-.copyrightInfo {
-  padding-bottom: 1rem;
-}
-@media screen and (min-width: 768px) {
-  .copyrightInfo {
-    padding-top: 2.25rem;
-  }
-}
-.copyrightInfo p {
+.bandSiteFooter__contactInfo-info p {
   color: #FFFFFF;
   font-size: 0.8rem;
   line-height: 18px;
   font-weight: 400;
 }
 @media screen and (min-width: 768px) {
-  .copyrightInfo p {
+  .bandSiteFooter__contactInfo-info p {
     font-size: 0.9rem;
     line-height: 22px;
     font-weight: 400;
   }
 }
-
-.socialIcons__icon {
-  padding-right: 1rem;
-}
-
-.socialIcons {
+.bandSiteFooter__contactInfo-info {
   padding-top: 1rem;
-  display: flex;
 }
-@media screen and (min-width: 768px) {
-  .socialIcons {
-    padding-top: 3.75rem;
-    padding-left: 2.25rem;
-  }
-}
-
-.footerBandSiteLogo {
+.bandSiteFooter__logoWrapper {
   padding-top: 2rem;
   padding-bottom: 1rem;
 }
 @media screen and (min-width: 768px) {
-  .footerBandSiteLogo {
+  .bandSiteFooter__logoWrapper {
     position: absolute;
     top: 20px;
     right: 50px;

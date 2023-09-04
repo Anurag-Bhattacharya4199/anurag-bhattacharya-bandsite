@@ -8,41 +8,45 @@
     <script src="../scripts/build-shows-page.js" defer></script>
   </head>
   <body>
-    <header class="header-section">
+    <!--Page Header Section-->
+    <header class="mainHeader">
       <!--BandSite Main Logo Wrapper-->
-      <article class="main-logo-wrapper">
+      <article class="mainHeader__bandSiteLogo-wrapper">
         <!--BandSite Main Logo - Links to the Biography, Index Page-->
-        <a href="./index.html">
+        <a href="../index.html">
           <img
             src="../assets/logos/Logo-bandsite.svg"
             alt="Main BandSite Logo"
-            class="main-logo-wrapper__logo"
+            class="mainHeader__bandSiteLogo-wrapper-image"
           />
         </a>
       </article>
       <!--Main Navigation Section-->
-      <nav class="main-navigation">
-        <ul class="main-navigation__navigationArea">
+      <!--Main Navigation Section-->
+      <nav class="mainHeader__mainNavigation">
+        <ul class="mainHeader__mainNavigation-list">
           <!--Main Navigation Links-->
-          <li class="main-navigation__item-inactive-state">
-            <a href="../index.html" class="inactive-link">Biography</a>
+          <li class="mainHeader__mainNavigation-list-inactive">
+            <a
+              href="../index.html"
+              class="mainHeader__mainNavigation-inactive-list"
+              >Biography</a
+            >
           </li>
-          <li class="main-navigation__item-active-state">
+          <li class="mainHeader__mainNavigation-list-active">
             <a href="./shows.html">Shows</a>
           </li>
         </ul>
       </nav>
     </header>
-    <section class="hero-section-wrapper-shows">
-      <div class="hero-section-wrapper-shows__content">
-        <h1 class="hero-section-wrapper-shows__sectionHeader">
-          Beautiful Beasts Album
-        </h1>
-        <div class="header-soundcloud-section">
-          <h1 class="hero-section-wrapper-shows__header">
+    <section class="heroWrapper-shows">
+      <div class="heroWrapper-shows__content">
+        <h1 class="heroWrapper-shows__mainHeader">Beautiful Beasts Album</h1>
+        <div class="heroWrapper-shows__soundCloud">
+          <h1 class="heroWrapper-shows__subHeader">
             Queen of Yellow x For The Strings
           </h1>
-          <div class="hero__sound-cloud">
+          <div class="heroWrapper-shows__soundCloudBox">
             <iframe
               width="100%"
               scrolling="no"
@@ -55,97 +59,97 @@
       </div>
     </section>
     <section class="bandShows"></section>
-    <footer class="footerSection">
+    <footer class="bandSiteFooter">
       <!--Footer Content-->
-      <div class="footerSection__content">
-        <div class="footerSection__headerContent">
+      <div class="bandSiteFooter__content">
+        <div class="bandSiteFooter__headerContent">
           <!--Footer Section Title-->
-          <h1 class="footerSection__title">Get in Touch</h1>
+          <h1 class="bandSiteFooter__mainTitle">Get in Touch</h1>
           <!--Footer Section Social Icons-->
-          <div class="socialIcons">
-            <article class="socialIcons__icon">
+          <div class="bandSiteFooter__socialIcons">
+            <article class="bandSiteFooter__iconWrapper">
               <a href="https://instagram.com">
                 <img
                   src="../assets/icons/Icon-instagram.svg"
                   alt="Instagram Logo"
-                  class="socialIcons__image"
+                  class="bandSiteFooter__socialIcons-icon"
                 />
               </a>
             </article>
-            <article class="socialIcons__icon">
+            <article class="bandSiteFooter__iconWrapper">
               <a href="https://facebookcom">
                 <img
                   src="../assets/icons/Icon-facebook.svg"
                   alt="Facebook Logo"
-                  class="socialIcons__image"
+                  class="bandSiteFooter__socialIcons-icon"
                 />
               </a>
             </article>
-            <article class="socialIcons__icon">
+            <article class="bandSiteFooter__iconWrapper">
               <a href="https://twitter.com">
                 <img
                   src="../assets/icons/Icon-twitter.svg"
                   alt="Twitter Logo"
-                  class="socialIcons__image"
+                  class="bandSiteFooter__socialIcons-icon"
                 />
               </a>
             </article>
           </div>
         </div>
         <!--BandSite Contact Information-->
-        <div class="contactInfo">
-          <div class="contactInfo__contactSection">
-            <article class="contactInfo__section-title">
+        <div class="bandSiteFooter__contactInfo">
+          <div class="bandSiteFooter__contactInfo-content">
+            <article class="bandSiteFooter__contactInfo-heading">
               <p>Cam Adams</p>
               <p>The Bees Knees Management</p>
             </article>
-            <article class="contactInfo__section">
+            <article class="bandSiteFooter__contactInfo-info">
               <p>503 Broadway Penthouse,</p>
               <p>New York, NY 10012, USA</p>
             </article>
-            <article class="contactInfo__section">
+            <article class="bandSiteFooter__contactInfo-info">
               <p>info@thebeesknees.com</p>
             </article>
           </div>
-          <div class="contactInfo__contactSection">
-            <article class="contactInfo__section-title">
+          <div class="bandSiteFooter__contactInfo-content">
+            <article class="bandSiteFooter__contactInfo-heading">
               <p>Pearl Gregg</p>
               <p>Limitless Artist Group</p>
             </article>
-            <article class="contactInfo__section">
+            <article class="bandSiteFooter__contactInfo-info">
               <p>Booking Agent for</p>
               <p>US / South America / Japan</p>
             </article>
-            <article class="contactInfo__section">
+            <article class="bandSiteFooter__contactInfo-info">
               <p>pearl.gregg@limitlessag.com</p>
             </article>
           </div>
-          <div class="contactInfo__contactSection">
-            <article class="contactInfo__section-title">
+          <div class="bandSiteFooter__contactInfo-content">
+            <article class="bandSiteFooter__contactInfo-heading">
               <p>Carson Whyte</p>
               <p>ARCH Entertainment</p>
             </article>
-            <article class="contactInfo__section">
+            <article class="bandSiteFooter__contactInfo-info">
               <p>Booking Agent for</p>
               <p>UK / EU / AU</p>
             </article>
-            <article class="contactInfo__section">
+            <article class="bandSiteFooter__contactInfo-info">
               <p>cwhyte@archentertainment.com</p>
             </article>
           </div>
         </div>
         <!--Footer BandSite Logo-->
-        <div class="footerBandSiteLogo">
-          <a href="./index.html">
+        <div class="bandSiteFooter__logoWrapper">
+          <a href="../index.html">
             <img
               src="../assets/logos/Logo-bandsite.svg"
               alt="BandSite Logo"
-              class="footerBandSiteLogo__bandSiteLogo"
+              class="bandSiteFooter__logo"
             />
           </a>
         </div>
         <!--Copyright Section-->
-        <div class="copyrightInfo">
+        <div class="bandSiteFooter__copyrightInfo">
           <p>Copyright The Bees Knees @ 2021 All Rights Reserved</p>
         </div>
       </div>

@@ -11,11 +11,14 @@
 //Mixin SCSS Stylesheet
 @import './mixins';
 
+@import './fonts';
+
 //Header Section Styles
-.header-section
+.mainHeader
 {
 
-  @include header-section-styles(
+  @include header-section-styles
+  (
     100%, 
     flex, 
     column, 
@@ -25,7 +28,101 @@
   );
 
   //Tablet and Onwards Size Styles
-  @include tablet {
+  @include tablet 
+  {
     flex-direction: row;
+  }
+
+  &__bandSiteLogo-wrapper 
+  {
+    padding-top: $mobile-padding-before-headlines;
+    
+    //Tablet and Onwards Size Styles
+    @include tablet 
+    {
+      padding: 
+        $desktop-tablet-padding-before-headlines 
+        $desktop-tablet-padding-between-components 
+        $desktop-tablet-padding-after-headlines 
+        $desktop-tablet-padding-between-components;
+    }
+
+    &-image 
+    {
+      @include bandSiteLogo-styles
+      (
+        20px, 
+        120px
+      );
+    }
+  }
+
+  &__mainNavigation 
+  {
+    width: 100%;
+    padding-top: $mobile-padding-between-components;
+
+    @include tablet 
+    {
+      padding-top: $desktop-tablet-padding-between-components;  
+    }
+  }
+
+  &__mainNavigation-list 
+  {
+    width: 100%;
+    display: flex;
+    text-align: center;
+  }
+
+  &__mainNavigation-list li
+  {
+    list-style: none;
+    width: 50%;
+    font-family: 'AvenirNext-Bold';
+    @include text-styles
+    (
+      0.9rem,
+      32px,
+      700
+    );
+
+    @include tablet
+    {
+      font-family: 'AvenirNext-Demi';
+      @include text-styles
+      (
+        1rem,
+        32px,
+        600
+      );
+      width: 20%;
+    }
+  }
+
+  &__mainNavigation-list li a {
+    text-decoration: none;
+    color: $White;
+  }
+
+  &__mainNavigation-list li a.mainHeader__mainNavigation-inactive-list {
+    color: $Mercury;
+
+    &:hover {
+      color: $White;
+    }
+  }
+  &__mainNavigation-list li:hover, &__mainNavigation-list-active {
+    color: $White;
+    border-bottom: 
+    3.5px 
+    solid 
+    $White;
+    
+    //Tablet and Onwards Size Styles
+    @include tablet 
+    {
+      padding-bottom: 2rem;
+    }
   }
 }
