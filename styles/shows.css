@@ -9,15 +9,21 @@
 */
 @font-face {
   font-family: "AvenirNext-Regular";
-  src: url("../../assets/fonts/AvenirNextLTPro-Regular.otf") format("otf");
+  src: url("../../assets/fonts/AvenirNextLTPro.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 @font-face {
   font-family: "AvenirNext-Demi";
-  src: url("../../assets/fonts/AvenirNextLTPro-Regular.otf") format("otf");
+  src: url("../../assets/fonts/AvenirNextLTProDemi.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
 }
 @font-face {
   font-family: "AvenirNext-Bold";
-  src: url("../../assets/fonts/AvenirNextLTPro-Regular.otf") format("otf");
+  src: url("../../assets/fonts/AvenirNextLTProBold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
 }
 /*
   Name: Anurag Bhattacharya
@@ -148,15 +154,21 @@
 */
 @font-face {
   font-family: "AvenirNext-Regular";
-  src: url("../../assets/fonts/AvenirNextLTPro-Regular.otf") format("otf");
+  src: url("../../assets/fonts/AvenirNextLTPro.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 @font-face {
   font-family: "AvenirNext-Demi";
-  src: url("../../assets/fonts/AvenirNextLTPro-Regular.otf") format("otf");
+  src: url("../../assets/fonts/AvenirNextLTProDemi.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
 }
 @font-face {
   font-family: "AvenirNext-Bold";
-  src: url("../../assets/fonts/AvenirNextLTPro-Regular.otf") format("otf");
+  src: url("../../assets/fonts/AvenirNextLTProBold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
 }
 .main-navigation, .main-navigation__navigationArea {
   width: 100%;
@@ -259,15 +271,21 @@
 */
 @font-face {
   font-family: "AvenirNext-Regular";
-  src: url("../../assets/fonts/AvenirNextLTPro-Regular.otf") format("otf");
+  src: url("../../assets/fonts/AvenirNextLTPro.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 @font-face {
   font-family: "AvenirNext-Demi";
-  src: url("../../assets/fonts/AvenirNextLTPro-Regular.otf") format("otf");
+  src: url("../../assets/fonts/AvenirNextLTProDemi.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
 }
 @font-face {
   font-family: "AvenirNext-Bold";
-  src: url("../../assets/fonts/AvenirNextLTPro-Regular.otf") format("otf");
+  src: url("../../assets/fonts/AvenirNextLTProBold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
 }
 .hero-section-wrapper {
   background: linear-gradient(rgba(50, 50, 50, 0.5), rgba(50, 50, 50, 0.5)), url("../assets/images/hero-bio.jpg") center/cover;
@@ -573,15 +591,21 @@
 */
 @font-face {
   font-family: "AvenirNext-Regular";
-  src: url("../../assets/fonts/AvenirNextLTPro-Regular.otf") format("otf");
+  src: url("../../assets/fonts/AvenirNextLTPro.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 @font-face {
   font-family: "AvenirNext-Demi";
-  src: url("../../assets/fonts/AvenirNextLTPro-Regular.otf") format("otf");
+  src: url("../../assets/fonts/AvenirNextLTProDemi.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
 }
 @font-face {
   font-family: "AvenirNext-Bold";
-  src: url("../../assets/fonts/AvenirNextLTPro-Regular.otf") format("otf");
+  src: url("../../assets/fonts/AvenirNextLTProBold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
 }
 .footerSection {
   background-color: #000000;
