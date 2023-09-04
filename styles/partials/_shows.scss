@@ -1,6 +1,14 @@
 @import './mixins';
 
 .bandShows {
+
+    @include desktop {
+        display: flex;
+    }
+
+    &__headerWrapper {
+        flex: 1;
+    }
     &__headerContent {
         display: none;
 
@@ -50,6 +58,10 @@
             margin-left: $desktop-tablet-padding-between-components;
             margin-right: $desktop-tablet-padding-between-components;
             text-align: center;
+        }
+
+        &:hover {
+            background-color: $Mercury;
         }
     }
 

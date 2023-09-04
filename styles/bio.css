@@ -986,6 +986,7 @@ input:active {
 }
 .bandSiteFooter {
   background-color: #000000;
+  margin-top: 1rem;
 }
 @media screen and (min-width: 768px) {
   .bandSiteFooter {
@@ -1041,6 +1042,7 @@ input:active {
   .bandSiteFooter__contactInfo {
     display: flex;
     padding-top: 2.25rem;
+    padding-bottom: 2.25rem;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1086,6 +1088,22 @@ input:active {
     position: absolute;
     top: 20px;
     right: 50px;
+  }
+}
+.bandSiteFooter__copyrightInfo {
+  padding-bottom: 1rem;
+}
+.bandSiteFooter__copyrightInfo p {
+  color: #FFFFFF;
+  font-size: 0.8rem;
+  line-height: 18px;
+  font-weight: 400;
+}
+@media screen and (min-width: 768px) {
+  .bandSiteFooter__copyrightInfo p {
+    font-size: 0.9rem;
+    line-height: 22px;
+    font-weight: 400;
   }
 }
 

@@ -348,6 +348,14 @@
 /*All Colors*/
 /*All Padding Styles*/
 /*All Media Queries Breakpoints*/
+@media screen and (min-width: 1280px) {
+  .bandShows {
+    display: flex;
+  }
+}
+.bandShows__headerWrapper {
+  flex: 1;
+}
 .bandShows__headerContent {
   display: none;
 }
@@ -403,6 +411,9 @@
     margin-right: 2.25rem;
     text-align: center;
   }
+}
+.bandShows__showData:hover {
+  background-color: #E1E1E1;
 }
 .bandShows__showContent {
   padding-left: 1rem;
@@ -540,6 +551,7 @@
 }
 .bandSiteFooter {
   background-color: #000000;
+  margin-top: 1rem;
 }
 @media screen and (min-width: 768px) {
   .bandSiteFooter {
@@ -595,6 +607,7 @@
   .bandSiteFooter__contactInfo {
     display: flex;
     padding-top: 2.25rem;
+    padding-bottom: 2.25rem;
   }
 }
 @media screen and (min-width: 768px) {
@@ -640,6 +653,22 @@
     position: absolute;
     top: 20px;
     right: 50px;
+  }
+}
+.bandSiteFooter__copyrightInfo {
+  padding-bottom: 1rem;
+}
+.bandSiteFooter__copyrightInfo p {
+  color: #FFFFFF;
+  font-size: 0.8rem;
+  line-height: 18px;
+  font-weight: 400;
+}
+@media screen and (min-width: 768px) {
+  .bandSiteFooter__copyrightInfo p {
+    font-size: 0.9rem;
+    line-height: 22px;
+    font-weight: 400;
   }
 }
 
