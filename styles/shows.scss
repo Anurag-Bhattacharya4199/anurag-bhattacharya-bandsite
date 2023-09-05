@@ -1,15 +1,30 @@
+/*
+    Name: Anurag Bhattacharya
+    Project Name: BandSite Project - Sprint 2
+    Document Description: This is the Shows Page SCSS Styles
+    
+    Diving Deeper:
+    - Unable to figure out Dynamic timestamp with Comments form
+    - For Comments Form, there is Form Validations
+    - If there are any errors:
+        - Prevents form from submitting
+        - Shows the error state as mentioned on the Style Guide
+    - If there are no errors:
+        - Clears any error states from form
+        - Submits the form
+*/
+/*All the Partial Sections of the Website imported*/
+//Fonts
 @import './partials/fonts';
-
 //Header Section
 @import './partials/header';
-
 //Hero Section
 @import './partials/hero';
-
+//Show Table/Data Section
 @import './partials/shows';
-
+//Footer Section
 @import './partials/footer';
-
+//Global Styles
 * {
   margin: 0;
   padding: 0;

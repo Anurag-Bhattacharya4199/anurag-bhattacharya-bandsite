@@ -1,35 +1,34 @@
 /*
-Name: Anurag Bhattacharya
-Project Name: BandSite Project - Sprint 1
-Diving Deeper:
-- On Navigation Bar, Hover pseudo-class used to reconize tab user is in
-- For Photo Gallery, by default, images are greyscaled, on hover, they turn to color
-This is the Main Home Page SCSS File
+    Name: Anurag Bhattacharya
+    Project Name: BandSite Project - Sprint 2
+    Document Description: This is the Bio Page SCSS Styles
+    
+    Diving Deeper:
+    - Unable to figure out Dynamic timestamp with Comments form
+    - For Comments Form, there is Form Validations
+    - If there are any errors:
+        - Prevents form from submitting
+        - Shows the error state as mentioned on the Style Guide
+    - If there are no errors:
+        - Clears any error states from form
+        - Submits the form
 */
 
 /*All the Partial Sections of the Website imported*/
-
 //Fonts
 @import './partials/fonts';
-
 //Header Section
 @import './partials/header';
-
-
 //Hero Section
 @import './partials/hero';
-
 //Band Biography Section
 @import './partials/aboutInformation';
-
 //Photo Gallery Section
 @import './partials/photoGallery';
-
+//Band Comments Form and Panel Section
 @import './partials/_commentsSection';
-
 //Footer Section
 @import './partials/footer';
-
 //Global Styles
 * {
   margin: 0;

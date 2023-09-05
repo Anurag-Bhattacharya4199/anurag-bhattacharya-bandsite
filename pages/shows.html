@@ -1,10 +1,32 @@
+<!--
+  Name: Anurag Bhattacharya
+  Project Name: BandSite Project - Sprint 2
+  Document Description: This is the Shows Page
+
+  Diving Deeper:
+  - Unable to figure out Dynamic timestamp with Comments form
+  - For Comments Form, there is Form Validation:
+    - If there are any errors:
+      - Prevents form from submitting
+      - Shows the error state as mentioned on the Style Guide
+    - If there are no errors:
+      - Clears any error states from form
+      - Submits the form
+-->
+<!--HTML DOCTYPE-->
 <!DOCTYPE html>
 <html lang="en">
+  <!--HTML Head Section-->
   <head>
+    <!--HTML Meta Data Section-->
     <meta charset="UTF-8" />
+    <!--HTML Viewport Section-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shows</title>
+    <!--HTML Page Title-->
+    <title>BandSite Project - Shows Page</title>
+    <!--HTML Stylesheet Linked-->
     <link rel="stylesheet" type="text/css" href="../styles/shows.css" />
+    <!-- JavaScript Script Linked-->
     <script src="../scripts/build-shows-page.js" defer></script>
   </head>
   <body>
@@ -22,8 +44,8 @@
         </a>
       </article>
       <!--Main Navigation Section-->
-      <!--Main Navigation Section-->
       <nav class="mainHeader__mainNavigation">
+        <!--Main Navigation List-->
         <ul class="mainHeader__mainNavigation-list">
           <!--Main Navigation Links-->
           <li class="mainHeader__mainNavigation-list-inactive">
@@ -39,15 +61,22 @@
         </ul>
       </nav>
     </header>
+    <!--Hero Section Wrapper-->
     <section class="heroWrapper-shows">
+      <!--Hero Section Content-->
       <div class="heroWrapper-shows__content">
+        <!--Hero Section Main Title-->
         <h1 class="heroWrapper-shows__mainHeader">Beautiful Beasts Album</h1>
+        <!--Hero Section SoundCloud Section-->
         <div class="heroWrapper-shows__soundCloud">
+          <!--Hero Section Sub-Title-->
           <h1 class="heroWrapper-shows__subHeader">
             Queen of Yellow x For The Strings
           </h1>
+          <!--Hero Section SoundCloud-->
           <div class="heroWrapper-shows__soundCloudBox">
             <iframe
+              title="SoundCloud Player"
               width="100%"
               scrolling="no"
               frameborder="no"
@@ -58,7 +87,11 @@
         </div>
       </div>
     </section>
-    <section class="bandShows"></section>
+    <!--Band Shows Table-->
+    <section class="bandShows">
+      <!--Band Shows Content Here-->
+    </section>
+    <!--Band Footer Section-->
     <footer class="bandSiteFooter">
       <!--Footer Content-->
       <div class="bandSiteFooter__content">

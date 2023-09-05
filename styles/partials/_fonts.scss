@@ -1,13 +1,18 @@
 /*
   Name: Anurag Bhattacharya
-  Project Name: BandSite Project - Sprint 1
-  Document Description: This is the Font Styles SCSSS Stylesheet
+  Project Name: BandSite Project - Sprint 2
+  Document Description: This is the Fonts Styles
 
   Diving Deeper:
-  - Main Navigation: Hover effect to let user know which page is active & inactive
-  - Photo Gallery: Photo Gallery Images are greyscale by default and on hover, each image returns to color
+  - Unable to figure out Dynamic timestamp with Comments form
+  - For Comments Form, there is Form Validation:
+    - If there are any errors:
+      - Prevents form from submitting
+      - Shows the error state as mentioned on the Style Guide
+    - If there are no errors:
+      - Clears any error states from form
+      - Submits the form
 */
-
 //Normal Font Styles
 @font-face 
 {
@@ -16,8 +21,6 @@
   font-weight: normal;
   font-style: normal;
 }
-
-
 //Demi Font Styles
 @font-face 
 {
@@ -26,8 +29,6 @@
   font-weight: 600;
   font-style: normal;
 }
-
-
 //Bold Font Styles
 @font-face 
 {

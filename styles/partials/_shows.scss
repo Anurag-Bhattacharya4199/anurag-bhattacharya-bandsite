@@ -1,134 +1,177 @@
+/*
+    Name: Anurag Bhattacharya
+    Project Name: BandSite Project - Sprint 2
+    Document Description: This is the Photo Gallery Section Styles
+    
+    Diving Deeper:
+    - Unable to figure out Dynamic timestamp with Comments form
+    - For Comments Form, there is Form Validations
+    - If there are any errors:
+        - Prevents form from submitting
+        - Shows the error state as mentioned on the Style Guide
+    - If there are no errors:
+        - Clears any error states from form
+        - Submits the form
+*/
+//Mixin SCSS Style sheet
 @import './mixins';
+//Fonts SCSS Style sheet
+@import './fonts';
 
-.bandShows {
-
-    @include desktop {
+//Band Shows Table Styles
+.bandShows 
+{
+    //Desktop and Onwards Size Styles
+    @include desktop 
+    {
         display: flex;
     }
-
-    &__headerWrapper {
+    //Band Show Table Header Wrapper Styles
+    &__headerWrapper 
+    {
+        padding-top: 1rem;
         flex: 1;
     }
-    &__headerContent {
+    //Band Show table Header Content Styles
+    &__headerContent 
+    {
         display: none;
-
-        @include tablet {
+        //Tablet and Onwards Size Styles
+        @include tablet 
+        {
             display: flex;
             width: 70%;
-            padding-left: $desktop-tablet-padding-between-components;
             justify-content: space-between;
         }
-
-        @include desktop {
+        //Desktop and Onwards Size Styles
+        @include desktop 
+        {
             width: 100%;
         }
     }
-
-    &__headerContent-date, &__headerContent-venue, &__headerContent-location {
-        @include tablet {
-            padding-top: 24px;
-            padding-bottom: 24px;
-            padding-left: 18px;
-            padding-right: 18px;
+    //Band Site Table Headings Styles
+    &__headerContent-date, &__headerContent-venue, &__headerContent-location 
+    {
+        //Tablet and Onwards Size Styles
+        @include tablet 
+        {
+            color: $Silver;
+            font-family: 'AvenirNext-Demi'; 
+            @include text-styles(14px, 22px, 600);
+            padding: 24px 18px;
         }
     }
 
-    &__mainTitle {
+    //Band Site Table Main Title Styles
+    &__mainTitle 
+    {
         padding: $mobile-padding-before-headlines 0px $mobile-padding-after-headlines $mobile-padding-between-components;
         font-family: "AvenirNext-Bold";
         @include text-styles(2rem, 32px, 700);
-
-        @include tablet {
+        //Tablet and Onwards Size Styles
+        @include tablet 
+        {
             padding: $mobile-padding-before-headlines 0px $mobile-padding-after-headlines $mobile-padding-between-components;
             @include text-styles(2.25rem, 44px, 700);
         }
     }
-    
-    &__showData {
+    //Band Site Show Data Styles
+    &__showData 
+    {
         border-bottom: 1px solid $Mercury;
         padding-bottom: $mobile-padding-between-components;
         display: flex;
         flex-direction: column;
-
-        @include tablet {
-            margin-left: $desktop-tablet-padding-between-components;
-            margin-right: $desktop-tablet-padding-between-components;
+        //Tablet and Onwards Size Styles
+        @include tablet 
+        {
             text-align: center;
         }
-
-        &:hover {
+        //Band Site Show Data Hover Styles
+        &:hover 
+        {
+            background-color: $Alabaster;
+        }
+        //Band Site Show Data Selected/Active Styles
+        &:active 
+        {
             background-color: $Mercury;
         }
     }
-
-    &__showContent {
+    //Band Site Show Content Styles
+    &__showContent 
+    {
         padding: 0px $mobile-padding-between-components;
-
-        @include tablet {
+        //Tablet and Onwards Size Styles
+        @include tablet 
+        {
             display: flex;
             justify-content: space-between;
             padding-left: 0px;
             padding-right: 0px;
         }
     }
-
-    &__dateTitle, &__venueTitle, &__locationTitle {
+    //Band Site Show Data Header Styles
+    &__dateTitle, &__venueTitle, &__locationTitle 
+    {
         color: $Silver;
         padding: $mobile-padding-between-components 0px;
-
-        @include tablet {
+        //Tablet and Onwards Size Styles
+        @include tablet 
+        {
             display: none;
         }
     }
-
-    &__date {
+    //Band Site Show Data - Date Styles
+    &__date 
+    {
         font-family: "AvenirNext-Demi";
         @include text-styles(0.9rem, 22px, 600);
-
-        @include tablet {
-            padding-top: 24px;
-            padding-bottom: 24px;
-            padding-left: 18px;
-            padding-right: 18px;
+        //Tablet and Onwards Size Styles
+        @include tablet 
+        {
+            padding: 24px 18px;
         }
     }
-
-    &__venue, &__location {
+    //Band Site Show Data - Venue & Location Styles
+    &__venue, &__location 
+    {
         @include text-styles(0.8rem, 18px, 400);
-
-        @include tablet {
-            padding-top: 24px;
-            padding-bottom: 24px;
-            padding-left: 18px;
-            padding-right: 18px; 
+        //Tablet and Onwards Size Styles
+        @include tablet 
+        {
+            padding: 24px 18px;
         }
     }
 
-    &__buttonWrapper {
+    //Band Site Show Data - Button Wrapper Styles
+    &__buttonWrapper 
+    {
         padding-top: $mobile-padding-between-components;
-
-        @include tablet {
-            padding-top: 24px;
-            padding-bottom: 24px;
-            padding-left: 18px;
-            padding-right: 18px;
+        //Tablet and Onwards Size Styles
+        @include tablet 
+        {
+            padding: 24px 18px;
         }
     }
 
-    &__button {
+    //Band Site Show Data - Button Styles
+    &__button 
+    {
         width: 100%;
         height: 40px;
         background-color: $BandSite-Black;
         color: $White;
-
-        &:hover {
+        //Band Site Show Data - Button Hover Styles
+        &:hover 
+        {
             background-color: $BandSite-DarkBlack;
         }
-
-        @include tablet {
+        //Tablet and Onwards Size Styles
+        @include tablet 
+        {
             width: 150px;
-            padding-left: 32px;
-            padding-right: 32px;
+            padding: 0px 32px;
         }
     }
 }

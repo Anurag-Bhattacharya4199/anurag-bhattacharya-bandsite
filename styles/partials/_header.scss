@@ -1,124 +1,100 @@
 /*
   Name: Anurag Bhattacharya
-  Project Name: BandSite Project - Sprint 1
-  Document Description: This is the Header Section SCSSS Stylesheet
+  Project Name: BandSite Project - Sprint 2
+  Document Description: This is the Header Section Styles
 
   Diving Deeper:
-  - Main Navigation: Hover effect to let user know which page is active & inactive
-  - Photo Gallery: Photo Gallery Images are greyscale by default and on hover, each image returns to color
+  - Unable to figure out Dynamic timestamp with Comments form
+  - For Comments Form, there is Form Validation:
+    - If there are any errors:
+      - Prevents form from submitting
+      - Shows the error state as mentioned on the Style Guide
+    - If there are no errors:
+      - Clears any error states from form
+      - Submits the form
 */
-
-//Mixin SCSS Stylesheet
+//Mixin SCSS Style sheet
 @import './mixins';
-
+//Fonts SCSS Style sheet
 @import './fonts';
-
 //Header Section Styles
 .mainHeader
 {
-
-  @include header-section-styles
-  (
-    100%, 
-    flex, 
-    column, 
-    center, 
-    center, 
-    $BandSite-Black
-  );
-
+  @include header-section-styles(100%, flex, column, center, center, $BandSite-Black);
   //Tablet and Onwards Size Styles
   @include tablet 
   {
     flex-direction: row;
   }
-
+  //Header Logo Wrapper Styles
   &__bandSiteLogo-wrapper 
   {
     padding-top: $mobile-padding-before-headlines;
-    
     //Tablet and Onwards Size Styles
     @include tablet 
     {
-      padding: 
-        $desktop-tablet-padding-before-headlines 
-        $desktop-tablet-padding-between-components 
-        $desktop-tablet-padding-after-headlines 
-        $desktop-tablet-padding-between-components;
+      padding: $desktop-tablet-padding-before-headlines $desktop-tablet-padding-between-components $desktop-tablet-padding-after-headlines $desktop-tablet-padding-between-components;
     }
-
+    //Header Logo Styles
     &-image 
     {
-      @include bandSiteLogo-styles
-      (
-        20px, 
-        120px
-      );
+      @include bandSiteLogo-styles(20px, 120px);
     }
   }
-
+  //Main Navigation Section Styles
   &__mainNavigation 
   {
     width: 100%;
     padding-top: $mobile-padding-between-components;
-
+    //Tablet and Onwards Size Styles
     @include tablet 
     {
       padding-top: $desktop-tablet-padding-between-components;  
     }
   }
-
+  //Main Navigation List Styles
   &__mainNavigation-list 
   {
     width: 100%;
     display: flex;
     text-align: center;
   }
-
+  //Main Navigation List Item Styles
   &__mainNavigation-list li
   {
     list-style: none;
     width: 50%;
     font-family: 'AvenirNext-Bold';
-    @include text-styles
-    (
-      0.9rem,
-      32px,
-      700
-    );
-
+    @include text-styles(0.9rem, 32px, 700);
+    //Tablet and Onwards Size Styles
     @include tablet
     {
       font-family: 'AvenirNext-Demi';
-      @include text-styles
-      (
-        1rem,
-        32px,
-        600
-      );
+      @include text-styles(1rem,32px,600);
       width: 20%;
     }
   }
-
-  &__mainNavigation-list li a {
+  //Main Navigation List Item Link Styles
+  &__mainNavigation-list li a 
+  {
     text-decoration: none;
     color: $White;
   }
-
-  &__mainNavigation-list li a.mainHeader__mainNavigation-inactive-list {
+  //Main Navigation Inactive List Item Styles
+  &__mainNavigation-list li a.mainHeader__mainNavigation-inactive-list 
+  {
     color: $Mercury;
-
-    &:hover {
+    //Hover Styles
+    &:hover 
+    {
       color: $White;
     }
   }
-  &__mainNavigation-list li:hover, &__mainNavigation-list-active {
+  //Main Navigation Active and List Item Hover Styles
+  &__mainNavigation-list li:hover, &__mainNavigation-list-active 
+  {
     color: $White;
-    border-bottom: 
-    3.5px 
-    solid 
-    $White;
-    
+    border-bottom: 3.5px solid $White;
     //Tablet and Onwards Size Styles
     @include tablet 
     {

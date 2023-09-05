@@ -1,20 +1,33 @@
 /*
-Name: Anurag Bhattacharya
-Project Name: BandSite Project - Sprint 1
-Diving Deeper:
-- On Navigation Bar, Hover pseudo-class used to reconize tab user is in
-- For Photo Gallery, by default, images are greyscaled, on hover, they turn to color
-This is the Main Home Page SCSS File
+    Name: Anurag Bhattacharya
+    Project Name: BandSite Project - Sprint 2
+    Document Description: This is the Bio Page SCSS Styles
+
+    Diving Deeper:
+    - Unable to figure out Dynamic timestamp with Comments form
+    - For Comments Form, there is Form Validations
+    - If there are any errors:
+        - Prevents form from submitting
+        - Shows the error state as mentioned on the Style Guide
+    - If there are no errors:
+        - Clears any error states from form
+        - Submits the form
 */
 /*All the Partial Sections of the Website imported*/
 /*
   Name: Anurag Bhattacharya
-  Project Name: BandSite Project - Sprint 1
-  Document Description: This is the Font Styles SCSSS Stylesheet
+  Project Name: BandSite Project - Sprint 2
+  Document Description: This is the Fonts Styles
 
   Diving Deeper:
-  - Main Navigation: Hover effect to let user know which page is active & inactive
-  - Photo Gallery: Photo Gallery Images are greyscale by default and on hover, each image returns to color
+  - Unable to figure out Dynamic timestamp with Comments form
+  - For Comments Form, there is Form Validation:
+    - If there are any errors:
+      - Prevents form from submitting
+      - Shows the error state as mentioned on the Style Guide
+    - If there are no errors:
+      - Clears any error states from form
+      - Submits the form
 */
 @font-face {
   font-family: "AvenirNext-Regular";
@@ -36,42 +49,66 @@ This is the Main Home Page SCSS File
 }
 /*
   Name: Anurag Bhattacharya
-  Project Name: BandSite Project - Sprint 1
-  Document Description: This is the Header Section SCSSS Stylesheet
+  Project Name: BandSite Project - Sprint 2
+  Document Description: This is the Header Section Styles
 
   Diving Deeper:
-  - Main Navigation: Hover effect to let user know which page is active & inactive
-  - Photo Gallery: Photo Gallery Images are greyscale by default and on hover, each image returns to color
+  - Unable to figure out Dynamic timestamp with Comments form
+  - For Comments Form, there is Form Validation:
+    - If there are any errors:
+      - Prevents form from submitting
+      - Shows the error state as mentioned on the Style Guide
+    - If there are no errors:
+      - Clears any error states from form
+      - Submits the form
 */
 /*
   Name: Anurag Bhattacharya
-  Project Name: BandSite Project - Sprint 1
-  Document Description: This is the Mixins SCSSS Stylesheet
+  Project Name: BandSite Project - Sprint 2
+  Document Description: This is the MixIns Styles
 
   Diving Deeper:
-  - Main Navigation: Hover effect to let user know which page is active & inactive
-  - Photo Gallery: Photo Gallery Images are greyscale by default and on hover, each image returns to color
+  - Unable to figure out Dynamic timestamp with Comments form
+  - For Comments Form, there is Form Validation:
+    - If there are any errors:
+      - Prevents form from submitting
+      - Shows the error state as mentioned on the Style Guide
+    - If there are no errors:
+      - Clears any error states from form
+      - Submits the form
 */
 /*
-  Name: Anurag Bhattacharya
-  Project Name: BandSite Project - Sprint 1
-  Document Description: This is the Photo Gallery Section SCSSS Stylesheet
+    Name: Anurag Bhattacharya
+    Project Name: BandSite Project - Sprint 2
+    Document Description: This is the Variables Styles
 
-  Diving Deeper:
-  - Main Navigation: Hover effect to let user know which page is active & inactive
-  - Photo Gallery: Photo Gallery Images are greyscale by default and on hover, each image returns to color
+    Diving Deeper:
+    - Unable to figure out Dynamic timestamp with Comments form
+    - For Comments Form, there is Form Validations
+    - If there are any errors:
+        - Prevents form from submitting
+        - Shows the error state as mentioned on the Style Guide
+    - If there are no errors:
+        - Clears any error states from form
+        - Submits the form
 */
 /*All Colors*/
 /*All Padding Styles*/
 /*All Media Queries Breakpoints*/
 /*
   Name: Anurag Bhattacharya
-  Project Name: BandSite Project - Sprint 1
-  Document Description: This is the Font Styles SCSSS Stylesheet
+  Project Name: BandSite Project - Sprint 2
+  Document Description: This is the Fonts Styles
 
   Diving Deeper:
-  - Main Navigation: Hover effect to let user know which page is active & inactive
-  - Photo Gallery: Photo Gallery Images are greyscale by default and on hover, each image returns to color
+  - Unable to figure out Dynamic timestamp with Comments form
+  - For Comments Form, there is Form Validation:
+    - If there are any errors:
+      - Prevents form from submitting
+      - Shows the error state as mentioned on the Style Guide
+    - If there are no errors:
+      - Clears any error states from form
+      - Submits the form
 */
 @font-face {
   font-family: "AvenirNext-Regular";
@@ -169,42 +206,66 @@ This is the Main Home Page SCSS File
 
 /*
   Name: Anurag Bhattacharya
-  Project Name: BandSite Project - Sprint 1
-  Document Description: This is the Hero Section SCSSS Stylesheet
+  Project Name: BandSite Project - Sprint 2
+  Document Description: This is the Hero Section Styles
 
   Diving Deeper:
-  - Main Navigation: Hover effect to let user know which page is active & inactive
-  - Photo Gallery: Photo Gallery Images are greyscale by default and on hover, each image returns to color
+  - Unable to figure out Dynamic timestamp with Comments form
+  - For Comments Form, there is Form Validation:
+    - If there are any errors:
+      - Prevents form from submitting
+      - Shows the error state as mentioned on the Style Guide
+    - If there are no errors:
+      - Clears any error states from form
+      - Submits the form
 */
 /*
   Name: Anurag Bhattacharya
-  Project Name: BandSite Project - Sprint 1
-  Document Description: This is the Mixins SCSSS Stylesheet
+  Project Name: BandSite Project - Sprint 2
+  Document Description: This is the MixIns Styles
 
   Diving Deeper:
-  - Main Navigation: Hover effect to let user know which page is active & inactive
-  - Photo Gallery: Photo Gallery Images are greyscale by default and on hover, each image returns to color
+  - Unable to figure out Dynamic timestamp with Comments form
+  - For Comments Form, there is Form Validation:
+    - If there are any errors:
+      - Prevents form from submitting
+      - Shows the error state as mentioned on the Style Guide
+    - If there are no errors:
+      - Clears any error states from form
+      - Submits the form
 */
 /*
-  Name: Anurag Bhattacharya
-  Project Name: BandSite Project - Sprint 1
-  Document Description: This is the Photo Gallery Section SCSSS Stylesheet
+    Name: Anurag Bhattacharya
+    Project Name: BandSite Project - Sprint 2
+    Document Description: This is the Variables Styles
 
-  Diving Deeper:
-  - Main Navigation: Hover effect to let user know which page is active & inactive
-  - Photo Gallery: Photo Gallery Images are greyscale by default and on hover, each image returns to color
+    Diving Deeper:
+    - Unable to figure out Dynamic timestamp with Comments form
+    - For Comments Form, there is Form Validations
+    - If there are any errors:
+        - Prevents form from submitting
+        - Shows the error state as mentioned on the Style Guide
+    - If there are no errors:
+        - Clears any error states from form
+        - Submits the form
 */
 /*All Colors*/
 /*All Padding Styles*/
 /*All Media Queries Breakpoints*/
 /*
   Name: Anurag Bhattacharya
-  Project Name: BandSite Project - Sprint 1
-  Document Description: This is the Font Styles SCSSS Stylesheet
+  Project Name: BandSite Project - Sprint 2
+  Document Description: This is the Fonts Styles
 
   Diving Deeper:
-  - Main Navigation: Hover effect to let user know which page is active & inactive
-  - Photo Gallery: Photo Gallery Images are greyscale by default and on hover, each image returns to color
+  - Unable to figure out Dynamic timestamp with Comments form
+  - For Comments Form, there is Form Validation:
+    - If there are any errors:
+      - Prevents form from submitting
+      - Shows the error state as mentioned on the Style Guide
+    - If there are no errors:
+      - Clears any error states from form
+      - Submits the form
 */
 @font-face {
   font-family: "AvenirNext-Regular";
@@ -269,7 +330,12 @@ This is the Main Home Page SCSS File
 }
 @media screen and (min-width: 768px) {
   .heroWrapper-shows {
-    height: 450px;
+    height: 400px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .heroWrapper-shows {
+    height: 600px;
   }
 }
 .heroWrapper-shows__content {
@@ -338,42 +404,66 @@ This is the Main Home Page SCSS File
 
 /*
   Name: Anurag Bhattacharya
-  Project Name: BandSite Project - Sprint 1
-  Document Description: This is the Band Biography Section SCSSS Stylesheet
+  Project Name: BandSite Project - Sprint 2
+  Document Description: This is the About Information Section Styles
 
   Diving Deeper:
-  - Main Navigation: Hover effect to let user know which page is active & inactive
-  - Photo Gallery: Photo Gallery Images are greyscale by default and on hover, each image returns to color
+  - Unable to figure out Dynamic timestamp with Comments form
+  - For Comments Form, there is Form Validation:
+    - If there are any errors:
+      - Prevents form from submitting
+      - Shows the error state as mentioned on the Style Guide
+    - If there are no errors:
+      - Clears any error states from form
+      - Submits the form
 */
 /*
   Name: Anurag Bhattacharya
-  Project Name: BandSite Project - Sprint 1
-  Document Description: This is the Mixins SCSSS Stylesheet
+  Project Name: BandSite Project - Sprint 2
+  Document Description: This is the MixIns Styles
 
   Diving Deeper:
-  - Main Navigation: Hover effect to let user know which page is active & inactive
-  - Photo Gallery: Photo Gallery Images are greyscale by default and on hover, each image returns to color
+  - Unable to figure out Dynamic timestamp with Comments form
+  - For Comments Form, there is Form Validation:
+    - If there are any errors:
+      - Prevents form from submitting
+      - Shows the error state as mentioned on the Style Guide
+    - If there are no errors:
+      - Clears any error states from form
+      - Submits the form
 */
 /*
-  Name: Anurag Bhattacharya
-  Project Name: BandSite Project - Sprint 1
-  Document Description: This is the Photo Gallery Section SCSSS Stylesheet
+    Name: Anurag Bhattacharya
+    Project Name: BandSite Project - Sprint 2
+    Document Description: This is the Variables Styles
 
-  Diving Deeper:
-  - Main Navigation: Hover effect to let user know which page is active & inactive
-  - Photo Gallery: Photo Gallery Images are greyscale by default and on hover, each image returns to color
+    Diving Deeper:
+    - Unable to figure out Dynamic timestamp with Comments form
+    - For Comments Form, there is Form Validations
+    - If there are any errors:
+        - Prevents form from submitting
+        - Shows the error state as mentioned on the Style Guide
+    - If there are no errors:
+        - Clears any error states from form
+        - Submits the form
 */
 /*All Colors*/
 /*All Padding Styles*/
 /*All Media Queries Breakpoints*/
 /*
   Name: Anurag Bhattacharya
-  Project Name: BandSite Project - Sprint 1
-  Document Description: This is the Font Styles SCSSS Stylesheet
+  Project Name: BandSite Project - Sprint 2
+  Document Description: This is the Fonts Styles
 
   Diving Deeper:
-  - Main Navigation: Hover effect to let user know which page is active & inactive
-  - Photo Gallery: Photo Gallery Images are greyscale by default and on hover, each image returns to color
+  - Unable to figure out Dynamic timestamp with Comments form
+  - For Comments Form, there is Form Validation:
+    - If there are any errors:
+      - Prevents form from submitting
+      - Shows the error state as mentioned on the Style Guide
+    - If there are no errors:
+      - Clears any error states from form
+      - Submits the form
 */
 @font-face {
   font-family: "AvenirNext-Regular";
@@ -517,42 +607,66 @@ This is the Main Home Page SCSS File
 
 /*
   Name: Anurag Bhattacharya
-  Project Name: BandSite Project - Sprint 1
-  Document Description: This is the Photo Gallery Section SCSSS Stylesheet
+  Project Name: BandSite Project - Sprint 2
+  Document Description: This is the Photo Gallery Section Styles
 
   Diving Deeper:
-  - Main Navigation: Hover effect to let user know which page is active & inactive
-  - Photo Gallery: Photo Gallery Images are greyscale by default and on hover, each image returns to color
+  - Unable to figure out Dynamic timestamp with Comments form
+  - For Comments Form, there is Form Validation:
+    - If there are any errors:
+      - Prevents form from submitting
+      - Shows the error state as mentioned on the Style Guide
+    - If there are no errors:
+      - Clears any error states from form
+      - Submits the form
 */
 /*
   Name: Anurag Bhattacharya
-  Project Name: BandSite Project - Sprint 1
-  Document Description: This is the Mixins SCSSS Stylesheet
+  Project Name: BandSite Project - Sprint 2
+  Document Description: This is the MixIns Styles
 
   Diving Deeper:
-  - Main Navigation: Hover effect to let user know which page is active & inactive
-  - Photo Gallery: Photo Gallery Images are greyscale by default and on hover, each image returns to color
+  - Unable to figure out Dynamic timestamp with Comments form
+  - For Comments Form, there is Form Validation:
+    - If there are any errors:
+      - Prevents form from submitting
+      - Shows the error state as mentioned on the Style Guide
+    - If there are no errors:
+      - Clears any error states from form
+      - Submits the form
 */
 /*
-  Name: Anurag Bhattacharya
-  Project Name: BandSite Project - Sprint 1
-  Document Description: This is the Photo Gallery Section SCSSS Stylesheet
+    Name: Anurag Bhattacharya
+    Project Name: BandSite Project - Sprint 2
+    Document Description: This is the Variables Styles
 
-  Diving Deeper:
-  - Main Navigation: Hover effect to let user know which page is active & inactive
-  - Photo Gallery: Photo Gallery Images are greyscale by default and on hover, each image returns to color
+    Diving Deeper:
+    - Unable to figure out Dynamic timestamp with Comments form
+    - For Comments Form, there is Form Validations
+    - If there are any errors:
+        - Prevents form from submitting
+        - Shows the error state as mentioned on the Style Guide
+    - If there are no errors:
+        - Clears any error states from form
+        - Submits the form
 */
 /*All Colors*/
 /*All Padding Styles*/
 /*All Media Queries Breakpoints*/
 /*
   Name: Anurag Bhattacharya
-  Project Name: BandSite Project - Sprint 1
-  Document Description: This is the Font Styles SCSSS Stylesheet
+  Project Name: BandSite Project - Sprint 2
+  Document Description: This is the Fonts Styles
 
   Diving Deeper:
-  - Main Navigation: Hover effect to let user know which page is active & inactive
-  - Photo Gallery: Photo Gallery Images are greyscale by default and on hover, each image returns to color
+  - Unable to figure out Dynamic timestamp with Comments form
+  - For Comments Form, there is Form Validation:
+    - If there are any errors:
+      - Prevents form from submitting
+      - Shows the error state as mentioned on the Style Guide
+    - If there are no errors:
+      - Clears any error states from form
+      - Submits the form
 */
 @font-face {
   font-family: "AvenirNext-Regular";
@@ -643,33 +757,66 @@ This is the Main Home Page SCSS File
 
 /*
   Name: Anurag Bhattacharya
-  Project Name: BandSite Project - Sprint 1
-  Document Description: This is the Mixins SCSSS Stylesheet
+  Project Name: BandSite Project - Sprint 2
+  Document Description: This is the Comments Section Styles
 
   Diving Deeper:
-  - Main Navigation: Hover effect to let user know which page is active & inactive
-  - Photo Gallery: Photo Gallery Images are greyscale by default and on hover, each image returns to color
+  - Unable to figure out Dynamic timestamp with Comments form
+  - For Comments Form, there is Form Validation:
+    - If there are any errors:
+      - Prevents form from submitting
+      - Shows the error state as mentioned on the Style Guide
+    - If there are no errors:
+      - Clears any error states from form
+      - Submits the form
 */
 /*
   Name: Anurag Bhattacharya
-  Project Name: BandSite Project - Sprint 1
-  Document Description: This is the Photo Gallery Section SCSSS Stylesheet
+  Project Name: BandSite Project - Sprint 2
+  Document Description: This is the MixIns Styles
 
   Diving Deeper:
-  - Main Navigation: Hover effect to let user know which page is active & inactive
-  - Photo Gallery: Photo Gallery Images are greyscale by default and on hover, each image returns to color
+  - Unable to figure out Dynamic timestamp with Comments form
+  - For Comments Form, there is Form Validation:
+    - If there are any errors:
+      - Prevents form from submitting
+      - Shows the error state as mentioned on the Style Guide
+    - If there are no errors:
+      - Clears any error states from form
+      - Submits the form
+*/
+/*
+    Name: Anurag Bhattacharya
+    Project Name: BandSite Project - Sprint 2
+    Document Description: This is the Variables Styles
+
+    Diving Deeper:
+    - Unable to figure out Dynamic timestamp with Comments form
+    - For Comments Form, there is Form Validations
+    - If there are any errors:
+        - Prevents form from submitting
+        - Shows the error state as mentioned on the Style Guide
+    - If there are no errors:
+        - Clears any error states from form
+        - Submits the form
 */
 /*All Colors*/
 /*All Padding Styles*/
 /*All Media Queries Breakpoints*/
 /*
   Name: Anurag Bhattacharya
-  Project Name: BandSite Project - Sprint 1
-  Document Description: This is the Font Styles SCSSS Stylesheet
+  Project Name: BandSite Project - Sprint 2
+  Document Description: This is the Fonts Styles
 
   Diving Deeper:
-  - Main Navigation: Hover effect to let user know which page is active & inactive
-  - Photo Gallery: Photo Gallery Images are greyscale by default and on hover, each image returns to color
+  - Unable to figure out Dynamic timestamp with Comments form
+  - For Comments Form, there is Form Validation:
+    - If there are any errors:
+      - Prevents form from submitting
+      - Shows the error state as mentioned on the Style Guide
+    - If there are no errors:
+      - Clears any error states from form
+      - Submits the form
 */
 @font-face {
   font-family: "AvenirNext-Regular";
@@ -736,21 +883,21 @@ This is the Main Home Page SCSS File
     padding-bottom: 2.25rem;
   }
 }
-.commentsForm__avaterWrapper {
+.commentsForm__avatarWrapper {
   padding-right: 1rem;
 }
 @media screen and (min-width: 768px) {
-  .commentsForm__avaterWrapper {
+  .commentsForm__avatarWrapper {
     padding-right: 1rem;
   }
 }
-.commentsForm__avater {
+.commentsForm__avatar {
   border-radius: 50%;
   width: 36px;
   height: 36px;
 }
 @media screen and (min-width: 768px) {
-  .commentsForm__avater {
+  .commentsForm__avatar {
     width: 48px;
     height: 48px;
   }
@@ -787,6 +934,9 @@ This is the Main Home Page SCSS File
     padding-left: 32px;
     padding-right: 32px;
   }
+}
+.commentsForm__submitButton:hover {
+  background-color: #000000;
 }
 
 label {
@@ -850,22 +1000,22 @@ input:active {
 .commentsPanel__commentContent {
   width: 100%;
 }
-.commentsPanel__avaterWrapper {
+.commentsPanel__avatarWrapper {
   padding-right: 1rem;
 }
 @media screen and (min-width: 768px) {
-  .commentsPanel__avaterWrapper {
+  .commentsPanel__avatarWrapper {
     padding-right: 2.25rem;
   }
 }
-.commentsPanel__avater {
+.commentsPanel__avatar {
   border-radius: 50%;
   width: 36px;
   height: 36px;
   background-color: #E1E1E1;
 }
 @media screen and (min-width: 768px) {
-  .commentsPanel__avater {
+  .commentsPanel__avatar {
     width: 48px;
     height: 48px;
   }
@@ -921,42 +1071,66 @@ input:active {
 
 /*
   Name: Anurag Bhattacharya
-  Project Name: BandSite Project - Sprint 1
-  Document Description: This is the Footer Section SCSSS Stylesheet
+  Project Name: BandSite Project - Sprint 2
+  Document Description: This is the Footer Section Styles
 
   Diving Deeper:
-  - Main Navigation: Hover effect to let user know which page is active & inactive
-  - Photo Gallery: Photo Gallery Images are greyscale by default and on hover, each image returns to color
+  - Unable to figure out Dynamic timestamp with Comments form
+  - For Comments Form, there is Form Validation:
+    - If there are any errors:
+      - Prevents form from submitting
+      - Shows the error state as mentioned on the Style Guide
+    - If there are no errors:
+      - Clears any error states from form
+      - Submits the form
 */
 /*
   Name: Anurag Bhattacharya
-  Project Name: BandSite Project - Sprint 1
-  Document Description: This is the Mixins SCSSS Stylesheet
+  Project Name: BandSite Project - Sprint 2
+  Document Description: This is the MixIns Styles
 
   Diving Deeper:
-  - Main Navigation: Hover effect to let user know which page is active & inactive
-  - Photo Gallery: Photo Gallery Images are greyscale by default and on hover, each image returns to color
+  - Unable to figure out Dynamic timestamp with Comments form
+  - For Comments Form, there is Form Validation:
+    - If there are any errors:
+      - Prevents form from submitting
+      - Shows the error state as mentioned on the Style Guide
+    - If there are no errors:
+      - Clears any error states from form
+      - Submits the form
 */
 /*
-  Name: Anurag Bhattacharya
-  Project Name: BandSite Project - Sprint 1
-  Document Description: This is the Photo Gallery Section SCSSS Stylesheet
+    Name: Anurag Bhattacharya
+    Project Name: BandSite Project - Sprint 2
+    Document Description: This is the Variables Styles
 
-  Diving Deeper:
-  - Main Navigation: Hover effect to let user know which page is active & inactive
-  - Photo Gallery: Photo Gallery Images are greyscale by default and on hover, each image returns to color
+    Diving Deeper:
+    - Unable to figure out Dynamic timestamp with Comments form
+    - For Comments Form, there is Form Validations
+    - If there are any errors:
+        - Prevents form from submitting
+        - Shows the error state as mentioned on the Style Guide
+    - If there are no errors:
+        - Clears any error states from form
+        - Submits the form
 */
 /*All Colors*/
 /*All Padding Styles*/
 /*All Media Queries Breakpoints*/
 /*
   Name: Anurag Bhattacharya
-  Project Name: BandSite Project - Sprint 1
-  Document Description: This is the Font Styles SCSSS Stylesheet
+  Project Name: BandSite Project - Sprint 2
+  Document Description: This is the Fonts Styles
 
   Diving Deeper:
-  - Main Navigation: Hover effect to let user know which page is active & inactive
-  - Photo Gallery: Photo Gallery Images are greyscale by default and on hover, each image returns to color
+  - Unable to figure out Dynamic timestamp with Comments form
+  - For Comments Form, there is Form Validation:
+    - If there are any errors:
+      - Prevents form from submitting
+      - Shows the error state as mentioned on the Style Guide
+    - If there are no errors:
+      - Clears any error states from form
+      - Submits the form
 */
 @font-face {
   font-family: "AvenirNext-Regular";
@@ -1042,6 +1216,7 @@ input:active {
 }
 .bandSiteFooter__contactInfo-heading p {
   color: #FFFFFF;
+  font-family: "AvenirNext-Demi";
   font-size: 0.8rem;
   line-height: 18px;
   font-weight: 600;

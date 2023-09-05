@@ -1,13 +1,18 @@
 <!--
   Name: Anurag Bhattacharya
-  Project Name: BandSite Project - Sprint 1
+  Project Name: BandSite Project - Sprint 2
   Document Description: This is the Main Biography HTML Page
 
   Diving Deeper:
-  - Main Navigation: Hover effect to let user know which page is active & inactive
-  - Photo Gallery: Photo Gallery Images are greyscale by default and on hover, each image returns to color
+  - Unable to figure out Dynamic timestamp with Comments form
+  - For Comments Form, there is Form Validation:
+    - If there are any errors:
+      - Prevents form from submitting
+      - Shows the error state as mentioned on the Style Guide
+    - If there are no errors:
+      - Clears any error states from form
+      - Submits the form
 -->
-
 <!--HTML DOCTYPE-->
 <!DOCTYPE html>
 <html lang="en">
@@ -21,6 +26,7 @@
     <title>Band-Site</title>
     <!--HTML Stylesheet Linked-->
     <link rel="stylesheet" type="text/css" href="./styles/bio.css" />
+    <!-- JavaScript Script Linked-->
     <script src="./scripts/index-page.js" defer></script>
   </head>
   <!--Body Section-->
@@ -31,16 +37,12 @@
       <article class="mainHeader__bandSiteLogo-wrapper">
         <!--BandSite Main Logo - Links to the Biography, Index Page-->
         <a href="./index.html">
-          <img
-            src="./assets/logos/Logo-bandsite.svg"
-            alt="Main BandSite Logo"
-            class="mainHeader__bandSiteLogo-wrapper-image"
-          />
+          <img src="./assets/logos/Logo-bandsite.svg" alt="Main BandSite Logo" class="mainHeader__bandSiteLogo-wrapper-image"/>
         </a>
       </article>
       <!--Main Navigation Section-->
-      <!--Main Navigation Section-->
       <nav class="mainHeader__mainNavigation">
+        <!--Main Navigation List-->
         <ul class="mainHeader__mainNavigation-list">
           <!--Main Navigation Links-->
           <li class="mainHeader__mainNavigation-list-active"><a href="./index.html">Biography</a></li>
@@ -69,12 +71,14 @@
             class="bioWrapper__image"
           />
         </article>
-        <!--Band Motto-->
+        <!--Band Motto Section-->
         <article class="bandMottoWrapper">
+          <!--Band Motto Quote-->
           <q class="bandMottoWrapper__quote">
             We push each other to be the best. It’s not uncommon for one of us
             to say ‘this needs to be better, back to the drawing board’
           </q>
+          <!--Band Motto Person-->
           <p class="bandMottoWrapper__person">
             - Bryan Teddy, lead vocalist of The Bees Knees
           </p>
@@ -97,15 +101,19 @@
               sign with Magenta Records.
             </p>
             <p class="bioContentWrapper__content-2">
-              From there, the band has soared, gaining international recognition
-              and ranking in the top 10 on the Poster Charts. New fans
-              immediately fell in love with the band's original and organic
-              attitude, solidifying their place as one of the hottest and
-              fastest up and coming acts of this century. Fans affectionately
-              refer to themselves as “The Hive” and are drawn to their candid
-              and authentic performances on stage. Looking forward to touring in
-              the future, The Bees Knees are currently recording their second
-              studio album, looking to be released in late 2021.
+              From there, the band has soared, gaining
+              international recognition and ranking in the
+              top 10 on the Poster Charts. New fans
+              immediately fell in love with the band’s original
+              and organic attitude, solidifying their place as
+              one of the hottest and fastest up and coming
+              acts of this century. Fans affectionately refer to
+              themselves as “The Hive” and are drawn to
+              their candid and authentic performances on
+              stage. Looking forward to touring in the future,
+              The Bees Knees are currently recording their
+              second studio album, looking to be released in
+              late 2021.
             </p>
           </div>
         </article>
@@ -113,6 +121,7 @@
     </section>
     <!--Photo Gallery-->
     <section class="photoGalleryWrapper">
+      <!--Photo Gallery Content-->
       <div class="photoGalleryWrapper__content">
         <div class="photoGalleryWrapper__mainTitleWrapper">
           <!--Photo Gallery Title-->
@@ -132,7 +141,7 @@
           <article class="photoGalleryWrapper__photo-gallery-area">
             <img
               src="./assets/images/Photo-gallery-2.jpg"
-              alt="photo-gallery1"
+              alt="photo-gallery2"
               class="photoGalleryWrapper__photo"
             />
           </article>
@@ -140,7 +149,7 @@
           <article class="photoGalleryWrapper__photo-gallery-area">
             <img
               src="./assets/images/Photo-gallery-3.jpg"
-              alt="photo-gallery1"
+              alt="photo-gallery3"
               class="photoGalleryWrapper__photo"
             />
           </article>
@@ -148,7 +157,7 @@
           <article class="photoGalleryWrapper__photo-gallery-area">
             <img
               src="./assets/images/Photo-gallery-4.jpg"
-              alt="photo-gallery1"
+              alt="photo-gallery4"
               class="photoGalleryWrapper__photo"
             />
           </article>
@@ -156,7 +165,7 @@
           <article class="photoGalleryWrapper__photo-gallery-area">
             <img
               src="./assets/images/Photo-gallery-5.jpg"
-              alt="photo-gallery1"
+              alt="photo-gallery5"
               class="photoGalleryWrapper__photo"
             />
           </article>
@@ -164,7 +173,7 @@
           <article class="photoGalleryWrapper__photo-gallery-area">
             <img
               src="./assets/images/Photo-gallery-6.jpg"
-              alt="photo-gallery1"
+              alt="photo-gallery6"
               class="photoGalleryWrapper__photo"
             />
           </article>
@@ -172,7 +181,7 @@
           <article class="photoGalleryWrapper__photo-gallery-area">
             <img
               src="./assets/images/Photo-gallery-7.jpg"
-              alt="photo-gallery1"
+              alt="photo-gallery7"
               class="photoGalleryWrapper__photo"
             />
           </article>
@@ -180,7 +189,7 @@
           <article class="photoGalleryWrapper__photo-gallery-area">
             <img
               src="./assets/images/Photo-gallery-8.jpg"
-              alt="photo-gallery1"
+              alt="photo-gallery8"
               class="photoGalleryWrapper__photo"
             />
           </article>
@@ -188,34 +197,46 @@
           <article class="photoGalleryWrapper__photo-gallery-area">
             <img
               src="./assets/images/Photo-gallery-9.jpg"
-              alt="photo-gallery1"
+              alt="photo-gallery9"
               class="photoGalleryWrapper__photo"
             />
           </article>
         </div>
       </div>
     </section>
+    <!--Band Comments Section-->
     <section class="bandComments">
+      <!--Band Comments Main Title-->
       <h1 class="bandComments__mainTitle">Join the Conversation</h1>
+      <!--Band Comments Content-->
       <div class="bandComments__content">
+        <!--Band Comments Form Section-->
         <section class="commentsForm">
-          <div class="commentsForm__avaterWrapper">
+          <!--Band Comments Avatar Wrapper-->
+          <div class="commentsForm__avatarWrapper">
+            <!--Band Comments avatar-->
             <img
               src="./assets/images/Mohan-muruge.jpg"
-              alt="Form Avater"
-              class="commentsForm__avater"
+              alt="Form avatar"
+              class="commentsForm__avatar"
             />
           </div>
+          <!--Band Comments Form-->
           <form id="commentsForm__form" class="commentsForm__form">
+            <!--Name Label-->
             <label for="name">NAME</label>
+            <!--Name Input-->
             <input
               type="text"
               name="name"
               id="name"
               placeholder="Enter your name"
             />
+            <!--Comment Label-->
             <label for="comment" id="commentLabel">COMMENT</label>
+            <!--Comment Input-->
             <input type="text" name="comment" id="comment" placeholder="Add a new comment"></input>
+            <!--Submit Button-->
             <div class="commentsForm__submitButtonWrapper">
               <button type="submit" class="commentsForm__submitButton">
                 COMMENT
@@ -223,9 +244,11 @@
             </div>
           </form>
         </section>
+        <!--Comments Panel-->
         <section class="commentsPanel">
+          <!--Comments Panel Comment-->
           <div class="commentsPanel__content">
-            <!--Articles here-->
+            <!--Comment Articles here-->
           </div>
         </section>
       </div>

@@ -1,150 +1,137 @@
 /*
   Name: Anurag Bhattacharya
-  Project Name: BandSite Project - Sprint 1
-  Document Description: This is the Hero Section SCSSS Stylesheet
+  Project Name: BandSite Project - Sprint 2
+  Document Description: This is the Hero Section Styles
 
   Diving Deeper:
-  - Main Navigation: Hover effect to let user know which page is active & inactive
-  - Photo Gallery: Photo Gallery Images are greyscale by default and on hover, each image returns to color
+  - Unable to figure out Dynamic timestamp with Comments form
+  - For Comments Form, there is Form Validation:
+    - If there are any errors:
+      - Prevents form from submitting
+      - Shows the error state as mentioned on the Style Guide
+    - If there are no errors:
+      - Clears any error states from form
+      - Submits the form
 */
 
-//Mixin SCSS Stylesheet
+//Mixin SCSS Style sheet
 @import './mixins';
-
+//Fonts SCSS Style sheet
 @import './fonts';
-
 //Hero Section Wrapper Styles
 .heroWrapper
 {
-  background: 
-    linear-gradient(rgba(50,50,50,0.5), rgba(50,50,50,0.5)), 
-    url('../assets/images/hero-bio.jpg') 
-    center/cover;
-  @include hero-section-wrapper-styles(
-    100%, 
-    200px, 
-    flex, 
-    column, 
-    center
-  );
-  
+  background: linear-gradient(rgba(50,50,50,0.5), rgba(50,50,50,0.5)), url('../assets/images/hero-bio.jpg') center/cover;
+  @include hero-section-wrapper-styles(100%, 200px, flex, column, center);
   //Tablet and Onwards Size Styles
   @include tablet 
   {
     height: 400px;
   }
-
-  @include desktop {
+  //Desktop and Onwards Size Styles
+  @include desktop 
+  {
     height: 600px;
   }
-
   //Hero Section Title Styles
   &__header 
   {
-    padding: 
-      $mobile-padding-before-headlines
-      $mobile-padding-between-components
-      $mobile-padding-after-headlines
-      $mobile-padding-between-components;
+    padding: $mobile-padding-before-headlines $mobile-padding-between-components $mobile-padding-after-headlines $mobile-padding-between-components;
     color: $White;
     font-family: "AvenirNext-Bold";
-    @include text-styles(
-      2rem, 
-      32px, 
-      700
-    );
+    @include text-styles(2rem, 32px, 700);
 
     //Tablet and Onwards Size Styles
     @include tablet 
     {
-      padding: 
-        $desktop-tablet-padding-before-headlines
-        $desktop-tablet-padding-between-components
-        $desktop-tablet-padding-after-headlines
-        $desktop-tablet-padding-between-components;
+      padding: $desktop-tablet-padding-before-headlines $desktop-tablet-padding-between-components $desktop-tablet-padding-after-headlines $desktop-tablet-padding-between-components;
       @include text-styles(3.75rem, 44px, 700);
     }
   }
 }
 
-.heroWrapper-shows {
-  background: 
-    linear-gradient(rgba(50,50,50,0.5), rgba(50,50,50,0.5)), 
-    url('../assets/images/hero-shows.jpg') 
-    center/cover;
-  
+//Shows Page Hero Wrapper Styles
+.heroWrapper-shows 
+{
+  background: linear-gradient(rgba(50,50,50,0.5), rgba(50,50,50,0.5)), url('../assets/images/hero-shows.jpg') center/cover;
   width: 100%;
   height: 350px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-
   @include tablet 
   {
-    height: 450px;
+    height: 400px;
   }
-
-  &__content {
+  //Desktop and Onwards Size Styles
+  @include desktop 
+  {
+    height: 600px;
+  }
+  //Shows Page Hero Wrapper Content Styles
+  &__content 
+  {
     padding: $mobile-padding-between-components;
-
-    @include tablet {
+    //Tablet and Onwards Size Styles
+    @include tablet 
+    {
       padding: $desktop-tablet-padding-between-components;
     }
   }
+  //Shows Page Hero Wrapper Main Header Styles
   &__mainHeader
   {
     color: $White;
     padding-bottom: $mobile-padding-after-headlines;
     font-family: "AvenirNext-Demi";
-    @include text-styles(
-      0.9rem, 
-      22px, 
-      600
-    );
-
+    @include text-styles(0.9rem, 22px, 600);
+    //Tablet and Onwards Size Styles
     @include tablet 
     {
       padding-bottom: $desktop-tablet-padding-after-headlines;
       @include text-styles(2rem, 32px, 600);
     }
   }
-
+  //Shows Page Hero Wrapper Sub-Header Styles
   &__subHeader 
   {
     color: $White;
     padding-bottom: $mobile-padding-after-headlines;
     font-family: "AvenirNext-Bold";
-    @include text-styles(
-      2rem, 
-      32px, 
-      700
-    );
-
+    @include text-styles(2rem, 32px, 700);
     //Tablet and Onwards Size Styles
     @include tablet 
     {
       padding-bottom: $desktop-tablet-padding-after-headlines;
       @include text-styles(3.75rem, 44px, 700);
     }
-
+    //Desktop and Onwards Size Styles
     @include desktop {
       padding-right: $desktop-tablet-padding-between-components;
     }
   }
-
-  &__soundCloud {
-    @include desktop {
+  //SoundCloud Section Styles
+  &__soundCloud 
+  {
+    //Desktop and Onwards Size Styles
+    @include desktop 
+    {
       display: flex;
     }
   }
-
-  &__soundCloudBox iframe {
+  //SoundCloud IFrame Styles
+  &__soundCloudBox iframe 
+  {
     width: 100%;
-  @include tablet {
-    width: 65%;
-  }
-  @include desktop {
-    width: 450px;
-  }
+    //Tablet and Onwards Size Styles
+    @include tablet 
+    {
+      width: 65%;
+    }
+    //Desktop and Onwards Size Styles
+    @include desktop 
+    {
+      width: 450px;
+    }
   }
 }

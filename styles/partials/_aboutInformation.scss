@@ -1,47 +1,43 @@
 /*
   Name: Anurag Bhattacharya
-  Project Name: BandSite Project - Sprint 1
-  Document Description: This is the Band Biography Section SCSSS Stylesheet
+  Project Name: BandSite Project - Sprint 2
+  Document Description: This is the About Information Section Styles
 
   Diving Deeper:
-  - Main Navigation: Hover effect to let user know which page is active & inactive
-  - Photo Gallery: Photo Gallery Images are greyscale by default and on hover, each image returns to color
+  - Unable to figure out Dynamic timestamp with Comments form
+  - For Comments Form, there is Form Validation:
+    - If there are any errors:
+      - Prevents form from submitting
+      - Shows the error state as mentioned on the Style Guide
+    - If there are no errors:
+      - Clears any error states from form
+      - Submits the form
 */
-
-//Mixin SCSS Stylesheet
+//Mixin SCSS Style sheet
 @import './mixins';
-
+//Fonts SCSS Style sheet
 @import './fonts';
-
 //Biography Wrapper Styles
 .bioWrapper 
 {
-
   //Biography Content Styles
   &__content 
   {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 
-      0px 
-      $mobile-padding-between-components;
-
+    padding: 0px $mobile-padding-between-components;
     //Tablet and Onwards Size Styles
     @include tablet 
     {
-      padding: 
-        0px 
-        $desktop-tablet-padding-between-components;
+      padding: 0px $desktop-tablet-padding-between-components;
     }
   }
-
   //Biography Title Area Styles
   &__mainTitle-wrapper 
   {
     padding-top: $mobile-padding-before-headlines;
     padding-bottom: $mobile-padding-after-headlines;
-
     //Tablet and Onwards Size Styles
     @include tablet 
     {
@@ -49,115 +45,75 @@
       padding-bottom: $desktop-tablet-padding-after-headlines;
     }
   }
-
   //Biography Title Styles
   &__mainTitle
   {
     font-family: "AvenirNext-Bold";
     @include text-styles(2rem, 32px, 700);
-
     //Tablet and Onwards Size Styles
     @include tablet 
     {
       @include text-styles(2.25rem, 44px, 700);
     }
   }
-
   //Band Image Wrapper Styles
   &__image-wrapper 
   {
-
     //Tablet and Onwards Size Styles
     @include tablet 
     {
-      padding: 
-        0px 
-        $desktop-tablet-padding-between-components;
+      padding: 0px $desktop-tablet-padding-between-components;
     }
   }
-
   //Band Image Styles
   &__image 
   {
-    @include band-image-styles(
-      flex, 
-      center, 
-      center, 
-      auto, 
-      100%
-    );
+    @include band-image-styles(flex, center, center, auto, 100%);
   }
 }
-
 //BandSite Motto Wrapper Styles
 .bandMottoWrapper 
 {
   padding-top: $mobile-padding-between-components;
-
   //Tablet and Onwards Size Styles
   @include tablet 
   {
     padding: $desktop-tablet-padding-between-components;
   }
-
   //BandSite Motto Styles
   &__quote, &__person 
   {
     font-family: "AvenirNext-Demi";
     padding: $mobile-padding-between-components 0px;
-    @include text-styles(
-      0.8rem, 
-      18px, 
-      600
-    );
-
+    @include text-styles(0.8rem, 18px, 600);
     //Tablet and Onwards Size Styles
     @include tablet 
     {
       padding-bottom: $desktop-tablet-padding-between-components;
-      @include text-styles(
-        0.9rem, 
-        22px, 
-        600
-      );
+      @include text-styles(0.9rem, 22px, 600);
     }
   }
 }
-
 //Band Biography Text Wrapper Styles
 .bioContentWrapper
 {
   padding-top: $mobile-padding-before-headlines;
   padding-bottom: $mobile-padding-between-components;
-
   //Tablet and Onwards Size Styles
   @include tablet 
   {
-    padding: 
-      $desktop-tablet-padding-before-headlines 
-      $desktop-tablet-padding-between-components 
-      $desktop-tablet-padding-after-headlines 
-      $desktop-tablet-padding-between-components;
+    padding: $desktop-tablet-padding-before-headlines $desktop-tablet-padding-between-components $desktop-tablet-padding-after-headlines $desktop-tablet-padding-between-components;
   }
 
   //Band Biography Title Styles
   &__mainTitle
   {
     font-family: "AvenirNext-Demi";
-    @include text-styles(
-      0.9rem, 
-      22px, 
-      600
-    );
-    
+    @include text-styles(0.9rem, 22px, 600);
     //Tablet and Onwards Size Styles
     @include tablet 
     {
-      @include text-styles(
-        2rem, 
-        32px, 
-        600
-      );
+      @include text-styles(2rem, 32px, 600);
     }
   }
 
@@ -165,7 +121,6 @@
   &__content 
   {
     padding-top: $mobile-padding-between-components;
-
     //Tablet and Onwards Size Styles
     @include tablet 
     {
@@ -179,20 +134,11 @@
   &__content-1, &__content-2 
   {
     padding-bottom: $mobile-padding-between-components;
-
-    @include text-styles(
-      0.8rem, 
-      18px, 
-      400
-    );
-    
+    @include text-styles(0.8rem, 18px, 400);
     //Tablet and Onwards Size Styles
     @include tablet 
     {
-      @include text-styles(
-        0.9rem, 
-        22px, 
-      400);
+      @include text-styles(0.9rem, 22px, 400);
     }
   }
 
