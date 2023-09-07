@@ -13,41 +13,29 @@
         - Clears any error states from form
         - Submits the form
 */
-//Band Shows Array
-const bandShowsArray = [
-  {
-    date: "Mon Sept 06 2021",
-    venue: "Ronald Lane",
-    location: "San Francisco, CA",
+
+let baseURL = "https://project-1-api.herokuapp.com";
+let api_key = "?api_key=7c2395bc-a9b1-4505-b5c5-0331ea11bff0";
+let showsEndpoint = "/showdates";
+let requestOptions = {
+  method: "GET",
+  header: {
+    "Content-Type": "application/json",
   },
-  {
-    date: "Tue Sept 21 2021",
-    venue: "Pier 3 East",
-    location: "San Francisco, CA",
-  },
-  {
-    date: "Fri Oct 15 2021",
-    venue: "View Lounge",
-    location: "San Francisco, CA",
-  },
-  {
-    date: "Sat Nov 06 2021",
-    venue: "Hyatt Agency",
-    location: "San Francisco, CA",
-  },
-  {
-    date: "Fri Nov 26 2021",
-    venue: "Moscow Center",
-    location: "San Francisco, CA",
-  },
-  {
-    date: "Wed Dec 15 2021",
-    venue: "Press Club",
-    location: "San Francisco, CA",
-  },
-];
+};
+
+fetch(`${baseURL}${showsEndpoint}${api_key}`, requestOptions)
+  .then((response) => {
+    return response.json();
+  })
+  .then((data) => {
+    displayShows(data);
+  })
+  .catch((error) => {
+    console.error("Fetch Error:", error);
+  });
 //This Function Displays the Show Data
-function displayShows(bandShowsArray) {
+function displayShows(data) {
   //Getting the element to store the show data
   const bandShowsEl = document.querySelector(".bandShows");
   //Band Show Data Main Title
@@ -85,7 +73,7 @@ function displayShows(bandShowsArray) {
   bandShowsHeaderContent.appendChild(hiddenEl);
 
   //For Loop to go through each Band Shows Data in Array
-  for (let key in bandShowsArray) {
+  for (let key in data) {
     //Band Shows Parent
     const bandShowsParent = document.createElement("div");
     bandShowsParent.classList.add("bandShows__showData");
@@ -102,7 +90,10 @@ function displayShows(bandShowsArray) {
     //Band Shows Date
     const date = document.createElement("h3");
     date.classList.add("bandShows__date");
-    date.innerText = bandShowsArray[key]["date"];
+    let unixTimeStamp = data[key]["date"];
+    let showsDate = new Date(unixTimeStamp);
+    let dateString = showsDate.toDateString();
+    date.innerText = dateString;
     bandShowsContent.appendChild(date);
     //Band Shows Venue Title
     const venueTitle = document.createElement("h4");
@@ -112,7 +103,7 @@ function displayShows(bandShowsArray) {
     //Band Shows Venue
     const venue = document.createElement("h3");
     venue.classList.add("bandShows__venue");
-    venue.innerText = bandShowsArray[key]["venue"];
+    venue.innerText = data[key]["place"];
     bandShowsContent.appendChild(venue);
     //Band Shows Location Title
     const locationTitle = document.createElement("h4");
@@ -122,7 +113,7 @@ function displayShows(bandShowsArray) {
     //Band Shows Location
     const location = document.createElement("h3");
     location.classList.add("bandShows__location");
-    location.innerText = bandShowsArray[key]["location"];
+    location.innerText = data[key]["location"];
     bandShowsContent.appendChild(location);
     //Band Shows Buy Tickets Button Wrapper
     const buyTicketsButtonWrapper = document.createElement("div");
@@ -136,4 +127,4 @@ function displayShows(bandShowsArray) {
   }
 }
 //To Run displayShows Function
-displayShows(bandShowsArray);
+// displayShows(bandShowsArray);

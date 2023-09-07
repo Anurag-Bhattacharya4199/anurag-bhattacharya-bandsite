@@ -14,10 +14,9 @@
         - Submits the form
 */
 
-let baseURL = "https://project-1-api.herokuapp.com/";
-let api_key = "7c2395bc-a9b1-4505-b5c5-0331ea11bff0";
+let baseURL = "https://project-1-api.herokuapp.com";
+let api_key = "?api_key=7c2395bc-a9b1-4505-b5c5-0331ea11bff0";
 let commentsEndpoint = "/comments";
-let showsEndpoint = "/showdates";
 let requestOptions = {
   method: "GET",
   header: {
@@ -25,10 +24,7 @@ let requestOptions = {
   },
 };
 
-fetch(
-  "https://project-1-api.herokuapp.com/comments?api_key=53b1fc9f-eae8-4052-8b37-599e09015560",
-  requestOptions
-)
+fetch(`${baseURL}${commentsEndpoint}${api_key}`, requestOptions)
   .then((response) => {
     return response.json();
   })
