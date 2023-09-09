@@ -15,23 +15,22 @@
 */
 
 let baseURL = "https://project-1-api.herokuapp.com";
-let api_key = "?api_key=7c2395bc-a9b1-4505-b5c5-0331ea11bff0";
+let api_key = "?api_key=38d065a7-e5a0-442f-bd28-22ddfbc7f490";
 let commentsEndpoint = "/comments";
-// let requestOptions = {
-//   method: "GET",
-//   header: {
-//     "Content-Type": "application/json",
-//   },
-// };
 
-axios
-  .get(`${baseURL}${commentsEndpoint}${api_key}`)
-  .then((response) => {
-    renderComments(response.data);
-  })
-  .catch((error) => {
-    console.error("Fetch Error:", error);
-  });
+const sortComment = () => {
+  axios
+    .get(`${baseURL}${commentsEndpoint}${api_key}`)
+    .then((response) => {
+      let sortedData = response.data.sort((a, b) => {
+        return b.timestamp - a.timestamp;
+      });
+      renderComments(sortedData);
+    })
+    .catch((error) => {
+      console.error("Fetch Error:", error);
+    });
+};
 
 //This function creates each comment article
 function createCommentCard(data) {
@@ -100,62 +99,47 @@ function renderComments(data) {
   nameInput = "";
   commentInput = "";
 }
+sortComment();
 
-// //This function listens to the Submit Button on the Comments Form event
-// function handleFormSubmit(event) {
-//   //Prevents Form Submission Default Behaviour
-//   event.preventDefault();
-//   //Gets the Name and Comment Input values
-//   let name = event.target.name.value;
-//   let comment = event.target.comment.value;
-//   //Creating the Date in correct format
-//   let dateObject = new Date();
-//   //Month
-//   let month = dateObject.getMonth() + 1;
-//   //Day
-//   let day = dateObject.getDate();
-//   //Year
-//   let year = dateObject.getFullYear();
-//   //If statements to make sure to add a 0 in front of day/month value, if needed
-//   if (day < 10) day = "0" + day;
-//   if (month < 10) month = "0" + month;
-//   //Correct Date Format
-//   let date = `${month}/${day}/${year}`;
-//   //Form Validation Steps
-//   //If Both Name and Comment Input empty, surround with red border
-//   if (name === "" && comment === "") {
-//     let nameInput = document.getElementById("name");
-//     let commentInput = document.getElementById("comment");
-//     nameInput.style.border = "1px solid #D22D2D";
-//     commentInput.style.border = "1px solid #D22D2D";
-//     return;
-//     //If Name Input empty, surround with red border
-//   } else if (name === "") {
-//     let nameInput = document.getElementById("name");
-//     nameInput.style.border = "1px solid #D22D2D";
-//     return;
-//     //If Comment Input empty, surround with red border
-//   } else if (comment === "") {
-//     let commentInput = document.getElementById("comment");
-//     commentInput.style.border = "1px solid #D22D2D";
-//     return;
-//   }
-//   //Create the new comment
-//   const newComment = {
-//     name,
-//     comment,
-//     date,
-//   };
-//   //Append the new comment to the end of the array
-//   commentsList.unshift(newComment);
-//   //Call the renderComments Function
-//   renderComments();
-//   //Reset the Comments Form upon submission
-//   commentsForm.reset();
-// }
-// //Get the Element for the Comment Form
-// const commentsForm = document.getElementById("commentsForm__form");
-// //Event Listen on submit button click on Comments Form
-// commentsForm.addEventListener("submit", handleFormSubmit);
-//Call the renderComments Function
-//renderComments();
+//This function listens to the Submit Button on the Comments Form event
+function handleFormSubmit(event) {
+  event.preventDefault();
+  let name = event.target.name.value;
+  let comment = event.target.comment.value;
+  //Form Validation Steps
+  //If Both Name and Comment Input empty, surround with red border
+  if (name === "" && comment === "") {
+    let nameInput = document.getElementById("name");
+    let commentInput = document.getElementById("comment");
+    nameInput.style.border = "1px solid #D22D2D";
+    commentInput.style.border = "1px solid #D22D2D";
+    return;
+    //If Name Input empty, surround with red border
+  } else if (name === "") {
+    let nameInput = document.getElementById("name");
+    nameInput.style.border = "1px solid #D22D2D";
+    return;
+    //If Comment Input empty, surround with red border
+  } else if (comment === "") {
+    let commentInput = document.getElementById("comment");
+    commentInput.style.border = "1px solid #D22D2D";
+    return;
+  }
+  const newCommentData = {
+    name: name,
+    comment: comment,
+  };
+
+  axios
+    .post(`${baseURL}${commentsEndpoint}${api_key}`, newCommentData)
+    .then((response) => {
+      sortComment();
+    });
+
+  commentsForm.reset();
+}
+
+//Get the Element for the Comment Form
+const commentsForm = document.getElementById("commentsForm__form");
+//Event Listen on submit button click on Comments Form
+commentsForm.addEventListener("submit", handleFormSubmit);
