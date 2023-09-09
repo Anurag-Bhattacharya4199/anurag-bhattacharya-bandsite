@@ -17,19 +17,17 @@
 let baseURL = "https://project-1-api.herokuapp.com";
 let api_key = "?api_key=7c2395bc-a9b1-4505-b5c5-0331ea11bff0";
 let showsEndpoint = "/showdates";
-let requestOptions = {
-  method: "GET",
-  header: {
-    "Content-Type": "application/json",
-  },
-};
+// let requestOptions = {
+//   method: "GET",
+//   header: {
+//     "Content-Type": "application/json",
+//   },
+// };
 
-fetch(`${baseURL}${showsEndpoint}${api_key}`, requestOptions)
+axios
+  .get(`${baseURL}${showsEndpoint}${api_key}`)
   .then((response) => {
-    return response.json();
-  })
-  .then((data) => {
-    displayShows(data);
+    displayShows(response.data);
   })
   .catch((error) => {
     console.error("Fetch Error:", error);
