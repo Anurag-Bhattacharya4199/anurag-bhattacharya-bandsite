@@ -17,10 +17,10 @@
 let baseURL = "https://project-1-api.herokuapp.com";
 let api_key = "?api_key=38d065a7-e5a0-442f-bd28-22ddfbc7f490";
 let commentsEndpoint = "/comments";
-
+let fullURL = `${baseURL}${commentsEndpoint}${api_key}`;
 const sortComment = () => {
   axios
-    .get(`${baseURL}${commentsEndpoint}${api_key}`)
+    .get(`${fullURL}`)
     .then((response) => {
       let sortedData = response.data.sort((a, b) => {
         return b.timestamp - a.timestamp;
@@ -69,6 +69,56 @@ function createCommentCard(data) {
   const commentEl = document.createElement("span");
   commentEl.classList.add("commentsPanel__personComment");
   commentEl.innerText = data.comment;
+
+  const crudIcons = document.createElement("section");
+  crudIcons.classList.add("commentsPanel__crudIcons");
+  const likeButtonWrapper = document.createElement("div");
+  likeButtonWrapper.classList.add("commentsPanel__likeButtonWrapper");
+  const likeButton = document.createElement("img");
+  likeButton.classList.add("commentsPanel__likeButton");
+  likeButton.id = data.id;
+  likeButton.src = "../assets/icons/icon-like.svg";
+  crudIcons.appendChild(likeButtonWrapper);
+  likeButtonWrapper.appendChild(likeButton);
+  const commentLikes = document.createElement("span");
+  commentLikes.classList.add("commentsPanel__commentLikes");
+  commentLikes.innerText = data.likes;
+  likeButtonWrapper.appendChild(commentLikes);
+
+  likeButton.addEventListener("click", (event) => {
+    let likeId = event.target.id;
+    let fullURLPUT = `${baseURL}${commentsEndpoint}/${likeId}/like/${api_key}`;
+    axios
+      .put(`${fullURLPUT}`)
+      .then((response) => {
+        commentLikes.innerText = response.data.likes;
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  });
+
+  const deleteButtonWrapper = document.createElement("div");
+  deleteButtonWrapper.classList.add("commentsPanel__deleteButtonWrapper");
+  crudIcons.appendChild(deleteButtonWrapper);
+  const deleteButton = document.createElement("img");
+  deleteButton.classList.add("commentsPanel__deleteButton");
+  deleteButton.id = data.id;
+  deleteButton.src = "../assets/icons/icon-delete.svg";
+  deleteButtonWrapper.appendChild(deleteButton);
+
+  deleteButton.addEventListener("click", (event) => {
+    let deleteId = event.target.id;
+    let fullURLDELETE = `${baseURL}${commentsEndpoint}/${deleteId}${api_key}`;
+    axios
+      .delete(`${fullURLDELETE}`)
+      .then((response) => {
+        sortComment();
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  });
   //Appending all elements to parent elements as needed
   cardEl.appendChild(imageWrapperEl);
   imageWrapperEl.appendChild(image);
@@ -77,6 +127,7 @@ function createCommentCard(data) {
   headingContent.appendChild(heading);
   headingContent.appendChild(dateEl);
   commentsContentEl.appendChild(commentEl);
+  commentsContentEl.appendChild(crudIcons);
   //Returning the comment card for each comment
   return cardEl;
 }
@@ -85,13 +136,10 @@ function renderComments(data) {
   //Comments Panel Content
   const commentsEl = document.querySelector(".commentsPanel__content");
   commentsEl.innerHTML = "";
-  //For Loop through Comments Array to get Comments Data
-  for (let i = 0; i < data.length; i++) {
-    //Create a Comment Card for a Comment Data
-    const card = createCommentCard(data[i]);
-    //Append the Comment to the Array
+  data.forEach((comment) => {
+    const card = createCommentCard(comment);
     commentsEl.appendChild(card);
-  }
+  });
   //Get the Name and Comment Inputs
   let nameInput = document.getElementById("name");
   let commentInput = document.getElementById("comment");
@@ -130,12 +178,11 @@ function handleFormSubmit(event) {
     comment: comment,
   };
 
-  axios
-    .post(`${baseURL}${commentsEndpoint}${api_key}`, newCommentData)
-    .then((response) => {
-      sortComment();
-    });
+  axios.post(`${fullURL}`, newCommentData).then((response) => {
+    sortComment();
+  });
 
+  commentInput.style.border = "1px solid #E1E1E1";
   commentsForm.reset();
 }
 
