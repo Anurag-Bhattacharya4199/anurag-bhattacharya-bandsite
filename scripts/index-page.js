@@ -18,6 +18,7 @@ let baseURL = "https://project-1-api.herokuapp.com";
 let api_key = "?api_key=38d065a7-e5a0-442f-bd28-22ddfbc7f490";
 let commentsEndpoint = "/comments";
 let fullURL = `${baseURL}${commentsEndpoint}${api_key}`;
+
 const sortComment = () => {
   axios
     .get(`${fullURL}`)
@@ -33,7 +34,7 @@ const sortComment = () => {
 };
 
 //This function creates each comment article
-function createCommentCard(data) {
+const displayComment = (data) => {
   //Image Wrapper
   const imageWrapperEl = document.createElement("div");
   imageWrapperEl.classList.add("commentsPanel__avatarWrapper");
@@ -130,14 +131,15 @@ function createCommentCard(data) {
   commentsContentEl.appendChild(crudIcons);
   //Returning the comment card for each comment
   return cardEl;
-}
+};
+
 //This function renders the Comments Panel Content
-function renderComments(data) {
+const renderComments = (data) => {
   //Comments Panel Content
   const commentsEl = document.querySelector(".commentsPanel__content");
   commentsEl.innerHTML = "";
   data.forEach((comment) => {
-    const card = createCommentCard(comment);
+    const card = displayComment(comment);
     commentsEl.appendChild(card);
   });
   //Get the Name and Comment Inputs
@@ -146,7 +148,7 @@ function renderComments(data) {
   //Empty them after rendering the comments panel data
   nameInput = "";
   commentInput = "";
-}
+};
 sortComment();
 
 //This function listens to the Submit Button on the Comments Form event
@@ -154,24 +156,31 @@ function handleFormSubmit(event) {
   event.preventDefault();
   let name = event.target.name.value;
   let comment = event.target.comment.value;
+  let nameInput = document.getElementById("name");
+  let commentInput = document.getElementById("comment");
   //Form Validation Steps
   //If Both Name and Comment Input empty, surround with red border
   if (name === "" && comment === "") {
-    let nameInput = document.getElementById("name");
-    let commentInput = document.getElementById("comment");
-    nameInput.style.border = "1px solid #D22D2D";
-    commentInput.style.border = "1px solid #D22D2D";
+    nameInput.classList.remove("default-border");
+    commentInput.classList.remove("default-border");
+    nameInput.classList.add("error-border");
+    commentInput.classList.add("error-border");
     return;
     //If Name Input empty, surround with red border
   } else if (name === "") {
-    let nameInput = document.getElementById("name");
-    nameInput.style.border = "1px solid #D22D2D";
+    nameInput.classList.remove("default-border");
+    nameInput.classList.add("error-border");
     return;
     //If Comment Input empty, surround with red border
   } else if (comment === "") {
-    let commentInput = document.getElementById("comment");
-    commentInput.style.border = "1px solid #D22D2D";
+    commentInput.classList.remove("default-border");
+    commentInput.classList.add("error-border");
     return;
+  } else {
+    nameInput.classList.remove("error-border");
+    nameInput.classList.add("default-border");
+    commentInput.classList.remove("error-border");
+    commentInput.classList.add("default-border");
   }
   const newCommentData = {
     name: name,
@@ -182,7 +191,10 @@ function handleFormSubmit(event) {
     sortComment();
   });
 
-  commentInput.style.border = "1px solid #E1E1E1";
+  nameInput.classList.remove("error-border");
+  commentInput.classList.remove("error-border");
+  nameInput.classList.add("default-border");
+  commentInput.classList.add("default-border");
   commentsForm.reset();
 }
 

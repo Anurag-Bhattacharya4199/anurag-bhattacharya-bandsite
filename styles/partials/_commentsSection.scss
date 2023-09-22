@@ -185,6 +185,14 @@ input
     border: 1px solid $BandSite-Black;
   }
 }
+
+.error-border {
+  border: 1px solid #D22D2D;
+}
+
+.default-border {
+  border: 1px solid $Mercury;
+}
 //Comments Panel Section Styles
 .commentsPanel 
 {

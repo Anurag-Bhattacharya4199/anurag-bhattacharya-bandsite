@@ -17,23 +17,20 @@
 let baseURL = "https://project-1-api.herokuapp.com";
 let api_key = "?api_key=7c2395bc-a9b1-4505-b5c5-0331ea11bff0";
 let showsEndpoint = "/showdates";
-// let requestOptions = {
-//   method: "GET",
-//   header: {
-//     "Content-Type": "application/json",
-//   },
-// };
+let fullURL = `${baseURL}${showsEndpoint}${api_key}`;
 
 axios
-  .get(`${baseURL}${showsEndpoint}${api_key}`)
+  .get(`${fullURL}`)
   .then((response) => {
-    displayShows(response.data);
+    displayShowHeaders();
+    displayShowData(response.data);
   })
   .catch((error) => {
     console.error("Fetch Error:", error);
   });
+
 //This Function Displays the Show Data
-function displayShows(data) {
+function displayShowHeaders() {
   //Getting the element to store the show data
   const bandShowsEl = document.querySelector(".bandShows");
   //Band Show Data Main Title
@@ -69,7 +66,12 @@ function displayShows(data) {
   hiddenEl.classList.add("bandShows__hidden");
   hiddenEl.innerText = ".";
   bandShowsHeaderContent.appendChild(hiddenEl);
+}
 
+function displayShowData(data) {
+  let bandShowsHeaderWrapper = document.querySelector(
+    ".bandShows__headerWrapper"
+  );
   //For Loop to go through each Band Shows Data in Array
   for (let key in data) {
     //Band Shows Parent
@@ -123,6 +125,13 @@ function displayShows(data) {
     buyTicketsButton.innerText = "BUY TICKETS";
     buyTicketsButtonWrapper.appendChild(buyTicketsButton);
   }
+  const showDataRow = document.querySelectorAll(".bandShows__showData");
+  showDataRow.forEach((show) => {
+    show.addEventListener("click", (event) => {
+      showDataRow.forEach((show) => {
+        show.classList.remove("bandShows__selectedRow");
+        event.target.classList.add("bandShows__selectedRow");
+      });
+    });
+  });
 }
-//To Run displayShows Function
-// displayShows(bandShowsArray);

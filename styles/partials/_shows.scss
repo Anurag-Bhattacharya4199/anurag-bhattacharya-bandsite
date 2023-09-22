@@ -41,12 +41,13 @@
         {
             display: flex;
             width: 70%;
-            justify-content: space-between;
+            //justify-content: space-between;
         }
         //Desktop and Onwards Size Styles
         @include desktop 
         {
             width: 100%;
+            text-align: center;
         }
     }
     //Band Site Table Headings Styles
@@ -59,6 +60,7 @@
             font-family: 'AvenirNext-Demi'; 
             @include text-styles(14px, 22px, 600);
             padding: 24px 18px;
+            width: 25%;
         }
     }
 
@@ -86,16 +88,10 @@
         @include tablet 
         {
             text-align: center;
-        }
-        //Band Site Show Data Hover Styles
-        &:hover 
-        {
-            background-color: $Alabaster;
-        }
-        //Band Site Show Data Selected/Active Styles
-        &:active 
-        {
-            background-color: $Mercury;
+
+            &:hover {
+                background-color: $Alabaster;
+            }
         }
     }
     //Band Site Show Content Styles
@@ -106,9 +102,11 @@
         @include tablet 
         {
             display: flex;
-            justify-content: space-between;
+            //justify-content: space-between;
             padding-left: 0px;
             padding-right: 0px;
+            width: 100%;
+            pointer-events: none;   
         }
     }
     //Band Site Show Data Header Styles
@@ -116,6 +114,8 @@
     {
         color: $Silver;
         padding: $mobile-padding-between-components 0px;
+        @include text-styles(0.9rem, 22px, 600);
+
         //Tablet and Onwards Size Styles
         @include tablet 
         {
@@ -130,7 +130,10 @@
         //Tablet and Onwards Size Styles
         @include tablet 
         {
+            @include text-styles(0.9rem, 22px, 600);
             padding: 24px 18px;
+            width: 25%;
+            pointer-events: none;
         }
     }
     //Band Site Show Data - Venue & Location Styles
@@ -140,10 +143,12 @@
         //Tablet and Onwards Size Styles
         @include tablet 
         {
+            @include text-styles(0.9rem, 22px, 400);
             padding: 24px 18px;
+            width: 25%;
+            pointer-events: none;
         }
     }
-
     //Band Site Show Data - Button Wrapper Styles
     &__buttonWrapper 
     {
@@ -173,5 +178,16 @@
             width: 150px;
             padding: 0px 32px;
         }
+    }
+
+    &__selectedRow {
+        @include tablet {
+            background-color: $Mercury;
+
+            &:hover {
+                background-color: $Mercury;
+            }
+        }
+        
     }
 }

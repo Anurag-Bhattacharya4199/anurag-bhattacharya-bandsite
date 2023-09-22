@@ -499,12 +499,12 @@
   .bandShows__headerContent {
     display: flex;
     width: 70%;
-    justify-content: space-between;
   }
 }
 @media screen and (min-width: 1280px) {
   .bandShows__headerContent {
     width: 100%;
+    text-align: center;
   }
 }
 @media screen and (min-width: 768px) {
@@ -515,6 +515,7 @@
     line-height: 22px;
     font-weight: 600;
     padding: 24px 18px;
+    width: 25%;
   }
 }
 .bandShows__mainTitle {
@@ -542,12 +543,9 @@
   .bandShows__showData {
     text-align: center;
   }
-}
-.bandShows__showData:hover {
-  background-color: #FAFAFA;
-}
-.bandShows__showData:active {
-  background-color: #E1E1E1;
+  .bandShows__showData:hover {
+    background-color: #FAFAFA;
+  }
 }
 .bandShows__showContent {
   padding: 0px 1rem;
@@ -555,14 +553,18 @@
 @media screen and (min-width: 768px) {
   .bandShows__showContent {
     display: flex;
-    justify-content: space-between;
     padding-left: 0px;
     padding-right: 0px;
+    width: 100%;
+    pointer-events: none;
   }
 }
 .bandShows__dateTitle, .bandShows__venueTitle, .bandShows__locationTitle {
   color: #AFAFAF;
   padding: 1rem 0px;
+  font-size: 0.9rem;
+  line-height: 22px;
+  font-weight: 600;
 }
 @media screen and (min-width: 768px) {
   .bandShows__dateTitle, .bandShows__venueTitle, .bandShows__locationTitle {
@@ -577,7 +579,12 @@
 }
 @media screen and (min-width: 768px) {
   .bandShows__date {
+    font-size: 0.9rem;
+    line-height: 22px;
+    font-weight: 600;
     padding: 24px 18px;
+    width: 25%;
+    pointer-events: none;
   }
 }
 .bandShows__venue, .bandShows__location {
@@ -587,7 +594,12 @@
 }
 @media screen and (min-width: 768px) {
   .bandShows__venue, .bandShows__location {
+    font-size: 0.9rem;
+    line-height: 22px;
+    font-weight: 400;
     padding: 24px 18px;
+    width: 25%;
+    pointer-events: none;
   }
 }
 .bandShows__buttonWrapper {
@@ -611,6 +623,14 @@
   .bandShows__button {
     width: 150px;
     padding: 0px 32px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .bandShows__selectedRow {
+    background-color: #E1E1E1;
+  }
+  .bandShows__selectedRow:hover {
+    background-color: #E1E1E1;
   }
 }
 
