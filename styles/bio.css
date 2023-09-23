@@ -1086,6 +1086,10 @@ input:active {
     padding-top: 2.25rem;
   }
 }
+.commentsPanel__likeButton:hover, .commentsPanel__deleteButton:hover {
+  cursor: pointer;
+  transform: scale(1.5);
+}
 .commentsPanel__likeButton, .commentsPanel__commentLikes {
   padding-right: 1rem;
 }

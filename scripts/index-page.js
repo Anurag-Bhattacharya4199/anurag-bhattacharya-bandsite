@@ -111,14 +111,17 @@ const displayComment = (data) => {
   deleteButton.addEventListener("click", (event) => {
     let deleteId = event.target.id;
     let fullURLDELETE = `${baseURL}${commentsEndpoint}/${deleteId}${api_key}`;
-    axios
-      .delete(`${fullURLDELETE}`)
-      .then((response) => {
-        sortComment();
-      })
-      .catch((error) => {
-        console.log(error);
-      });
+    let confirmDelete = confirm("Are you sure you want to delete?");
+    if (confirmDelete) {
+      axios
+        .delete(`${fullURLDELETE}`)
+        .then((response) => {
+          sortComment();
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    }
   });
   //Appending all elements to parent elements as needed
   cardEl.appendChild(imageWrapperEl);

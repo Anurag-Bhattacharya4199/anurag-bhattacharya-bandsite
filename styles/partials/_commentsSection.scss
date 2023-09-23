@@ -297,6 +297,13 @@ input
       padding-top: $desktop-tablet-padding-between-components;
     }
   }
+  
+  &__likeButton, &__deleteButton {
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.5);
+    }
+  }
 
   &__likeButton, &__commentLikes {
     padding-right: $mobile-padding-between-components;
