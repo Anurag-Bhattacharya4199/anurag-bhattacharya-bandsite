@@ -1,37 +1,40 @@
 <!--
-  Name: Anurag Bhattacharya
-  Project Name: BandSite Project - Sprint 2
-  Document Description: This is the Shows Page
-
-  Diving Deeper:
-  - Unable to figure out Dynamic timestamp with Comments form
-  - For Comments Form, there is Form Validation:
-    - If there are any errors:
-      - Prevents form from submitting
-      - Shows the error state as mentioned on the Style Guide
-    - If there are no errors:
-      - Clears any error states from form
-      - Submits the form
+  Name: 
+  Anurag Bhattacharya
+  Project: 
+  BandSite Project - Sprint 3
+  Description: 
+  This is the Main Index Page, the Bio Page of the Music Band
+  Diving Deeper Notes:
+  - All Diving Deeper From Sprint 1 Completed
+  - Form Validation Diving Deeper From Sprint 2 Completed
+  - Dynamic Timestamp Diving Deeper From Sprint 2 Not Completed
+  - All Diving Deeper From Sprint 3 Completed
 -->
-<!--HTML DOCTYPE-->
+
+<!--This is the HTML-->
 <!DOCTYPE html>
 <html lang="en">
-  <!--HTML Head Section-->
+  <!--
+    Head Section which includes metadata, title, Stylesheets & JavaScript Files Links
+  -->
   <head>
-    <!--HTML Meta Data Section-->
     <meta charset="UTF-8" />
-    <!--HTML Viewport Section-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--HTML Page Title-->
     <title>BandSite Project - Shows Page</title>
-    <!--HTML Stylesheet Linked-->
     <link rel="stylesheet" type="text/css" href="../styles/shows.css" />
-    <!-- JavaScript Script Linked-->
     <script src="https://unpkg.com/axios/dist/axios.min.js" defer></script>
     <script src="../scripts/build-shows-page.js" defer></script>
   </head>
+  <!--
+    This is the Main Body
+  -->
   <body>
-    <!--Page Header Section-->
+    <!--
+      This is the Main Header which includes:
+      - Main Band Logo
+      - Main Navigation Bar
+    -->
     <header class="mainHeader">
       <!--BandSite Main Logo Wrapper-->
       <article class="mainHeader__bandSiteLogo-wrapper">
@@ -62,11 +65,13 @@
         </ul>
       </nav>
     </header>
-    <!--Hero Section Wrapper-->
+    <!--
+        This is the Hero Section which includes:
+        - Hero Title
+        - Hero Image
+    -->
     <section class="heroWrapper-shows">
-      <!--Hero Section Content-->
       <div class="heroWrapper-shows__content">
-        <!--Hero Section Main Title-->
         <h1 class="heroWrapper-shows__mainHeader">Beautiful Beasts Album</h1>
         <!--Hero Section SoundCloud Section-->
         <div class="heroWrapper-shows__soundCloud">
@@ -88,18 +93,21 @@
         </div>
       </div>
     </section>
-    <!--Band Shows Table-->
+    <!--
+      This is the Band Shows Table Section
+    -->
     <section class="bandShows">
       <!--Band Shows Content Here-->
     </section>
-    <!--Band Footer Section-->
+    <!--
+    This is the Footer Section which includes:
+    - Contact Information of the Band
+    - Copyright Information
+  -->
     <footer class="bandSiteFooter">
-      <!--Footer Content-->
       <div class="bandSiteFooter__content">
         <div class="bandSiteFooter__headerContent">
-          <!--Footer Section Title-->
           <h1 class="bandSiteFooter__mainTitle">Get in Touch</h1>
-          <!--Footer Section Social Icons-->
           <div class="bandSiteFooter__socialIcons">
             <article class="bandSiteFooter__iconWrapper">
               <a href="https://instagram.com">
@@ -130,7 +138,6 @@
             </article>
           </div>
         </div>
-        <!--BandSite Contact Information-->
         <div class="bandSiteFooter__contactInfo">
           <div class="bandSiteFooter__contactInfo-content">
             <article class="bandSiteFooter__contactInfo-heading">
@@ -172,7 +179,6 @@
             </article>
           </div>
         </div>
-        <!--Footer BandSite Logo-->
         <div class="bandSiteFooter__logoWrapper">
           <a href="../index.html">
             <img
@@ -182,7 +188,6 @@
             />
           </a>
         </div>
-        <!--Copyright Section-->
         <div class="bandSiteFooter__copyrightInfo">
           <p>Copyright The Bees Knees @ 2021 All Rights Reserved</p>
         </div>
