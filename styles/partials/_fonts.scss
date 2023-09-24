@@ -1,19 +1,18 @@
 /*
-  Name: Anurag Bhattacharya
-  Project Name: BandSite Project - Sprint 2
-  Document Description: This is the Fonts Styles
-
-  Diving Deeper:
-  - Unable to figure out Dynamic timestamp with Comments form
-  - For Comments Form, there is Form Validation:
-    - If there are any errors:
-      - Prevents form from submitting
-      - Shows the error state as mentioned on the Style Guide
-    - If there are no errors:
-      - Clears any error states from form
-      - Submits the form
+  Name: 
+  Anurag Bhattacharya
+  Project: 
+  BandSite Project - Sprint 3
+  Description: 
+  This is the Fonts Partials Component
+  Diving Deeper Notes:
+  - All Diving Deeper From Sprint 1 Completed
+  - Form Validation Diving Deeper From Sprint 2 Completed
+  - Dynamic Timestamp Diving Deeper From Sprint 2 Not Completed
+  - All Diving Deeper From Sprint 3 Completed
 */
-//Normal Font Styles
+
+//AvenirNext Regular Font Styles
 @font-face 
 {
   font-family: 'AvenirNext-Regular';
@@ -21,7 +20,8 @@
   font-weight: normal;
   font-style: normal;
 }
-//Demi Font Styles
+
+//AvenirNext Demi Font Styles
 @font-face 
 {
   font-family: 'AvenirNext-Demi';
@@ -29,7 +29,8 @@
   font-weight: 600;
   font-style: normal;
 }
-//Bold Font Styles
+
+//AvenirNext Bold Font Styles
 @font-face 
 {
   font-family: 'AvenirNext-Bold';

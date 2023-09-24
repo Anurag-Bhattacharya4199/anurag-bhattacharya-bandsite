@@ -1,60 +1,68 @@
 /*
-  Name: Anurag Bhattacharya
-  Project Name: BandSite Project - Sprint 2
-  Document Description: This is the Photo Gallery Section Styles
-
-  Diving Deeper:
-  - Unable to figure out Dynamic timestamp with Comments form
-  - For Comments Form, there is Form Validation:
-    - If there are any errors:
-      - Prevents form from submitting
-      - Shows the error state as mentioned on the Style Guide
-    - If there are no errors:
-      - Clears any error states from form
-      - Submits the form
+  Name: 
+  Anurag Bhattacharya
+  Project: 
+  BandSite Project - Sprint 3
+  Description: 
+  This is the Photo Gallery Section Partial Component
+  Diving Deeper Notes:
+  - All Diving Deeper From Sprint 1 Completed
+  - Form Validation Diving Deeper From Sprint 2 Completed
+  - Dynamic Timestamp Diving Deeper From Sprint 2 Not Completed
+  - All Diving Deeper From Sprint 3 Completed
 */
+
+/*
+  All the Partials imported needed for the Photo Gallery Section Partial Component
+*/
+
 //Mixin SCSS Style sheet
 @import './mixins';
 //Fonts SCSS Style sheet
 @import './fonts';
-//Photo Gallery Wrapper Styles
+
+//Band Photo Gallery Wrapper Styles
 .photoGalleryWrapper 
 {
   background-color: $Alabaster;
-  //Photo Gallery Content Styles
+
+  //Band Photo Gallery Content Styles
   &__content 
   {
     padding: 0px $mobile-padding-between-components;
-    //Tablet and Onwards Size Styles
+    
     @include tablet
     {
       padding: $desktop-tablet-padding-between-components;
     }
   }
-  //Photo Gallery Title Area Styles
+  
+  //Band Photo Gallery Title Wrapper Styles
   &__mainTitleWrapper 
   {
     padding-top: $mobile-padding-before-headlines;
     padding-bottom: $mobile-padding-after-headlines;
-    //Tablet and Onwards Size Styles
+    
     @include tablet 
     {
       padding-top: $desktop-tablet-padding-before-headlines;
       padding-bottom: $desktop-tablet-padding-after-headlines;
     }
   }
-  //Photo Gallery Title Styles
+  
+  //Band Photo Gallery Title Styles
   &__mainTitle 
   {
     font-family: "AvenirNext-Bold";
     @include text-styles(2rem, 32px, 700);
-    //Tablet and Onwards Size Styles
+    
     @include tablet 
     {
       @include text-styles(2.25rem, 44px, 700);
     }
   }
-  //Photo Gallery Styles
+  
+  //Band Photo Gallery Wrapper Styles
   &__photo-gallery 
   {
     display: flex;
@@ -62,37 +70,38 @@
     text-align: center;
     justify-content: center;
 
-    //Tablet and Onwards Size Styles
+    
     @include tablet 
     {
       flex-direction: row;
       flex-wrap: wrap;
     }
   }
-  //Photo Gallery Image Area Styles
+  
+  //Band Photo Gallery Area Styles
   &__photo-gallery-area 
   {
     padding-bottom: $mobile-padding-between-components;
 
-    //Tablet and Onwards Size Styles
     @include tablet 
     {
       width: 30%;
       padding-right: 1rem;
     }
-    //Desktop and Onwards Size Styles
+    
     @include desktop 
     {
       padding-right: 0.5rem;
     }
   }
-  //Photo Gallery Image Styles
+  
+  //Band Photo Gallery - Photo Image Styles
   &__photo 
   {
     height: auto;
     width: 100%;
     filter: grayscale(100%);
-    //Photo Gallery Image Hover Styles
+    
     &:hover 
     {
       filter: grayscale(0%);

@@ -1,59 +1,63 @@
 /*
-    Name: Anurag Bhattacharya
-    Project Name: BandSite Project - Sprint 2
-    Document Description: This is the Photo Gallery Section Styles
-    
-    Diving Deeper:
-    - Unable to figure out Dynamic timestamp with Comments form
-    - For Comments Form, there is Form Validations
-    - If there are any errors:
-        - Prevents form from submitting
-        - Shows the error state as mentioned on the Style Guide
-    - If there are no errors:
-        - Clears any error states from form
-        - Submits the form
+  Name: 
+  Anurag Bhattacharya
+  Project: 
+  BandSite Project - Sprint 3
+  Description: 
+  This is the Shows Data Table Partial Component
+  Diving Deeper Notes:
+  - All Diving Deeper From Sprint 1 Completed
+  - Form Validation Diving Deeper From Sprint 2 Completed
+  - Dynamic Timestamp Diving Deeper From Sprint 2 Not Completed
+  - All Diving Deeper From Sprint 3 Completed
 */
+
+/*
+  All the Partials imported needed for the Shows Data Table Partial Component
+*/
+
 //Mixin SCSS Style sheet
 @import './mixins';
+
 //Fonts SCSS Style sheet
 @import './fonts';
 
-//Band Shows Table Styles
+//Band Shows Table Wrapper Styles
 .bandShows 
 {
-    //Desktop and Onwards Size Styles
     @include desktop 
     {
         display: flex;
     }
-    //Band Show Table Header Wrapper Styles
+
+    //Band Shows Table Headers Wrapper Styles
     &__headerWrapper 
     {
         padding-top: 1rem;
         flex: 1;
     }
-    //Band Show table Header Content Styles
+    
+    //Band Shows Table Headers Content Styles
     &__headerContent 
     {
         display: none;
-        //Tablet and Onwards Size Styles
+        
         @include tablet 
         {
             display: flex;
             width: 70%;
-            //justify-content: space-between;
         }
-        //Desktop and Onwards Size Styles
+        
         @include desktop 
         {
             width: 100%;
             text-align: center;
         }
     }
-    //Band Site Table Headings Styles
+    
+    //Band Shows Table Header Titles Styles
     &__headerContent-date, &__headerContent-venue, &__headerContent-location 
     {
-        //Tablet and Onwards Size Styles
         @include tablet 
         {
             color: $Silver;
@@ -64,27 +68,28 @@
         }
     }
 
-    //Band Site Table Main Title Styles
+    //Band Shows Table Main Title Styles
     &__mainTitle 
     {
         padding: $mobile-padding-before-headlines 0px $mobile-padding-after-headlines $mobile-padding-between-components;
         font-family: "AvenirNext-Bold";
         @include text-styles(2rem, 32px, 700);
-        //Tablet and Onwards Size Styles
+        
         @include tablet 
         {
             padding: $mobile-padding-before-headlines 0px $mobile-padding-after-headlines $mobile-padding-between-components;
             @include text-styles(2.25rem, 44px, 700);
         }
     }
-    //Band Site Show Data Styles
+    
+    //Band Shows Table Show Data Styles
     &__showData 
     {
         border-bottom: 1px solid $Mercury;
         padding-bottom: $mobile-padding-between-components;
         display: flex;
         flex-direction: column;
-        //Tablet and Onwards Size Styles
+        
         @include tablet 
         {
             text-align: center;
@@ -94,40 +99,41 @@
             }
         }
     }
-    //Band Site Show Content Styles
+    
+    //Band Shows Table Show Content Styles
     &__showContent 
     {
         padding: 0px $mobile-padding-between-components;
-        //Tablet and Onwards Size Styles
+        
         @include tablet 
         {
             display: flex;
-            //justify-content: space-between;
             padding-left: 0px;
             padding-right: 0px;
             width: 100%;
             pointer-events: none;   
         }
     }
-    //Band Site Show Data Header Styles
+    
+    //Band Shows Table Sub-Headers Styles
     &__dateTitle, &__venueTitle, &__locationTitle 
     {
         color: $Silver;
         padding: $mobile-padding-between-components 0px;
         @include text-styles(0.9rem, 22px, 600);
 
-        //Tablet and Onwards Size Styles
         @include tablet 
         {
             display: none;
         }
     }
-    //Band Site Show Data - Date Styles
+
+    //Band Shows Table - Date Information Styles
     &__date 
     {
         font-family: "AvenirNext-Demi";
         @include text-styles(0.9rem, 22px, 600);
-        //Tablet and Onwards Size Styles
+
         @include tablet 
         {
             @include text-styles(0.9rem, 22px, 600);
@@ -136,11 +142,12 @@
             pointer-events: none;
         }
     }
-    //Band Site Show Data - Venue & Location Styles
+
+    //Band Shows Table - Venue & Location Information Styles
     &__venue, &__location 
     {
         @include text-styles(0.8rem, 18px, 400);
-        //Tablet and Onwards Size Styles
+
         @include tablet 
         {
             @include text-styles(0.9rem, 22px, 400);
@@ -149,30 +156,31 @@
             pointer-events: none;
         }
     }
-    //Band Site Show Data - Button Wrapper Styles
+
+    //Band Shows Table - Button Wrapper Styles
     &__buttonWrapper 
     {
         padding-top: $mobile-padding-between-components;
-        //Tablet and Onwards Size Styles
+        
         @include tablet 
         {
             padding: 24px 18px;
         }
     }
 
-    //Band Site Show Data - Button Styles
+    //Band Shows Table - Button Styles
     &__button 
     {
         width: 100%;
         height: 40px;
         background-color: $BandSite-Black;
         color: $White;
-        //Band Site Show Data - Button Hover Styles
+
         &:hover 
         {
             background-color: $BandSite-DarkBlack;
         }
-        //Tablet and Onwards Size Styles
+
         @include tablet 
         {
             width: 150px;
@@ -180,14 +188,17 @@
         }
     }
 
-    &__selectedRow {
-        @include tablet {
+    //Band Shows Table Selected Row Styles
+    &__selectedRow 
+    {
+        @include tablet 
+        {
             background-color: $Mercury;
 
-            &:hover {
+            &:hover 
+            {
                 background-color: $Mercury;
             }
         }
-        
     }
 }

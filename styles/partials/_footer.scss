@@ -1,56 +1,64 @@
 /*
-  Name: Anurag Bhattacharya
-  Project Name: BandSite Project - Sprint 2
-  Document Description: This is the Footer Section Styles
-
-  Diving Deeper:
-  - Unable to figure out Dynamic timestamp with Comments form
-  - For Comments Form, there is Form Validation:
-    - If there are any errors:
-      - Prevents form from submitting
-      - Shows the error state as mentioned on the Style Guide
-    - If there are no errors:
-      - Clears any error states from form
-      - Submits the form
+  Name: 
+  Anurag Bhattacharya
+  Project: 
+  BandSite Project - Sprint 3
+  Description: 
+  This is the Footer Section Partials Component
+  Diving Deeper Notes:
+  - All Diving Deeper From Sprint 1 Completed
+  - Form Validation Diving Deeper From Sprint 2 Completed
+  - Dynamic Timestamp Diving Deeper From Sprint 2 Not Completed
+  - All Diving Deeper From Sprint 3 Completed
 */
+
+/*
+  All the Partials imported needed for the Footer Section Partial Component
+*/
+
 //Mixin SCSS Style sheet
 @import './mixins';
+
 //Fonts SCSS Style sheet
 @import './fonts';
-//Band Footer Styles
+
+//Band Footer Wrapper Styles
 .bandSiteFooter 
 {
   background-color: $BandSite-DarkBlack;
   margin-top: $mobile-padding-between-components;
-  //Tablet and Onwards Size Styles
+  
   @include tablet 
   {
     position: relative;
   }
-  //Band Footer Content Styles
+
+  //Band Footer Content Wrapper Styles
   &__content 
   {
     padding-left: $mobile-padding-between-components;
-    //Tablet and Onwards Size Styles
+    
     @include tablet 
     {
       padding-left: $desktop-tablet-padding-between-components;
     }
   }
-  //Band Footer Main Title Styles
+  
+  //Band Footer Title Styles
   &__mainTitle 
   {
     color: $White;
     padding-top: $mobile-padding-before-headlines;
     font-family: 'AvenirNext-Bold';
     @include text-styles(2rem, 32px, 700);
-    //Tablet and Onwards Size Styles
+    
     @include tablet 
     {
       padding-top: $desktop-tablet-padding-before-headlines;
       @include text-styles(2.25rem, 44px, 700);
     }
   }
+  
   //Band Footer Header Content Styles
   &__headerContent 
   {
@@ -60,76 +68,82 @@
     }
   }
 
-  //Band Footer Social Icons Section Styles
+  //Band Footer Social Icons Selection Styles
   &__socialIcons 
   {
     padding-top: $mobile-padding-between-components;
     display: flex;
-    //Tablet and Onwards Size Styles
+    
     @include tablet 
     {
       padding: 3.75rem 0px 0px $desktop-tablet-padding-between-components;
     }
   }
-  //Band Footer Social Icon Styles
+  
+  //Band Footer Social Icons Icon Images Styles
   &__socialIcons-icon 
   {
     padding-right: $mobile-padding-between-components;
   }
-  //Band Footer Contact Info Section Styles
+  
+  //Band Footer Contact Info Styles
   &__contactInfo 
   {
     padding-top: $mobile-padding-between-components;
-    //Tablet and Onwards Size Styles
+    
     @include tablet 
     {
       display: flex;
       padding: $desktop-tablet-padding-between-components 0px;
     }
   }
+  
   //Band Footer Contact Info Content Styles
   &__contactInfo-content 
   {
-    //Tablet and Onwards Size Styles
     @include tablet 
     {
       padding-right: $desktop-tablet-padding-between-components;
     }
   }
-  //Band Footer Contact Info Header Styles
+  
+  //Band Footer Contact Info Heading Paragraph Styles
   &__contactInfo-heading p
   {
     color: $White;
     font-family: 'AvenirNext-Demi';
     @include text-styles(0.8rem, 18px, 600);
-    //Tablet and Onwards Size Styles
+    
     @include tablet 
     {
       @include text-styles(0.9rem, 22px, 600);
     }
   }
-  //Band Footer Contact Info Text Styles
+
+  //Band Footer Contact Info Paragraph Styles
   &__contactInfo-info p 
   {
     color: $White;
     @include text-styles(0.8rem, 18px, 400);
-    //Tablet and Onwards Size Styles
+    
     @include tablet 
     {
       @include text-styles(0.9rem, 22px, 400);
     }
   }
-  //Band Footer Contact Info Text Styles
+  
+  //Band Footer Contact Info Styles
   &__contactInfo-info 
   {
     padding-top: $mobile-padding-between-components;
   }
-  //Band Footer Logo Wrapper Styles
+  
+  //Band Footer Logo Styles
   &__logoWrapper 
   {
     padding-top: $mobile-padding-before-headlines;
     padding-bottom: $mobile-padding-between-components;
-    //Tablet and Onwards Size Styles
+    
     @include tablet 
     {
       position: absolute;
@@ -137,17 +151,18 @@
       right: 50px;
     }
   }
-  //Band Footer Copyright Info Section Styles
+  
+  //Band Footer Copyright Section Styles
   &__copyrightInfo 
   {
     padding-bottom: $mobile-padding-between-components;
 
-    //Band Footer Copyright Info Text Styles
+    //Band Footer Copyright Paragraph Styles
     p 
     {
       color: $White;
       @include text-styles(0.8rem, 18px, 400);
-      //Tablet and Onwards Size Styles
+      
       @include tablet 
       {
         @include text-styles(0.9rem, 22px, 400)

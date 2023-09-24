@@ -1,34 +1,42 @@
 /*
-    Name: Anurag Bhattacharya
-    Project Name: BandSite Project - Sprint 2
-    Document Description: This is the Bio Page SCSS Styles
-    
-    Diving Deeper:
-    - Unable to figure out Dynamic timestamp with Comments form
-    - For Comments Form, there is Form Validations
-    - If there are any errors:
-        - Prevents form from submitting
-        - Shows the error state as mentioned on the Style Guide
-    - If there are no errors:
-        - Clears any error states from form
-        - Submits the form
+  Name: 
+  Anurag Bhattacharya
+  Project: 
+  BandSite Project - Sprint 3
+  Description: 
+  This is the Shows Page, displaying All the Shows Schedule of the Music Band
+  Diving Deeper Notes:
+  - All Diving Deeper From Sprint 1 Completed
+  - Form Validation Diving Deeper From Sprint 2 Completed
+  - Dynamic Timestamp Diving Deeper From Sprint 2 Not Completed
+  - All Diving Deeper From Sprint 3 Completed
 */
 
-/*All the Partial Sections of the Website imported*/
+/*
+All need partials for Main/Bio Page imported
+*/
+
 //Fonts
 @import './partials/fonts';
-//Header Section
+
+//BandSite Header Section
 @import './partials/header';
-//Hero Section
+
+//BandSite Hero Section
 @import './partials/hero';
-//Band Biography Section
+
+//BandSite Biography Section
 @import './partials/aboutInformation';
-//Photo Gallery Section
+
+//BandSite Photo Gallery Section
 @import './partials/photoGallery';
-//Band Comments Form and Panel Section
+
+//BandSite Comments Form and Panel Section
 @import './partials/_commentsSection';
-//Footer Section
+
+//bandSite Footer Section
 @import './partials/footer';
+
 //Global Styles
 * {
   margin: 0;

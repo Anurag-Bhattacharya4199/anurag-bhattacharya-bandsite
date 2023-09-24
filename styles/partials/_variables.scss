@@ -1,46 +1,67 @@
 /*
-    Name: Anurag Bhattacharya
-    Project Name: BandSite Project - Sprint 2
-    Document Description: This is the Variables Styles
-    
-    Diving Deeper:
-    - Unable to figure out Dynamic timestamp with Comments form
-    - For Comments Form, there is Form Validations
-    - If there are any errors:
-        - Prevents form from submitting
-        - Shows the error state as mentioned on the Style Guide
-    - If there are no errors:
-        - Clears any error states from form
-        - Submits the form
+  Name: 
+  Anurag Bhattacharya
+  Project: 
+  BandSite Project - Sprint 3
+  Description: 
+  This is the Variables
+  Diving Deeper Notes:
+  - All Diving Deeper From Sprint 1 Completed
+  - Form Validation Diving Deeper From Sprint 2 Completed
+  - Dynamic Timestamp Diving Deeper From Sprint 2 Not Completed
+  - All Diving Deeper From Sprint 3 Completed
 */
-/*All Colors*/
+
+/*
+    All Colors
+*/
+
 //BandSite Black Color
 $BandSite-Black: #323232;
+
 //Silver Color
 $Silver: #AFAFAF;
+
 //White Color
 $White: #FFFFFF;
+
 //BandSite-DarkBlack Color
 $BandSite-DarkBlack: #000000;
+
 //Mercury Color
 $Mercury: #E1E1E1;
+
 //Alabaster Color
 $Alabaster: #FAFAFA;
-/*All Padding Styles*/
+
+/*
+    All Padding Styles
+*/
+
 //Mobile Padding Before Headlines
 $mobile-padding-before-headlines: 2rem;
+
 //Mobile Padding After Headlines
 $mobile-padding-after-headlines: 1rem;
+
 //Mobile Padding Between Components
 $mobile-padding-between-components: 1rem;
+
 //Desktop & Tablet Padding Before Headlines
 $desktop-tablet-padding-before-headlines: 3rem;
+
 //Desktop & Tablet Padding After Headlines
 $desktop-tablet-padding-after-headlines: 2.25rem;
+
 //Desktop & tablet Padding Between Components
 $desktop-tablet-padding-between-components: 2.25rem;
-/*All Media Queries Breakpoints*/
+
+/*
+    All Media Queries Breakpoints
+*/
+
 //Tablet Breakpoint
 $tablet-breakdown: 768px; 
+
 //Desktop Breakpoint
 $desktop-breakdown: 1280px;

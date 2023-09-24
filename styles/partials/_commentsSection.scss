@@ -1,33 +1,37 @@
 /*
-  Name: Anurag Bhattacharya
-  Project Name: BandSite Project - Sprint 2
-  Document Description: This is the Comments Section Styles
+  Name: 
+  Anurag Bhattacharya
+  Project: 
+  BandSite Project - Sprint 3
+  Description: 
+  This is the Band Comments Partials Component
+  Diving Deeper Notes:
+  - All Diving Deeper From Sprint 1 Completed
+  - Form Validation Diving Deeper From Sprint 2 Completed
+  - Dynamic Timestamp Diving Deeper From Sprint 2 Not Completed
+  - All Diving Deeper From Sprint 3 Completed
+*/
 
-  Diving Deeper:
-  - Unable to figure out Dynamic timestamp with Comments form
-  - For Comments Form, there is Form Validation:
-    - If there are any errors:
-      - Prevents form from submitting
-      - Shows the error state as mentioned on the Style Guide
-    - If there are no errors:
-      - Clears any error states from form
-      - Submits the form
+/*
+  All the Partials imported needed for the Band Comments Partial Component
 */
 
 //Mixins SCSS Style sheet
 @import './mixins';
+
 //Fonts SCSS Style sheet
 @import './fonts';
-//Band Comments Styles
+
+//Band Comments Wrapper Styles
 .bandComments 
 {
   padding: 0px $mobile-padding-between-components;
-  //Tablet and Onwards Size Styles
+
   @include tablet 
   {
     padding: 0px $desktop-tablet-padding-between-components;
   }
-  //Desktop and Onwards Size Styles
+
   @include desktop 
   {
     display: flex;
@@ -35,14 +39,14 @@
     justify-content: center;
   }
 
-  //Band Comments Main Title Styles
+  //Band Comments Title Styles
   &__mainTitle 
   {
     font-family: "AvenirNext-Bold";
     @include text-styles(2rem, 32px, 700);
     padding-top: $mobile-padding-before-headlines;
     padding-bottom: $mobile-padding-after-headlines;
-    //Tablet and Onwards Size Styles
+
     @include tablet 
     {
       @include text-styles(2.25rem, 44px, 700);
@@ -52,7 +56,6 @@
   //Band Comments Content Styles
   &__content 
   {
-    //Tablet and Onwards Size Styles
     @include tablet 
     {
       padding: 0px $desktop-tablet-padding-between-components;
@@ -60,37 +63,37 @@
   }
 }
 
-//Band Comment Form Section Styles
+//Band Comments Form Styles
 .commentsForm 
 {
   display: flex;
   padding-bottom: $mobile-padding-between-components;
   border-bottom: 1px solid $Mercury;
-  //Tablet and Onwards Size Styles
+
   @include tablet 
   {
     position: relative;
     padding-bottom: $desktop-tablet-padding-between-components;
   }
 
-  //Band Comment Form Avatar Wrapper Styles
+  //Band Comments Form Avatar Wrapper Styles
   &__avatarWrapper 
   {
     padding-right: $mobile-padding-between-components;
-    //Tablet and Onwards Size Styles
+
     @include tablet 
     {
       padding-right: 1rem;
     }
   }
 
-  //Band Comment Form Avatar Styles
+  //Band Comments Form Avatar Styles
   &__avatar 
   {
     border-radius: 50%;
     width: 36px;
     height: 36px;
-    //Tablet and Onwards Size Styles
+
     @include tablet 
     {
       width: 48px;
@@ -98,30 +101,32 @@
     }
   }
 
-  //Band Comment Form Styles
+  //Band Comments Form Styles
   &__form 
   {
     display: flex;
     flex-direction: column;
     gap: 4px;
-    //Tablet and Onwards Size Styles
+
     @include tablet 
     {
       width: 100%;
     }
   }
-  //Submit Button Wrapper Styles
+
+  //Band Comments Form Submit Button Wrapper Styles
   &__submitButtonWrapper 
   {
     padding-top: $mobile-padding-between-components;
-    //Tablet and Onwards Size Styles
+
     @include tablet 
     {
       display: flex;
       justify-content: flex-end;
     }
   }
-  //Submit Button Styles
+
+  //Band Comments Form Submit Button Styles
   &__submitButton 
   {
     background-color: $BandSite-Black;
@@ -129,44 +134,45 @@
     height: 40px;
     width: 100%;
     border-radius: 4px;
-    //Tablet and Onwards Size Styles
+
     @include tablet 
     {
       width: 150px;
       padding-left: 32px;
       padding-right: 32px;
     }
-    //Submit Button Hover Styles
-    &:hover {
+
+    &:hover 
+    {
       background-color: $BandSite-DarkBlack;
     }
   }
 }
 
-//Form Label Styles
+//Band Comments Form Label Styles
 label 
 {
   @include text-styles(0.8rem, 18px, 400);
   color: $Silver;
-  //Tablet and Onwards Size Styles
+
   @include tablet 
   {
     @include text-styles(0.9rem, 22px, 400);
   }
 }
 
-//Form Label - Comment Label Styles
+//Band Comments Form - Comment Label
 label#commentLabel 
 {
   padding-top: $mobile-padding-between-components;
-  //Tablet and Onwards Size Styles
+
   @include tablet 
   {
     padding-top: $desktop-tablet-padding-between-components;
   }
 }
 
-//Form Input Styles
+//Band Comments Form Input Element Styles
 input 
 {
   height: 36px;
@@ -174,149 +180,176 @@ input
   border-radius: 4px;
   padding: 12px;
   border: 1px solid $Mercury;
-  //Tablet and Onwards Size Styles
+
   @include tablet 
   {
     height: 48px;
     padding: 16px;
   }
-  //Form Input Active Styles
+
+  //Band Comments Form Input Element - Active Styles
   &:active {
     border: 1px solid $BandSite-Black;
   }
 }
 
-.error-border {
+//Band Comments Form Input Error Styles
+.error-border 
+{
   border: 1px solid #D22D2D;
 }
 
-.default-border {
+//Band Comments Form Input Default Styles
+.default-border 
+{
   border: 1px solid $Mercury;
 }
-//Comments Panel Section Styles
+
+//Band Comments Panel Wrapper Styles
 .commentsPanel 
 {
   padding: $mobile-padding-between-components 0px;
-  //Tablet and Onwards Size Styles
+  
   @include tablet 
   {
     padding: $desktop-tablet-padding-between-components 0px;
   }
-  //Comment Styles
+
+  //Band Comments Panel Comment Styles
   &__comment 
   {
     display: flex;
     border-bottom: 1px solid $Mercury;
     padding: $mobile-padding-between-components 0px;
-    //Tablet and Onwards Size Styles
+    
     @include tablet 
     {
       padding: $desktop-tablet-padding-between-components 0px;
     }
   }
-  //Comment Content Styles
+
+  //Band Comments Panel Comment Content Styles
   &__commentContent 
   {
     width: 100%;
   }
-  //Comment Avatar Wrapper Styles
+
+  //Band Comments Panel Avatar Wrapper Styles
   &__avatarWrapper 
   {
     padding-right: $mobile-padding-between-components;
-    //Tablet and Onwards Size Styles
+    
     @include tablet 
     {
       padding-right: $desktop-tablet-padding-between-components;
     }
   }
-  //Comment Avatar Styles
+
+  //Band Comments Panel Avatar Styles
   &__avatar 
   {
     border-radius: 50%;
     width: 36px;
     height: 36px;
     background-color: $Mercury;
-    //Tablet and Onwards Size Styles
+
     @include tablet 
     {
       width: 48px;
       height: 48px;
     }
   }
-  //Comment Heading Content Styles
+
+  //Band Comments Panel Heading Content Styles
   &__headingContent 
   {
     display: flex;
     justify-content: space-between;
     padding-bottom: $mobile-padding-between-components;
-    //Tablet and Onwards Size Styles
+    
     @include tablet 
     {
       padding-bottom: $desktop-tablet-padding-between-components;
     }
   }
-  //Comment Title Styles
+
+  //Band Comments Panel Title Styles
   &__title 
   {
     font-family: "AvenirNext-Demi";
     @include text-styles(0.8rem, 18px, 600);
-    //Tablet and Onwards Size Styles
+
     @include tablet 
     {
       @include text-styles(0.9rem, 22px, 600);
     }
   }
-  //Comment Date Styles
+
+  //Band Comments Panel Content - Date
   &__date 
   {
     @include text-styles(0.8rem, 18px, 400);
     color: $Silver;
-    //Tablet and Onwards Size Styles
-    @include tablet 
-    {
-      @include text-styles(0.9rem, 22px, 400);
-    }
-  }
-  //Comment Person Name Styles
-  &__personComment 
-  {
-    @include text-styles(0.8rem, 18px, 400);
-    //Tablet and Onwards Size Styles
+
     @include tablet 
     {
       @include text-styles(0.9rem, 22px, 400);
     }
   }
 
-  &__crudIcons {
+  //Band Comments Panel Content - Comment
+  &__personComment 
+  {
+    @include text-styles(0.8rem, 18px, 400);
+    
+    @include tablet 
+    {
+      @include text-styles(0.9rem, 22px, 400);
+    }
+  }
+
+  //Icons Selection Wrapper Styles
+  &__crudIcons 
+  {
     display: flex;
     justify-content: flex-end;
     padding-top: $mobile-padding-between-components;
 
-    @include tablet {
+    @include tablet 
+    {
       padding-top: $desktop-tablet-padding-between-components;
     }
   }
-  
-  &__likeButton, &__deleteButton {
-    &:hover {
+
+  //Like Button & Delete Button Styles
+  &__likeButton, &__deleteButton 
+  {
+
+    //Button Hover Effects
+    &:hover 
+    {
       cursor: pointer;
       transform: scale(1.5);
     }
   }
 
-  &__likeButton, &__commentLikes {
+  //Like Button & # of Comments Text Styles
+  &__likeButton, &__commentLikes 
+  {
     padding-right: $mobile-padding-between-components;
 
-    @include tablet {
+    @include tablet 
+    {
       padding-right: $desktop-tablet-padding-between-components;
     }
   }
 
-  &__commentLikes {
+  //# of Comments Text Styles
+  &__commentLikes 
+  {
     @include text-styles(0.8rem, 18px, 400);
     color: $Silver;
-    //Tablet and Onwards Size Styles
+
     @include tablet 
     {
       @include text-styles(0.9rem, 22px, 400);

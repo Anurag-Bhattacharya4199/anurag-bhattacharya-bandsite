@@ -1,72 +1,86 @@
 /*
-  Name: Anurag Bhattacharya
-  Project Name: BandSite Project - Sprint 2
-  Document Description: This is the Header Section Styles
-
-  Diving Deeper:
-  - Unable to figure out Dynamic timestamp with Comments form
-  - For Comments Form, there is Form Validation:
-    - If there are any errors:
-      - Prevents form from submitting
-      - Shows the error state as mentioned on the Style Guide
-    - If there are no errors:
-      - Clears any error states from form
-      - Submits the form
+  Name: 
+  Anurag Bhattacharya
+  Project: 
+  BandSite Project - Sprint 3
+  Description: 
+  This is the Header Section Partials Component
+  Diving Deeper Notes:
+  - All Diving Deeper From Sprint 1 Completed
+  - Form Validation Diving Deeper From Sprint 2 Completed
+  - Dynamic Timestamp Diving Deeper From Sprint 2 Not Completed
+  - All Diving Deeper From Sprint 3 Completed
 */
+
+/*
+  All the Partials imported needed for the Footer Section Partial Component
+*/
+
 //Mixin SCSS Style sheet
 @import './mixins';
+
 //Fonts SCSS Style sheet
 @import './fonts';
-//Header Section Styles
+
+//Band Main Header Styles
 .mainHeader
 {
   @include header-section-styles(100%, flex, column, center, center, $BandSite-Black);
-  //Tablet and Onwards Size Styles
+  
   @include tablet 
   {
     flex-direction: row;
   }
-  //Header Logo Wrapper Styles
+  
+  //Band Logo Wrapper Styles
   &__bandSiteLogo-wrapper 
   {
     padding-top: $mobile-padding-before-headlines;
-    //Tablet and Onwards Size Styles
+    
     @include tablet 
     {
-      padding: $desktop-tablet-padding-before-headlines $desktop-tablet-padding-between-components $desktop-tablet-padding-after-headlines $desktop-tablet-padding-between-components;
+      padding: 
+        $desktop-tablet-padding-before-headlines 
+        $desktop-tablet-padding-between-components 
+        $desktop-tablet-padding-after-headlines 
+        $desktop-tablet-padding-between-components;
     }
-    //Header Logo Styles
+    
+    //Band Logo Image Styles
     &-image 
     {
       @include bandSiteLogo-styles(20px, 120px);
     }
   }
-  //Main Navigation Section Styles
+  
+  //Band Main Navigation Styles
   &__mainNavigation 
   {
     width: 100%;
     padding-top: $mobile-padding-between-components;
-    //Tablet and Onwards Size Styles
+    
     @include tablet 
     {
       padding-top: $desktop-tablet-padding-between-components;  
     }
   }
-  //Main Navigation List Styles
+  
+  //Band Main Navigation List Styles
   &__mainNavigation-list 
   {
     width: 100%;
     display: flex;
     text-align: center;
   }
-  //Main Navigation List Item Styles
+  
+  //Band Main Navigation List-Item Styles
   &__mainNavigation-list li
   {
     list-style: none;
     width: 50%;
     font-family: 'AvenirNext-Bold';
     @include text-styles(0.9rem, 32px, 700);
-    //Tablet and Onwards Size Styles
+    
     @include tablet
     {
       font-family: 'AvenirNext-Demi';
@@ -74,28 +88,31 @@
       width: 20%;
     }
   }
-  //Main Navigation List Item Link Styles
+  
+  //Band Main Navigation List-Item Link Styles
   &__mainNavigation-list li a 
   {
     text-decoration: none;
     color: $White;
   }
-  //Main Navigation Inactive List Item Styles
+  
+  //Band Main Navigation Inactive List-Item Styles
   &__mainNavigation-list li a.mainHeader__mainNavigation-inactive-list 
   {
     color: $Mercury;
-    //Hover Styles
+    
     &:hover 
     {
       color: $White;
     }
   }
-  //Main Navigation Active and List Item Hover Styles
+  
+  //Band Main Navigation Active List-Item Styles
   &__mainNavigation-list li:hover, &__mainNavigation-list-active 
   {
     color: $White;
     border-bottom: 3.5px solid $White;
-    //Tablet and Onwards Size Styles
+    
     @include tablet 
     {
       padding-bottom: 2rem;

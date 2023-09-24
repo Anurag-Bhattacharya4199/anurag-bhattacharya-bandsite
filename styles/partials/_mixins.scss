@@ -1,20 +1,24 @@
 /*
-  Name: Anurag Bhattacharya
-  Project Name: BandSite Project - Sprint 2
-  Document Description: This is the MixIns Styles
-
-  Diving Deeper:
-  - Unable to figure out Dynamic timestamp with Comments form
-  - For Comments Form, there is Form Validation:
-    - If there are any errors:
-      - Prevents form from submitting
-      - Shows the error state as mentioned on the Style Guide
-    - If there are no errors:
-      - Clears any error states from form
-      - Submits the form
+  Name: 
+  Anurag Bhattacharya
+  Project: 
+  BandSite Project - Sprint 3
+  Description: 
+  This is the Mixins
+  Diving Deeper Notes:
+  - All Diving Deeper From Sprint 1 Completed
+  - Form Validation Diving Deeper From Sprint 2 Completed
+  - Dynamic Timestamp Diving Deeper From Sprint 2 Not Completed
+  - All Diving Deeper From Sprint 3 Completed
 */
+
+/*
+  All the Partials imported needed for the Mixins
+*/
+
 //Variables SCSS Style sheet
 @import './variables';
+
 //Text Styles Mixin
 @mixin text-styles($font-size, $line-height, $font-weight)
 {
@@ -22,6 +26,7 @@
   line-height: $line-height;
   font-weight: $font-weight;
 }
+
 //Header Section Styles Mixin
 @mixin header-section-styles($width, $display, $flex-direction, $justify-content, $align-items, $background-color)
 {
@@ -32,6 +37,7 @@
   align-items: $align-items;
   background-color: $background-color;
 }
+
 //Hero Section Styles Mixin
 @mixin hero-section-wrapper-styles($width, $height, $display, $flex-direction, $justify-content)
 {
@@ -41,6 +47,7 @@
   flex-direction: $flex-direction;
   justify-content: $justify-content;
 }
+
 //Band Image Styles Mixin
 @mixin band-image-styles($display, $text-align, $justify-content, $height, $width)
 {
@@ -50,12 +57,14 @@
   height: $height;
   width: $width;
 }
-//BandSite Logo Styles Mixin
+
+//Band Logo Styles Mixin
 @mixin bandSiteLogo-styles($max-height, $max-width)
 {
   max-height: $max-height;
   max-width: $max-width;
 }
+
 //Tablet Dimension Styles Mixin
 @mixin tablet 
 {
@@ -64,6 +73,7 @@
     @content;
   }
 }
+
 //Desktop Dimension Styles Mixin
 @mixin desktop 
 {
